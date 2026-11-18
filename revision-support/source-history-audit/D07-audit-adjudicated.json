@@ -1,0 +1,172 @@
+{
+  "debate_id": "D07",
+  "reviewed_field_ids": [
+    "I.agent-1",
+    "I.agent-2",
+    "I.agent-3",
+    "R1.argument.agent-1.agree_reasoning",
+    "R1.argument.agent-2.agree_reasoning",
+    "R1.argument.agent-3.disagree_reasoning",
+    "R1.revision.agent-1",
+    "R1.revision.agent-2",
+    "R1.revision.agent-3",
+    "R2.argument.agent-1.agree_reasoning",
+    "R2.argument.agent-2.agree_reasoning",
+    "R2.argument.agent-3.agree_reasoning",
+    "R2.revision.agent-1",
+    "R2.revision.agent-2",
+    "R2.revision.agent-3",
+    "R3.argument.agent-1.agree_reasoning",
+    "R3.argument.agent-2.agree_reasoning",
+    "R3.argument.agent-3.agree_reasoning",
+    "R3.revision.agent-1",
+    "R3.revision.agent-2",
+    "R3.revision.agent-3",
+    "R4.argument.agent-1.agree_reasoning",
+    "R4.argument.agent-2.agree_reasoning",
+    "R4.argument.agent-3.agree_reasoning",
+    "R4.revision.agent-1",
+    "R4.revision.agent-2",
+    "R4.revision.agent-3",
+    "R5.argument.agent-1.agree_reasoning",
+    "R5.argument.agent-2.agree_reasoning",
+    "R5.argument.agent-3.agree_reasoning",
+    "R5.revision.agent-1",
+    "R5.revision.agent-2",
+    "R5.revision.agent-3",
+    "R6.argument.agent-1.agree_reasoning",
+    "R6.argument.agent-2.agree_reasoning",
+    "R6.argument.agent-3.agree_reasoning",
+    "R6.revision.agent-1",
+    "R6.revision.agent-2",
+    "R6.revision.agent-3"
+  ],
+  "targets": [
+    {
+      "expression": "STMT_TRUE(E)",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "E must be a knight with a true statement"
+            }
+          ],
+          "note": "The field first asserts that B must be a knave; E’s truth evaluation is then stated declaratively after the scoped “if” reasoning."
+        },
+        "agent-2": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "E's parity claim is true, so E knight"
+            }
+          ],
+          "note": "Explicit E truth evaluation follows the stated “Assume B knave” premise."
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "E must be knight because his statement is true"
+            }
+          ],
+          "note": "Explicit E truth evaluation is inside the stated “Assume A is the spy” solution."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "E's statement holds true making E a knight"
+            }
+          ],
+          "note": "Reviewed all later fields; no reversal found."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "E’s parity claim is true"
+            }
+          ],
+          "note": "Reviewed all later fields; no reversal found."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "E’s true statement implies E is knight"
+            }
+          ],
+          "note": "Reviewed all later fields; no reversal found."
+        }
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "field_id": "I.agent-1",
+      "span": "Player C and Player F make identical statements",
+      "reason": "Report of what puzzle characters say, not an assertion that their statements are true."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "If B is a knave, A must be the spy because A's statement would otherwise create a contradiction.",
+      "reason": "Scoped role conclusion about A; literal ROLE content excluded."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "leaving C, D, and F as knaves",
+      "reason": "Role assignments."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "Assume B knave, then C and F statements are false, making them knaves unless one is the spy.",
+      "reason": "Explicit assumption and scoped statement evaluations; not initial commitments."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "D's complex statement is true via its second clause, making D knight.",
+      "reason": "Statement truth is scoped to the assumed B-knave solution."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "All statements then match role constraints.",
+      "reason": "Vague proof summary."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "B, C, F are knaves by B’s count condition (exactly 4 knaves among A,B,C,E,F).",
+      "reason": "Role assignments and a report of B’s count claim under the A-spy assumption."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "D’s statement is true (knave count odd or parity condition) so D is knight.",
+      "reason": "D truth evaluation is scoped under the explicit A-spy assumption."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "All statements satisfy truth/lie requirements. Other spy placements lead to contradictions.",
+      "reason": "Vague summary and generalization."
+    }
+  ],
+  "ambiguities": [
+    {
+      "field_id": "I.agent-2",
+      "span": "Assume B knave",
+      "note": "The E truth evaluation is explicit but scoped under this assumption."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "Assume A is the spy",
+      "note": "The E truth evaluation is explicit but scoped under this assumption."
+    }
+  ]
+}

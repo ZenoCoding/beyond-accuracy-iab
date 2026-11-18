@@ -1,0 +1,9 @@
+{
+  "timing": "Found after sample/protocol freeze, before pipeline comparison; sample not replaced.",
+  "additional_prior_review_path": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/reports/analysis/fast-claim-uptake-2026-09-06/uptake-audit-sample.json",
+  "sha256": "d2c4691a2b28be9155d29f24ad39cf10c32a0f65b6f76370dabd3507fdd3fa9b",
+  "sampled_task_overlap": [
+    "kks-v1-n06-143"
+  ],
+  "interpretation": "Known correction ledger and eight-example audit were not a complete prior-review registry. One sampled puzzle also appears in older16adoptedpairaudit. Do not call either sample an independent untouched holdout. Annotators have not seen this registry/pipeline outcomes. Retain frozen blinded reannotation as model-assisted diagnostic."
+}

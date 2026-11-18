@@ -1,0 +1,411 @@
+{
+  "debate_id": "D04",
+  "reviewed_field_ids": [
+    "I.agent-1",
+    "I.agent-2",
+    "I.agent-3",
+    "R1.argument.agent-1.agree_reasoning",
+    "R1.argument.agent-1.disagree_reasoning",
+    "R1.argument.agent-2.agree_reasoning",
+    "R1.argument.agent-2.disagree_reasoning",
+    "R1.argument.agent-3.agree_reasoning",
+    "R1.argument.agent-3.disagree_reasoning",
+    "R1.revision.agent-1",
+    "R1.revision.agent-2",
+    "R1.revision.agent-3",
+    "R2.argument.agent-1.agree_reasoning",
+    "R2.argument.agent-2.agree_reasoning",
+    "R2.argument.agent-3.agree_reasoning",
+    "R2.revision.agent-1",
+    "R2.revision.agent-2",
+    "R2.revision.agent-3",
+    "R3.argument.agent-1.agree_reasoning",
+    "R3.argument.agent-2.agree_reasoning",
+    "R3.argument.agent-3.agree_reasoning",
+    "R3.revision.agent-1",
+    "R3.revision.agent-2",
+    "R3.revision.agent-3",
+    "R4.argument.agent-1.agree_reasoning",
+    "R4.argument.agent-2.agree_reasoning",
+    "R4.argument.agent-3.agree_reasoning",
+    "R4.revision.agent-1",
+    "R4.revision.agent-2",
+    "R4.revision.agent-3",
+    "R5.argument.agent-1.agree_reasoning",
+    "R5.argument.agent-2.agree_reasoning",
+    "R5.argument.agent-3.agree_reasoning",
+    "R5.revision.agent-1",
+    "R5.revision.agent-2",
+    "R5.revision.agent-3",
+    "R6.argument.agent-1.agree_reasoning",
+    "R6.argument.agent-2.agree_reasoning",
+    "R6.argument.agent-3.agree_reasoning",
+    "R6.revision.agent-1",
+    "R6.revision.agent-2",
+    "R6.revision.agent-3"
+  ],
+  "targets": [
+    {
+      "expression": "NOT(STMT_TRUE(B))",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "B and C's statements are always false"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "B's statement is false"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "B and C statements are always false"
+            }
+          ]
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "B and C statements are false"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "B and C statements are false"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "B and C statements are false"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(C))",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "B and C's statements are always false"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "C's false statement"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "B and C statements are always false"
+            }
+          ]
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "B and C statements are false"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "B and C statements are false"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "B and C statements are false"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(E)",
+      "initial": {
+        "agent-1": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "Then E's statement is true, allowing E to be the spy."
+            }
+          ],
+          "note": "Explicit E evaluation appears within the sequence introduced by \u201cAssuming they are knaves\u201d; scope determines whether it is an unconditional proposed solution claim."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "E's statement true makes E knight"
+            }
+          ],
+          "note": "Explicit evaluation in the proposed A-spy solution."
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "E's claim that A is not a knight is true, making E a knight."
+            }
+          ],
+          "note": "Explicit E evaluation follows \u201cAssuming A is the spy\u201d; preserve the disputed scope rather than force absent."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "E\u2019s claim that A is not a knight is true"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "E\u2019s denial that A is a knight is true"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "E\u2019s claim that A is not a knight is true"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(F)",
+      "initial": {
+        "agent-1": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "F's statement is true, so F is knight."
+            }
+          ],
+          "note": "Explicit F evaluation appears within the sequence introduced by \u201cAssuming they are knaves\u201d; scope determines whether it is an unconditional proposed solution claim."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "F's statement true makes F knight"
+            }
+          ],
+          "note": "Explicit evaluation in the proposed A-spy solution."
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "F must be knight to keep his at\u2011most\u20112\u2011knights claim true."
+            }
+          ],
+          "note": "Explicit F evaluation follows \u201cAssuming A is the spy\u201d; preserve the disputed scope rather than force absent."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "F\u2019s claim that at most two of C,D,E,F are knights is true"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "F\u2019s claim that at most two of C,D,E,F are knights is true"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "F\u2019s claim \u201cat most 2 of C,D,E,F are knights\u201d is true"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "SAME_ROLE(A,B)",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "A cannot be knight because his statement would be false"
+            }
+          ],
+          "note": "This evaluates A's whole disjunctive statement in a role-scoped argument. It does not separately assert the SAME_ROLE disjunct; deriving that disjunct's falsity would add a consequence not separately expressed."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "A's statement reduces to A and B same role"
+            }
+          ],
+          "note": "The clause rewrites or reports the content attributed to A's statement. It does not say that A and B actually have the same role; the subsequent 'choose A as spy' is a role-solving choice."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "This field contains no assertion or report of A and B having the same role. The role-solving text concerns B and C instead."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "ambiguous",
+          "evidence": [],
+          "note": "No unambiguous initial supply established for this candidate; later status not separately adjudicated and does not enter source-derived eligible counts."
+        },
+        "agent-2": {
+          "status": "ambiguous",
+          "evidence": [],
+          "note": "No unambiguous initial supply established for this candidate; later status not separately adjudicated and does not enter source-derived eligible counts."
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [],
+          "note": "No unambiguous initial supply established for this candidate; later status not separately adjudicated and does not enter source-derived eligible counts."
+        }
+      },
+      "adjudication_origin": "Candidate identified after pipeline comparison; independently source-reviewed; not part of blinded discovery."
+    }
+  ],
+  "exclusions": [
+    {
+      "field_id": "I.agent-1",
+      "span": "Assuming they are knaves, D's statement becomes false",
+      "reason": "D truth is a scoped consequence of an explicit assumption, not an unconditional target."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "A cannot be knight because his statement would be false, so A is knave",
+      "reason": "Role assignment and statement evaluation scoped to the assumed B/C roles."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "D then must be knave",
+      "reason": "ROLE assignment; no explicit D statement evaluation."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "A's statement reduces to A and B same role",
+      "reason": "Reports the content of A statement; does not assert SAME_ROLE(A,B)."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "choose A as spy",
+      "reason": "ROLE assignment in a proposed solution."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "Assuming A is the spy avoids contradictions. Then D's statement is false",
+      "reason": "D truth value is scoped to the A-spy hypothesis."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "All roles fit the single\u2011spy requirement",
+      "reason": "Vague solution summary and role assignment."
+    }
+  ],
+  "ambiguities": [
+    {
+      "field_id": "I.agent-2",
+      "span": "choose A as spy. E's statement true makes E knight. F's statement true makes F knight. All constraints satisfied.",
+      "note": "E/F are explicitly evaluated within an endorsed candidate assignment; counted as present because the text asserts this solution, while the other initial E/F mentions are explicitly scoped by \u201cAssuming\u201d."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "Assuming they are knaves, D's statement becomes false, making D a knave. A cannot be knight because his statement would be false, so A is knave. Then E's statement is true, allowing E to be the spy. F's statement is true, so F is knight.",
+      "note": "D/E/F truth evaluations are scoped consequences of the stated assumption, so excluded from initial target supply."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "Assuming A is the spy avoids contradictions. Then D's statement is false (B and C same role) so D knave. E's claim that A is not a knight is true, making E a knight. F must be knight to keep his at\u2011most\u20112\u2011knights claim true.",
+      "note": "D/E/F evaluation appears within an explicit assumption and is not an unconditional commitment."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "Assuming they are knaves, D's statement becomes false, making D a knave. A cannot be knight because his statement would be false, so A is knave. Then E's statement is true, allowing E to be the spy. F's statement is true, so F is knight. Exactly one spy (E) and all constraints satisfied.",
+      "note": "Adjudicated E/F initial truth mentions as ambiguous because they are explicit evaluations in a solution ending with all constraints satisfied, despite the opening assumption."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "Assuming A is the spy avoids contradictions. Then D's statement is false (B and C same role) so D knave. E's claim that A is not a knight is true, making E a knight. F must be knight to keep his at\u2011most\u20112\u2011knights claim true. All roles fit the single\u2011spy requirement.",
+      "note": "Adjudicated E/F initial truth mentions as ambiguous because they are explicit evaluations in a proposed solution, despite the opening assumption."
+    }
+  ]
+}

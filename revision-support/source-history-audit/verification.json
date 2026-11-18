@@ -1,0 +1,12 @@
+{
+  "source_debates": 8,
+  "puzzle_clusters": 2,
+  "nonempty_fields_reviewed": 336,
+  "full_history_annotation_files_checked": 16,
+  "firstpass_hashes_unchanged": true,
+  "standalone_comparison_outputs_byte_identical": 4,
+  "new_debate_generations": 0,
+  "full_corpus_retranslations": 0,
+  "human_adjudication": false,
+  "current_manuscript_updated_from_audit": false
+}

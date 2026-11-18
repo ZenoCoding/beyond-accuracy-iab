@@ -1,0 +1,464 @@
+{
+  "debate_id": "D01",
+  "puzzle": {
+    "hint": "There is exactly one spy among the players.",
+    "players": [
+      "Player A",
+      "Player B",
+      "Player C",
+      "Player D",
+      "Player E",
+      "Player F"
+    ],
+    "size": 6,
+    "statements": [
+      {
+        "ast": {
+          "left": {
+            "comparison": "at_least",
+            "count": 2,
+            "op": "count_role",
+            "players": [
+              0,
+              1
+            ],
+            "role": "knave"
+          },
+          "op": "or",
+          "right": {
+            "op": "same_role",
+            "players": [
+              0,
+              1
+            ]
+          }
+        },
+        "speaker": "Player A",
+        "text": "at least one of the following is true: (1) at least 2 of Player A and Player B are knaves; (2) Player A and Player B have the same role."
+      },
+      {
+        "ast": {
+          "arg": {
+            "comparison": "at_least",
+            "count": 0,
+            "op": "count_role",
+            "players": [
+              0,
+              5
+            ],
+            "role": "spy"
+          },
+          "op": "not"
+        },
+        "speaker": "Player B",
+        "text": "it is not the case that (at least 0 of Player A and Player F are spies)."
+      },
+      {
+        "ast": {
+          "arg": {
+            "comparison": "at_most",
+            "count": 1,
+            "op": "count_role",
+            "players": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ],
+            "role": "spy"
+          },
+          "op": "not"
+        },
+        "speaker": "Player C",
+        "text": "it is not the case that (at most 1 of Player A, Player B, Player C, Player E, and Player F are spies)."
+      },
+      {
+        "ast": {
+          "arg": {
+            "op": "same_role",
+            "players": [
+              1,
+              2
+            ]
+          },
+          "op": "not"
+        },
+        "speaker": "Player D",
+        "text": "it is not the case that (Player B and Player C have the same role)."
+      },
+      {
+        "ast": {
+          "arg": {
+            "op": "role_is",
+            "player": 0,
+            "role": "knight"
+          },
+          "op": "not"
+        },
+        "speaker": "Player E",
+        "text": "it is not the case that (Player A is a knight)."
+      },
+      {
+        "ast": {
+          "comparison": "at_most",
+          "count": 2,
+          "op": "count_role",
+          "players": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "role": "knight"
+        },
+        "speaker": "Player F",
+        "text": "at most 2 of Player C, Player D, Player E, and Player F are knights."
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "I.agent-1",
+      "agent": "agent-1",
+      "stage_order": 0,
+      "text": "Player B says it's not the case that at least 0 of A and F are spies, which is always true since 0\u22650, so B lies, thus knave. Player C says not the case that at most 1 of A,B,C,E,F are spies; since only one spy, C must be the spy (can lie or tell truth). Player D says B and C don't have the same role; B is knave, C is spy, so D tells truth, knight. E says not A is knight; A is knave, so E tells truth, knight. F says at most 2 of C,D,E,F are knights; D,E,F are knights, 3 knights, so F lies, knave or spy but spy taken by C, so F is knight. A's statement is false, so A is knave."
+    },
+    {
+      "id": "I.agent-2",
+      "agent": "agent-2",
+      "stage_order": 0,
+      "text": "Player A says (at least 2 of A/B are knaves OR A/B same role). If A is knight, they share a role, so A is knight. Player B says there are 0 spies among A/F, which is false (F is spy), so B is knave. Player E claims A is not a knight, which is false, so E is knave. Player D says B and C have different roles; since B is knave, C must be knight to make D true, but C says there are >1 spies, which is false. Thus, C is knave, D is knight, and F is spy."
+    },
+    {
+      "id": "I.agent-3",
+      "agent": "agent-3",
+      "stage_order": 0,
+      "text": "Analyzing statements: Player A's statement is true, so A is knight or spy. B's statement implies A or F is spy, so B is knave. C's statement is true, so C is knight. D's statement is false, so D is spy. E's statement is false, so E is knave. F's statement is true, so F is knight. Combining these, we get the roles."
+    },
+    {
+      "id": "R1.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 110,
+      "text": "Agent-3 correctly identifies Player A's statement as false, consistent with a knave."
+    },
+    {
+      "id": "R1.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 110,
+      "text": "Agent-2's assumption that Player A is knight leads to contradictions in other roles and statements."
+    },
+    {
+      "id": "R1.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 110,
+      "text": "Agent-3 correctly identifies that Player A's statement holds true under the assumption of A being a knight."
+    },
+    {
+      "id": "R1.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 110,
+      "text": "Agent-1 incorrectly concludes Player A is a knave, which leads to logical contradictions in the roles of the remaining players."
+    },
+    {
+      "id": "R1.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 110,
+      "text": "Both agent-2 and agent-3 conclude Player A is a knight."
+    },
+    {
+      "id": "R1.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 110,
+      "text": "Agent-1 concludes Player A is a knave, contradicting agent-3's analysis."
+    },
+    {
+      "id": "R1.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 111,
+      "text": "Player A's statement is true, so A is knight. Player B says no spies among A and F, false since F is knight and D is spy, so B is knave. Player C's statement is true only if more than one spy among A,B,C,E,F, but only one spy\u2014D\u2014so C is knight. D states B and C have different roles, which is false (B knave, C knight), so D is spy. E denies A is knight, false, so E is knave. F's statement about knights is true, so F is knight."
+    },
+    {
+      "id": "R1.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 111,
+      "text": "Player A is a knight because the statement holds true if both A and B are knights, but B being a knave makes the 'same role' clause false. Re-evaluating, A is a knight, B is a knave (making B's statement false), E is a knave (since A is a knight), C is a knave (making C's statement false), D is a knight (B and C are both knaves, so they have the same role, making D's statement false? No, D is a knave). Final consistency: A=knight, B=knave, C=knave, D=knight, E=knave, F=spy."
+    },
+    {
+      "id": "R1.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 111,
+      "text": "Player A's true statement makes A a knight or spy. B's false statement makes B a knave. C's true statement makes C a knight. D's false statement makes D a spy. E's false statement makes E a knave. F's true statement makes F a knight. Combining these, we get the roles."
+    },
+    {
+      "id": "R2.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 120,
+      "text": "Agent-3's analysis correctly identifies Player B's statement as false, consistent with B being a knave, matching the logical deductions from the statements and roles of others."
+    },
+    {
+      "id": "R2.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 120,
+      "text": "Agent-2's assignment of B as knave is correct, but their overall role assignments for other players conflict with the consistent logic, affecting the validity of their reasoning on B's role."
+    },
+    {
+      "id": "R2.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 120,
+      "text": "Both agents agree that Player B is a knave, which is consistent with the falsity of B's statement."
+    },
+    {
+      "id": "R2.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 120,
+      "text": ""
+    },
+    {
+      "id": "R2.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 120,
+      "text": "Both agent-1 and agent-2 agree that Player B is a knave, consistent with my analysis."
+    },
+    {
+      "id": "R2.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 120,
+      "text": ""
+    },
+    {
+      "id": "R2.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 121,
+      "text": "Player A's statement is true, so A is knight. Player B's statement is false, making B a knave. Player C's statement is true, so C is knight. Player D's statement is false, so D is the spy. Player E's statement is false, so E is knave. Player F's statement is true, so F is knight. There is exactly one spy, D, fitting all conditions consistently."
+    },
+    {
+      "id": "R2.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 121,
+      "text": "Player A is a knight as their statement holds true. Player B's statement is false, identifying them as a knave. Player E claims A is not a knight, which is false, making E a knave. Player C's statement is true, as there is only one spy, making C a knight. Player D's statement is false since B and C have different roles (knave vs knight), making D the spy. Player F's statement is true, confirming F is a knight."
+    },
+    {
+      "id": "R2.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 121,
+      "text": "A's statement is true, making A a knight. B's false statement makes B a knave. C's true statement makes C a knight. D's false statement makes D a spy. E's false statement makes E a knave. F's true statement makes F a knight. This assignment is consistent with all statements and the rules."
+    },
+    {
+      "id": "R3.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 130,
+      "text": "Both agent-2 and agent-3 logically deduce Player C's statement is true, consistent with Player C being a knight, fitting the single spy and other players' roles."
+    },
+    {
+      "id": "R3.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 130,
+      "text": ""
+    },
+    {
+      "id": "R3.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 130,
+      "text": "Both agents agree that Player C is a knight, consistent with the logical deduction that their statement about spy counts holds true given the overall role distribution."
+    },
+    {
+      "id": "R3.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 130,
+      "text": ""
+    },
+    {
+      "id": "R3.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 130,
+      "text": "Both agents conclude Player C is a knight, consistent with my analysis."
+    },
+    {
+      "id": "R3.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 130,
+      "text": ""
+    },
+    {
+      "id": "R3.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 131,
+      "text": "Player A's statement is true, so A is knight. Player B's statement is false, so B is knave. Player C's statement is true, so C is knight. Player D's statement is false, so D is spy. Player E's statement is false, so E is knave. Player F's statement is true, so F is knight. Exactly one spy (D) is consistent with all statements and roles."
+    },
+    {
+      "id": "R3.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 131,
+      "text": "Player A is a knight as their statement is true. Player B's statement is false, confirming them as a knave. Player E claims A is not a knight, which is false, so E is a knave. Player C's statement is true, meaning C is a knight. Player D's statement is false since B and C have different roles, making D the spy. Player F's statement about the number of knights is true, so F is a knight. This distribution is consistent with all game rules."
+    },
+    {
+      "id": "R3.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 131,
+      "text": "All agents agree on the roles after debating Player C. Player A's true statement makes A a knight. B's false statement makes B a knave. C's true statement makes C a knight. D's false statement makes D a spy. E's false statement makes E a knave. F's true statement makes F a knight."
+    },
+    {
+      "id": "R4.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 140,
+      "text": "All agents consistently conclude Player D is the spy because D's statement is false, fitting the single-spy rule and making the overall assignment consistent."
+    },
+    {
+      "id": "R4.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 140,
+      "text": ""
+    },
+    {
+      "id": "R4.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 140,
+      "text": "All agents agree that Player D's statement is false, which is consistent with Player D being the single spy."
+    },
+    {
+      "id": "R4.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 140,
+      "text": ""
+    },
+    {
+      "id": "R4.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 140,
+      "text": "Both agent-1 and agent-2 conclude Player D is a spy, consistent with my analysis."
+    },
+    {
+      "id": "R4.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 140,
+      "text": ""
+    },
+    {
+      "id": "R4.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 141,
+      "text": "Player A's statement is true, so A is knight. B's statement is false, so B is knave. C's statement is true, so C is knight. D's statement is false, fitting the single spy role for D. E's statement is false, so E is knave. F's statement is true, so F is knight. This consistent assignment satisfies all statements and the game's rules."
+    },
+    {
+      "id": "R4.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 141,
+      "text": "Player A is a knight as their statement is true. Player B's statement is false, making them a knave. Player E's claim that A is not a knight is false, so E is a knave. Player C's statement is true, meaning they are a knight. Player D's statement is false since B and C have different roles, making D the spy. Player F's statement about knight counts is true, identifying them as a knight. This configuration is logically consistent with all statements."
+    },
+    {
+      "id": "R4.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 141,
+      "text": "All agents agree on the roles. Player A's true statement makes A a knight. B's false statement makes B a knave. C's true statement makes C a knight. D's false statement makes D a spy. E's false statement makes E a knave. F's true statement makes F a knight. This assignment is consistent with all statements and the rules."
+    },
+    {
+      "id": "R5.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 150,
+      "text": "Both agents correctly identify Player E's statement as false, consistent with E being a knave, which fits the overall logical structure and single spy constraint."
+    },
+    {
+      "id": "R5.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 150,
+      "text": ""
+    },
+    {
+      "id": "R5.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 150,
+      "text": "All agents agree that Player E's statement is false, which identifies them as a knave in this consistent model."
+    },
+    {
+      "id": "R5.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 150,
+      "text": ""
+    },
+    {
+      "id": "R5.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 150,
+      "text": "All agents agree that Player E is a knave."
+    },
+    {
+      "id": "R5.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 150,
+      "text": ""
+    },
+    {
+      "id": "R5.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 151,
+      "text": "Player A's statement is true (making A knight). Player B's statement is false (B knave). Player C's statement is true (C knight). Player D's statement is false (D spy). Player E's statement is false (E knave). Player F's statement is true (F knight). Only one spy (D), all statements consistent with roles and rules."
+    },
+    {
+      "id": "R5.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 151,
+      "text": "Player A is a knight because their statement is true. Player B's statement is false, identifying them as a knave. Player E's claim that A is not a knight is false, so E is a knave. Player C's statement is true, meaning C is a knight. Player D's statement is false since B (knave) and C (knight) have different roles, making D the spy. Player F's statement about the number of knights is true, confirming F is a knight. This configuration is logically consistent with all statements and the single-spy rule."
+    },
+    {
+      "id": "R5.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 151,
+      "text": "All agents agree on the roles after debating Player E. Player A's true statement makes A a knight. B's false statement makes B a knave. C's true statement makes C a knight. D's false statement makes D a spy. E's false statement makes E a knave. F's true statement makes F a knight."
+    },
+    {
+      "id": "R6.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 160,
+      "text": "All agents consistently conclude Player F's statement is true, fitting the logical deductions and the single-spy rule, confirming F as a knight."
+    },
+    {
+      "id": "R6.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 160,
+      "text": ""
+    },
+    {
+      "id": "R6.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 160,
+      "text": "All agents agree that Player F is a knight, consistent with the logical deduction that their statement regarding the number of knights among C, D, E, and F is true."
+    },
+    {
+      "id": "R6.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 160,
+      "text": ""
+    },
+    {
+      "id": "R6.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 160,
+      "text": "All agents agree that Player F is a knight based on the true statement about the number of knights among C, D, E, and F."
+    },
+    {
+      "id": "R6.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 160,
+      "text": ""
+    },
+    {
+      "id": "R6.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 161,
+      "text": "Player A's statement is true, so A is knight. Player B's statement is false, so B is knave. Player C's statement is true, so C is knight. Player D's statement is false, so D is the spy. Player E's statement is false, so E is knave. Player F's statement is true, so F is knight. This fits all statements and the single spy rule."
+    },
+    {
+      "id": "R6.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 161,
+      "text": "Player A is a knight because their statement is true. Player B's statement is false, identifying them as a knave. Player E's claim that A is not a knight is false, so E is a knave. Player C's statement is true, meaning C is a knight. Player D's statement is false since B and C have different roles, making D the spy. Player F's statement about the number of knights is true, confirming F is a knight. This configuration is logically consistent with all statements and the single-spy rule."
+    },
+    {
+      "id": "R6.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 161,
+      "text": "All agents agree on the roles. Player A's true statement makes A a knight. B's false statement makes B a knave. C's true statement makes C a knight. D's false statement makes D a spy. E's false statement makes E a knave. F's true statement makes F a knight. This assignment is consistent with all statements and the rules."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "baseline_archive": "beyondaccuracysupplement.tar.gz",
+  "baseline_archive_sha256": "5d22f9ab1aa99af1280c345f81390516428f505963c53c9cbdf26c72620825aa",
+  "byte_identical_baseline_inputs": [
+    {
+      "current": "revision-support/control-inputs/claims.csv",
+      "baseline": "release-staging/reports/analysis/fast-translation-cleanup-v1-2026-09-06/corrected-inputs/size6/claims.csv",
+      "sha256": "b209751d0d9476dbfc74255ac4fb8268bdb551660cd2e3dbc7d0f8ad7f677e2a"
+    },
+    {
+      "current": "revision-support/control-inputs/claims-size8.csv",
+      "baseline": "release-staging/reports/analysis/fast-translation-cleanup-v1-2026-09-06/corrected-inputs/size8/claims.csv",
+      "sha256": "838c25d917bb9349609814bc15d21d21aa5ec68cb512734dcff74e482602c93a"
+    },
+    {
+      "current": "revision-support/debate-features.csv",
+      "baseline": "release-staging/reports/analysis/fast-translation-cleanup-v1-2026-09-06/corrected/debate-features.csv",
+      "sha256": "fa712b4fb35873f33655ecb9e8b3544235551c98897fca5838e6c7cc805ed969"
+    },
+    {
+      "current": "revision-support/paper-auc.csv",
+      "baseline": "release-staging/reports/analysis/fast-translation-cleanup-v1-2026-09-06/corrected/paper-auc.csv",
+      "sha256": "c627b2cd13e3deabc539529b77b13653ebdacd2e168ad635ae0159fcdbd0e9b4"
+    }
+  ]
+}

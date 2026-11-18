@@ -1,0 +1,17 @@
+{
+  "files_sha256": {
+    "D01-audit-firstpass.json": "5a9ef4e796e2401e7f0a79b462858fbc9bd8b7a504c6637e470b3989c83c1bcd",
+    "D02-audit-firstpass.json": "6e16f21e1cefd2537219168f16c37936f5e4f89a07fa982c06de169b2bd3ca59",
+    "D03-audit-firstpass.json": "7d25461e855373be31f841855c6a08f971e28097fe311f9be9f1951ca6f078b6",
+    "D04-audit-firstpass.json": "d9d1156cddfe9be6d989365e293dca50c1baaeb339a4f6e4a20393a4a0e72726",
+    "D05-audit-firstpass.json": "2d1b2609a993718742554dbbe82aaf3cce2fdba5c9fc084026abe3953336f2d2",
+    "D06-audit-firstpass.json": "487d1602b36d83d347a99748eecaa739bce95b3c3e4b047c3cb2dbb1b73fe165",
+    "D07-audit-firstpass.json": "847ab1a940966239c1c983910d362ab74bef9daee97b29d6f569cdf811defa4f",
+    "D08-audit-firstpass.json": "b996f18654c8298e76b8aedc71e1a3d77b34e272a1fd32ecc84f798db5cede12",
+    "initial-independent-firstpass.json": "4d57a781b909cf5250060bf9fc8739238e363100390f0fb8d2dc6a37a317541e"
+  },
+  "stage": "Before source reconciliation and pipeline comparison",
+  "initial_signature_agent_presence_union": 51,
+  "initial_signature_agent_presence_overlap": 34,
+  "interpretation": "Agreement between model-assisted passes, not accuracy against independent gold. Includes scope and expression grouping disagreements."
+}

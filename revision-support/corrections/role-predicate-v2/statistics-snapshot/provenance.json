@@ -1,0 +1,13 @@
+{
+  "seed": 20260906,
+  "draws": 10000,
+  "resampling": "20 puzzles with replacement independently within each size; all configurations sharing a puzzle are retained together",
+  "inputs": {
+    "debate-features.csv": "dee40f0e45fc2b9cb3dedcdc313b1c026f1c46bb1cb91f4a0292c888439df891",
+    "paper-auc.csv": "b9f20184efa3c17d27976b600bd58ed88297b056e612bf18051fd26e4e4eb94c",
+    "exposure-pairs.csv": "f4971a9b7511d34ba7209bcf74cd796002728e0d515b0fec7e70a3978b09773b"
+  },
+  "points_match_corrected_table": true,
+  "n_debates": 120,
+  "n_puzzles": 40
+}

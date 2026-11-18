@@ -1,0 +1,579 @@
+{
+  "debate_id": "D06",
+  "reviewed_field_ids": [
+    "I.agent-1",
+    "I.agent-2",
+    "I.agent-3",
+    "R1.argument.agent-1.agree_reasoning",
+    "R1.argument.agent-2.agree_reasoning",
+    "R1.argument.agent-3.agree_reasoning",
+    "R1.revision.agent-1",
+    "R1.revision.agent-2",
+    "R1.revision.agent-3",
+    "R2.argument.agent-1.agree_reasoning",
+    "R2.argument.agent-2.agree_reasoning",
+    "R2.argument.agent-3.agree_reasoning",
+    "R2.revision.agent-1",
+    "R2.revision.agent-2",
+    "R2.revision.agent-3",
+    "R3.argument.agent-1.agree_reasoning",
+    "R3.argument.agent-2.agree_reasoning",
+    "R3.argument.agent-3.agree_reasoning",
+    "R3.revision.agent-1",
+    "R3.revision.agent-2",
+    "R3.revision.agent-3",
+    "R4.argument.agent-1.agree_reasoning",
+    "R4.argument.agent-2.agree_reasoning",
+    "R4.argument.agent-3.agree_reasoning",
+    "R4.revision.agent-1",
+    "R4.revision.agent-2",
+    "R4.revision.agent-3",
+    "R5.argument.agent-1.agree_reasoning",
+    "R5.argument.agent-2.agree_reasoning",
+    "R5.argument.agent-3.agree_reasoning",
+    "R5.revision.agent-1",
+    "R5.revision.agent-2",
+    "R5.revision.agent-3",
+    "R6.argument.agent-1.agree_reasoning",
+    "R6.argument.agent-2.agree_reasoning",
+    "R6.argument.agent-3.agree_reasoning",
+    "R6.revision.agent-1",
+    "R6.revision.agent-2",
+    "R6.revision.agent-3"
+  ],
+  "targets": [
+    {
+      "expression": "NOT(STMT_TRUE(A))",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "A must be knave (contradiction unless A is knave lying about same role)"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "A claims same role as B but A is knave, B knave, so A's statement is false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "Player A's claim that A and B have the same role is false"
+            }
+          ],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.argument.agent-1.agree_reasoning",
+              "span": "Player A is knave based on Player A's false statement"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.argument.agent-2.agree_reasoning",
+              "span": "A's statement is false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.argument.agent-3.agree_reasoning",
+              "span": "A's statement is false"
+            }
+          ],
+          "note": ""
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(B))",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "B's statement is false (so B is knave)"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "with B knave and C,F knights, A,E must be knaves, total 4 knaves"
+            }
+          ],
+          "note": "The field asserts an exact-count conclusion but the stated roles do not make the listed count transparently consistent."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "B's statement is false implying B is knave"
+            }
+          ],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "with B knave, this is false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "B's statement about 4 knaves among A,B,C,E,F is false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "which is false, so B is knave"
+            }
+          ],
+          "note": ""
+        }
+      }
+    },
+    {
+      "expression": "COUNT(exactly,4,knave,A,B,C,E,F)",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "The count is described as B's claim and then called false."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "with B knave and C,F knights, A,E must be knaves, total 4 knaves"
+            }
+          ],
+          "note": "The count assertion is explicit, although its tally conflicts with the roles listed in the same field."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "The count is described as B's claim and then called false."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(C)",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "C and F are knights (truth-tellers)"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "contradicting their truthfulness"
+            }
+          ],
+          "note": "Truthfulness is invoked within a conditional contradiction about B."
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "C's statement is false"
+            },
+            {
+              "field_id": "I.agent-3",
+              "span": "C must be knight (truth-teller)"
+            }
+          ],
+          "note": "The field calls C’s statement false and also labels C a truth-teller."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R3.argument.agent-1.agree_reasoning",
+              "span": "C's statement that B is not a knave is true"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R3.argument.agent-2.agree_reasoning",
+              "span": "C's statement that B is not a knave is true"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R3.argument.agent-3.agree_reasoning",
+              "span": "C's statement that B is not a knave aligns with the logic that B is knave and C tells truth"
+            }
+          ],
+          "note": ""
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(C))",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "The initial field only discusses the truth of C’s claim conditionally, then calls C a truth-teller."
+        },
+        "agent-2": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "if B were knave, their statements would be false"
+            }
+          ],
+          "note": "C’s false status appears only inside a conditional; the field later calls C and F knights."
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "C's statement is false"
+            },
+            {
+              "field_id": "I.agent-3",
+              "span": "C must be knight (truth-teller)"
+            }
+          ],
+          "note": "The field calls C’s statement false and also labels C a truth-teller."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later fields explicitly call C’s statement true."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later fields explicitly call C’s statement true."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later fields explicitly call C’s statement true."
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(F)",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "C and F are knights (truth-tellers)"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "contradicting their truthfulness"
+            }
+          ],
+          "note": "Truthfulness is invoked within a conditional contradiction about B."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "F says B is not knave, F is truthful"
+            }
+          ],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R6.argument.agent-1.agree_reasoning",
+              "span": "F truthfully says B is not a knave"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R6.argument.agent-2.agree_reasoning",
+              "span": "F's statement that Player B is not a knave is true"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R6.argument.agent-3.agree_reasoning",
+              "span": "F's statement that B is not knave is true"
+            }
+          ],
+          "note": ""
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(E))",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "E is knave lying"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "The initial field says E’s statement matches, without a clear truth evaluation."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "E says the number of spies among C,D,E is not odd; E is knave, so this is false"
+            }
+          ],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "E's statement about spies is false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "E's statement about odd spies among C,D,E is false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "E lies about the number of spies among C,D,E"
+            }
+          ],
+          "note": ""
+        }
+      }
+    },
+    {
+      "expression": "PARITY(odd,spy,C,D,E)",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "so number of spies in these three is odd"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "meaning there is an odd number of spies among C,D,E"
+            }
+          ],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "implying an odd count"
+            }
+          ],
+          "note": ""
+        }
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "field_id": "I.agent-1",
+      "span": "if true, B is not knave",
+      "reason": "Conditional truth status for C and F’s reported statement."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "D's statement is complex but can be true or false (spy)",
+      "reason": "Truth status is explicitly flexible/scoped to a role."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "if B were knave, their statements would be false",
+      "reason": "Conditional statement truth, not a direct unconditional evaluation."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "D's complex statement fits spy role as it can be true or false",
+      "reason": "Truth status is role-scoped and unresolved."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "E's statement about spies matches with D as spy",
+      "reason": "Vague summary; no clear statement evaluation."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "D's complex statement is consistent with spy role",
+      "reason": "Role-scoped/vague summary."
+    }
+  ],
+  "ambiguities": [
+    {
+      "field_id": "I.agent-1",
+      "span": "A must be knave (contradiction unless A is knave lying about same role)",
+      "note": "The same field states A must differ from B and then reasserts A knave, despite B knave."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "A claims same role as B but A is knave, B knave, so A's statement is false, consistent only if A is knave",
+      "note": "The stated roles make the same-role claim true while the field calls it false."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "C's statement is false, so C must be knight (truth-teller)",
+      "note": "The field calls C’s statement false and also labels C a truth-teller."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "with B knave and C,F knights, A,E must be knaves, total 4 knaves",
+      "note": "The exact-count assertion does not reconcile transparently with the listed roles."
+    }
+  ]
+}

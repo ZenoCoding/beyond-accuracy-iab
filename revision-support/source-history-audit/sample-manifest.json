@@ -1,0 +1,146 @@
+{
+  "seed": "makis-source-history-audit-v1-20260917",
+  "selection": "First two puzzle IDs ranked by SHA256(seed|task), each across all four size-six conditions; exclude puzzle IDs touched by recorded correction ledger or eight-example source audit. No result/claim counts used.",
+  "population_tasks": [
+    "kks-v1-n06-001",
+    "kks-v1-n06-017",
+    "kks-v1-n06-032",
+    "kks-v1-n06-048",
+    "kks-v1-n06-064",
+    "kks-v1-n06-080",
+    "kks-v1-n06-095",
+    "kks-v1-n06-112",
+    "kks-v1-n06-127",
+    "kks-v1-n06-143",
+    "kks-v1-n06-158",
+    "kks-v1-n06-174",
+    "kks-v1-n06-189",
+    "kks-v1-n06-198",
+    "kks-v1-n06-221",
+    "kks-v1-n06-237",
+    "kks-v1-n06-253",
+    "kks-v1-n06-269",
+    "kks-v1-n06-284",
+    "kks-v1-n06-300"
+  ],
+  "excluded_previously_reviewed_tasks": [
+    "kks-v1-n06-001",
+    "kks-v1-n06-017",
+    "kks-v1-n06-032",
+    "kks-v1-n06-048",
+    "kks-v1-n06-080",
+    "kks-v1-n06-095",
+    "kks-v1-n06-112",
+    "kks-v1-n06-158",
+    "kks-v1-n06-174",
+    "kks-v1-n06-189",
+    "kks-v1-n06-198",
+    "kks-v1-n06-221",
+    "kks-v1-n06-253",
+    "kks-v1-n06-284"
+  ],
+  "eligible_tasks": [
+    "kks-v1-n06-064",
+    "kks-v1-n06-127",
+    "kks-v1-n06-143",
+    "kks-v1-n06-237",
+    "kks-v1-n06-269",
+    "kks-v1-n06-300"
+  ],
+  "selected_tasks": [
+    "kks-v1-n06-143",
+    "kks-v1-n06-269"
+  ],
+  "puzzle_inclusion_probability_in_eligible_frame": 0.3333333333333333,
+  "limitations": "Model-assisted diagnostic audit; excludes known previously reviewed puzzles, only two puzzle clusters, not an independent human holdout or representative estimate for all20puzzles. Blinded packets omit condition/model/solution/pipeline outputs; puzzle IDs and metadata removed from source packets.",
+  "debates": [
+    {
+      "debate_id": "D01",
+      "task_id": "kks-v1-n06-143",
+      "condition_id": "broad-luna-low-weak-het",
+      "repetition": 1,
+      "raw_path": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-143__rep_0001/result.json",
+      "raw_sha256": "20e8524cdbf5ef84fa5ff906d1b79874004ab629b9210eafc0ab8cdbfd47489c",
+      "packet_sha256": "e6fadd22ffa5ae13e7ec06758010839b0a33b37662c2cd0ee35c83088457618c",
+      "field_count": 57,
+      "nonempty_fields": 43
+    },
+    {
+      "debate_id": "D02",
+      "task_id": "kks-v1-n06-143",
+      "condition_id": "broad-luna-low-weak-hom",
+      "repetition": 1,
+      "raw_path": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-143__rep_0001/result.json",
+      "raw_sha256": "dd4fdefba2c1f07da88f88a0badf1b769507048f9ff55a71276218a086dbe650",
+      "packet_sha256": "b5045bf1c24d1f2072dcab04e1818a11109fd43e73baf03e8a1301a4a636d803",
+      "field_count": 57,
+      "nonempty_fields": 41
+    },
+    {
+      "debate_id": "D03",
+      "task_id": "kks-v1-n06-143",
+      "condition_id": "broad-luna-low-medium-het",
+      "repetition": 1,
+      "raw_path": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-143__rep_0001/result.json",
+      "raw_sha256": "692f6dd3d8f2929c6c8cc38b25122c80c07055929cc0e1cec38f2976f178bd33",
+      "packet_sha256": "429e3930b05781ca7dd884dcb3dc27da56cc82df756ae9605bb24128e6f6dbbf",
+      "field_count": 57,
+      "nonempty_fields": 41
+    },
+    {
+      "debate_id": "D04",
+      "task_id": "kks-v1-n06-143",
+      "condition_id": "broad-luna-low-medium-hom",
+      "repetition": 1,
+      "raw_path": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-143__rep_0001/result.json",
+      "raw_sha256": "e7ca1c0d1cc36fe43745ceaa3a4fdaf7af962fd2006366daf04632ff2a58f422",
+      "packet_sha256": "99b7da329b0ba644f944a491135d350ee16db089a96ae3b1f04dcf1ff2778c96",
+      "field_count": 57,
+      "nonempty_fields": 42
+    },
+    {
+      "debate_id": "D05",
+      "task_id": "kks-v1-n06-269",
+      "condition_id": "broad-luna-low-weak-het",
+      "repetition": 1,
+      "raw_path": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-269__rep_0001/result.json",
+      "raw_sha256": "91e730df6723a1173ee4cf30a0e07ca733e3bfb604527393471fd026198b1165",
+      "packet_sha256": "42c628df84e4809533cb5fd8fc112eaa01e939c54ab0b18613406634872ab652",
+      "field_count": 57,
+      "nonempty_fields": 48
+    },
+    {
+      "debate_id": "D06",
+      "task_id": "kks-v1-n06-269",
+      "condition_id": "broad-luna-low-weak-hom",
+      "repetition": 1,
+      "raw_path": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-269__rep_0001/result.json",
+      "raw_sha256": "98de11409e9900df9fc6a39ff16ff0982ce92d3bcd71d8210fb510c483899f66",
+      "packet_sha256": "898b9d9ece7752cc080570bbfde1d5f5e7d675d23738a5305eb3d591349715d4",
+      "field_count": 57,
+      "nonempty_fields": 39
+    },
+    {
+      "debate_id": "D07",
+      "task_id": "kks-v1-n06-269",
+      "condition_id": "broad-luna-low-medium-het",
+      "repetition": 1,
+      "raw_path": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-269__rep_0001/result.json",
+      "raw_sha256": "3b9950edfc464b876fb7931ca0df83738027f4ad18b55b9ed0ae8f464b033675",
+      "packet_sha256": "836e219ce15581f851e27cb37fdfce0b1b6b2e4de418cd04e4fe433c3ee6f9b7",
+      "field_count": 57,
+      "nonempty_fields": 39
+    },
+    {
+      "debate_id": "D08",
+      "task_id": "kks-v1-n06-269",
+      "condition_id": "broad-luna-low-medium-hom",
+      "repetition": 1,
+      "raw_path": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-269__rep_0001/result.json",
+      "raw_sha256": "7050a16ebcd3fed937fff2256905e72c1574ebbb183443512e0cb93004f6529c",
+      "packet_sha256": "dbdf6fec2d3e7ee7e009a3b10411499a376e175f77e25cf44b8a8b500f28dafc",
+      "field_count": 57,
+      "nonempty_fields": 43
+    }
+  ]
+}

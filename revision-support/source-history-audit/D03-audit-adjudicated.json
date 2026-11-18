@@ -1,0 +1,465 @@
+{
+  "debate_id": "D03",
+  "reviewed_field_ids": [
+    "I.agent-1",
+    "I.agent-2",
+    "I.agent-3",
+    "R1.argument.agent-1.agree_reasoning",
+    "R1.argument.agent-1.disagree_reasoning",
+    "R1.argument.agent-2.agree_reasoning",
+    "R1.argument.agent-2.disagree_reasoning",
+    "R1.argument.agent-3.disagree_reasoning",
+    "R1.revision.agent-1",
+    "R1.revision.agent-2",
+    "R1.revision.agent-3",
+    "R2.argument.agent-1.agree_reasoning",
+    "R2.argument.agent-2.agree_reasoning",
+    "R2.argument.agent-3.agree_reasoning",
+    "R2.revision.agent-1",
+    "R2.revision.agent-2",
+    "R2.revision.agent-3",
+    "R3.argument.agent-1.agree_reasoning",
+    "R3.argument.agent-2.agree_reasoning",
+    "R3.argument.agent-3.agree_reasoning",
+    "R3.revision.agent-1",
+    "R3.revision.agent-2",
+    "R3.revision.agent-3",
+    "R4.argument.agent-1.agree_reasoning",
+    "R4.argument.agent-2.agree_reasoning",
+    "R4.argument.agent-3.agree_reasoning",
+    "R4.revision.agent-1",
+    "R4.revision.agent-2",
+    "R4.revision.agent-3",
+    "R5.argument.agent-1.agree_reasoning",
+    "R5.argument.agent-2.agree_reasoning",
+    "R5.argument.agent-3.agree_reasoning",
+    "R5.revision.agent-1",
+    "R5.revision.agent-2",
+    "R5.revision.agent-3",
+    "R6.argument.agent-1.agree_reasoning",
+    "R6.argument.agent-2.agree_reasoning",
+    "R6.argument.agent-3.agree_reasoning",
+    "R6.revision.agent-1",
+    "R6.revision.agent-2",
+    "R6.revision.agent-3"
+  ],
+  "targets": [
+    {
+      "expression": "NOT(STMT_TRUE(B))",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "Player B and Player C make statements that are logically false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "B's statement is always false"
+            }
+          ],
+          "note": "\u201cAlways\u201d is stronger than the local evaluation; universal scope is flagged below."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "B and C must be knaves because their statements are impossible to be true"
+            }
+          ],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "Player B and C make statements that are always false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.argument.agent-2.agree_reasoning",
+              "span": "B and C statements are always false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.argument.agent-3.disagree_reasoning",
+              "span": "B\u2019s statement is always false"
+            }
+          ],
+          "note": ""
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(C))",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "Player B and Player C make statements that are logically false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "C is assigned a role, but its statement is not unconditionally evaluated."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "B and C must be knaves because their statements are impossible to be true"
+            }
+          ],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "Player B and C make statements that are always false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.argument.agent-2.agree_reasoning",
+              "span": "B and C statements are always false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.argument.agent-3.disagree_reasoning",
+              "span": "C\u2019s statement is also always false"
+            }
+          ],
+          "note": ""
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(D))",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "D\u2019s statement is false"
+            }
+          ],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "Player D's statement is false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "D then lies (knave)"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "R1.argument.agent-3.disagree_reasoning",
+              "span": "D\u2019s statement then true, so D is knight"
+            },
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "D\u2019s statement is false so D is knave"
+            }
+          ],
+          "note": "Later history reverses from D true in R1 disagreement to D false in revision."
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(E)",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "\u201cTrue only if\u201d is conditional, not an unconditional evaluation."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "E\u2019s statement is true (A is not knight)"
+            }
+          ],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "Player E's statement is true since A is not a knight"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "E\u2019s claim that A is not a knight is true"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "R1.argument.agent-3.disagree_reasoning",
+              "span": "E\u2019s statement false, so E is knave"
+            },
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "E\u2019s claim true, so E is knight"
+            }
+          ],
+          "note": "The later disagreement calls E false; the revision then calls E true."
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(E))",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "with A and D as knights"
+            }
+          ],
+          "note": "The explicit A-knight commitment is equivalent to the negation of E's canonical statement. This is equivalence to the expressed content, not role-of-speaker implies truth.",
+          "supply_eligible": false
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "E's false statement makes E knave"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later text calls E's statement true."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later text calls E's statement true."
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "R1.argument.agent-3.disagree_reasoning",
+              "span": "E\u2019s statement false, so E is knave"
+            },
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "E\u2019s claim true, so E is knight"
+            }
+          ],
+          "note": "The later disagreement calls E false; the revision then calls E true."
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(F)",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "F must be knight to keep his statement true"
+            }
+          ],
+          "note": "The explicit truth evaluation appears within the assumed B-knave solution."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "F\u2019s statement is always true"
+            }
+          ],
+          "note": "The universal \u201calways\u201d wording is explicit; it is retained as a statement-truth assertion."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "Player F's statement is true"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "F\u2019s at\u2011most\u20112\u2011knights claim is true"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.argument.agent-3.disagree_reasoning",
+              "span": "F\u2019s statement true"
+            }
+          ],
+          "note": ""
+        }
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "field_id": "I.agent-1",
+      "span": "Player E's statement evaluates to true only if Player A is a knight",
+      "reason": "Conditional truth statement, not an unconditional evaluation."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "yields Player E as the spy, with A and D as knights, and B, C, and F as knaves",
+      "reason": "Role assignments."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "D must be knave to make B and C same role, forcing C knave",
+      "reason": "Role assignment argument; no unconditional evaluation of C or D."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "F must be knight to keep his statement true",
+      "reason": "Truth status scoped to a role condition."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "All constraints satisfied",
+      "reason": "Vague proof summary."
+    }
+  ],
+  "ambiguities": [
+    {
+      "field_id": "I.agent-2",
+      "span": "B's statement is always false",
+      "note": "The source claims universal falsity; the universal scope may exceed a local truth evaluation."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "B and C must be knaves because their statements are impossible to be true",
+      "note": "The impossibility wording makes a universal claim; retained as an explicit false evaluation with scope flagged."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "F\u2019s statement is always true",
+      "note": "\u201cAlways\u201d expresses a universal scope, retained here because it explicitly asserts F statement truth."
+    }
+  ],
+  "adjudication_notes": [
+    "Root aligned semantic identity to directly asserted canonical formula: NOT(STMT_TRUE(E)) / agent-1. Literal-role predicates remain excluded from initial supply generation; their direct equivalents may establish recipient prior presence."
+  ]
+}

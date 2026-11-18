@@ -1,0 +1,687 @@
+{
+  "debate_id": "D01",
+  "reviewed_field_ids": [
+    "I.agent-1",
+    "I.agent-2",
+    "I.agent-3",
+    "R1.argument.agent-1.agree_reasoning",
+    "R1.argument.agent-1.disagree_reasoning",
+    "R1.argument.agent-2.agree_reasoning",
+    "R1.argument.agent-2.disagree_reasoning",
+    "R1.argument.agent-3.agree_reasoning",
+    "R1.argument.agent-3.disagree_reasoning",
+    "R1.revision.agent-1",
+    "R1.revision.agent-2",
+    "R1.revision.agent-3",
+    "R2.argument.agent-1.agree_reasoning",
+    "R2.argument.agent-1.disagree_reasoning",
+    "R2.argument.agent-2.agree_reasoning",
+    "R2.argument.agent-3.agree_reasoning",
+    "R2.revision.agent-1",
+    "R2.revision.agent-2",
+    "R2.revision.agent-3",
+    "R3.argument.agent-1.agree_reasoning",
+    "R3.argument.agent-2.agree_reasoning",
+    "R3.argument.agent-3.agree_reasoning",
+    "R3.revision.agent-1",
+    "R3.revision.agent-2",
+    "R3.revision.agent-3",
+    "R4.argument.agent-1.agree_reasoning",
+    "R4.argument.agent-2.agree_reasoning",
+    "R4.argument.agent-3.agree_reasoning",
+    "R4.revision.agent-1",
+    "R4.revision.agent-2",
+    "R4.revision.agent-3",
+    "R5.argument.agent-1.agree_reasoning",
+    "R5.argument.agent-2.agree_reasoning",
+    "R5.argument.agent-3.agree_reasoning",
+    "R5.revision.agent-1",
+    "R5.revision.agent-2",
+    "R5.revision.agent-3",
+    "R6.argument.agent-1.agree_reasoning",
+    "R6.argument.agent-2.agree_reasoning",
+    "R6.argument.agent-3.agree_reasoning",
+    "R6.revision.agent-1",
+    "R6.revision.agent-2",
+    "R6.revision.agent-3"
+  ],
+  "targets": [
+    {
+      "expression": "NOT(STMT_TRUE(A))",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "A's statement is false"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "No unconditional A-statement truth evaluation; the A-knight discussion is conditional."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts the opposite, STMT_TRUE(A)."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.argument.agent-1.agree_reasoning",
+              "span": "Player A's statement as false"
+            }
+          ],
+          "note": "First clear match; agent-1 reverses in R1.revision.agent-1 and later revisions, which call A’s statement true."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later fields discuss A as a knight and explicitly call the statement true; no later false evaluation."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later fields repeat that A’s statement is true; no later false evaluation."
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(A)",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts the opposite, NOT(STMT_TRUE(A))."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Only a conditional A-knight inference appears; role assignment alone is not statement truth."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "Player A's statement is true"
+            }
+          ]
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "Player A's statement is true"
+            }
+          ],
+          "note": "First clear match; this reverses agent-1’s R1 argument-field assessment that A’s statement was false, then remains the stated evaluation."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R2.revision.agent-2",
+              "span": "A is a knight as their statement holds true"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "Player A's true statement"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(B)",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "which is always true"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts NOT(STMT_TRUE(B))."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Reports that B’s statement implies a spy; does not assert B’s statement truth."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "No later positive evaluation; agent-1 reverses the initial claim and calls B’s statement false in R1.revision.agent-1 and later revisions."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later fields consistently call B’s statement false."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later fields consistently call B’s statement false."
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(B))",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts STMT_TRUE(B)."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "which is false (F is spy)"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial field reports a consequence of B’s statement but does not evaluate its truth."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "Player B says no spies among A and F, false since F is knight and D is spy"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "B's statement false"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "B's false statement"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(C)",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Says C may lie or tell the truth; no positive evaluation."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts NOT(STMT_TRUE(C))."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "C's statement is true"
+            }
+          ]
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R2.revision.agent-1",
+              "span": "Player C's statement is true"
+            }
+          ],
+          "note": "First clear match; the R1 revision describes a truth condition but does not explicitly assert C’s statement is true."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R2.revision.agent-2",
+              "span": "Player C's statement is true"
+            }
+          ],
+          "note": "Agent-2 first calls C’s statement false in R1.revision.agent-2, then calls it true from R2 onward."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "C's true statement"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(C))",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Says C may lie or tell the truth; no negative evaluation."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "C says there are >1 spies, which is false"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts STMT_TRUE(C)."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "No explicit later negative evaluation; “true only if” is not an asserted falsity, and R2 onward explicitly calls C’s statement true."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "C is a knave (making C's statement false)"
+            }
+          ],
+          "note": "First clear match; agent-2 reverses in R2.revision.agent-2 and later revisions, which call C’s statement true."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later fields repeat that C’s statement is true."
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(D)",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "D tells truth"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "“C must be knight to make D true” is conditional, not an unconditional evaluation."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts NOT(STMT_TRUE(D))."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later explicit evaluations call D’s statement false; no later positive evaluation."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later explicit evaluations call D’s statement false; the R1 self-correction is not a clear positive assertion."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later explicit evaluations call D’s statement false."
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(D))",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts STMT_TRUE(D)."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "The only direct truth wording is “to make D true,” scoped to a condition."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "D's statement is false"
+            }
+          ]
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "D states B and C have different roles, which is false"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R2.revision.agent-2",
+              "span": "Player D's statement is false"
+            }
+          ],
+          "note": "A question-like self-correction in R1.revision.agent-2 is not treated as clear evidence; R2.revision is the first clear match."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "D's false statement"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(E)",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "E tells truth"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts NOT(STMT_TRUE(E))."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts NOT(STMT_TRUE(E))."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later explicit evaluations call E’s statement false."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later explicit evaluations call E’s statement false."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later explicit evaluations call E’s statement false."
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(E))",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts STMT_TRUE(E)."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "Player E claims A is not a knight, which is false"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "E's statement is false"
+            }
+          ]
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "E denies A is knight, false"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R2.revision.agent-2",
+              "span": "Player E claims A is not a knight, which is false"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "E's false statement makes E a knave"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(F)",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts NOT(STMT_TRUE(F))."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "No initial direct evaluation of F’s statement."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "F's statement is true"
+            }
+          ]
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "F's statement about knights is true"
+            }
+          ],
+          "note": "This reverses agent-1’s initial claim that F lies; later revisions keep the positive evaluation."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R2.revision.agent-2",
+              "span": "Player F's statement is true"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "F's true statement"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(F))",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "F lies"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "No initial direct negative evaluation of F’s statement."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts STMT_TRUE(F)."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later explicit evaluations call F’s statement true, reversing the initial claim."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later fields explicitly call F’s statement true."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later fields explicitly call F’s statement true."
+        }
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "field_id": "I.agent-1",
+      "span": "B is knave",
+      "reason": "ROLE assignment; recorded statement truth only where the field separately says always true."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "C must be the spy (can lie or tell truth)",
+      "reason": "ROLE assignment and an explicit noncommitment about C statement truth."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "If A is knight, they share a role, so A is knight",
+      "reason": "Conditional and role inference; not an unconditional SAME_ROLE or statement-truth commitment."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "C must be knight to make D true",
+      "reason": "D truth is scoped to a hypothetical C role; no unconditional evaluation."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "B's statement implies A or F is spy",
+      "reason": "Report of a consequence of B statement, not an assertion that B statement is true."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "Combining these, we get the roles.",
+      "reason": "Vague solution summary; no separately expressed non-role proposition."
+    }
+  ],
+  "ambiguities": [
+    {
+      "field_id": "I.agent-2",
+      "span": "If A is knight, they share a role, so A is knight",
+      "note": "Conditional role reasoning; do not convert it into an unconditional SAME_ROLE(A,B) or STMT_TRUE(A) target."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "C must be knight to make D true",
+      "note": "The truth evaluation of D is conditional on C being knight; excluded as a scoped consequence."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "C must be the spy (can lie or tell truth)",
+      "note": "The field explicitly leaves C statement truth unresolved."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "B's statement implies A or F is spy",
+      "note": "This reports the content/implication of B statement without asserting that B statement is true."
+    }
+  ]
+}

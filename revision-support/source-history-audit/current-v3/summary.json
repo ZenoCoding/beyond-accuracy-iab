@@ -1,0 +1,251 @@
+{
+  "clear_eligible_known_outcomes": 44,
+  "clear_eligible_outcome_disagreements": 0,
+  "opposition_reconstruction_rows": 80,
+  "opposition_reconstruction_match": true,
+  "scope": "Eight debates, two puzzle clusters; diagnostic sample, not corpus error-rate estimate. Model-assisted source judgments with unresolved alternatives, not certified ground truth.",
+  "pipeline_semantic_pairs": 63,
+  "pipeline_exact_pairs": 80,
+  "reconstruction_match": true,
+  "candidate_propositions": 43,
+  "candidate_recipient_records": 129,
+  "reference_overlay_records": 11,
+  "stage_summary": [
+    {
+      "stage": "peer_supply",
+      "tier": "strong",
+      "truth": "true",
+      "decisions": 30,
+      "agreement": 22,
+      "disagreement": 0,
+      "unresolved": 8
+    },
+    {
+      "stage": "peer_supply",
+      "tier": "strong",
+      "truth": "false",
+      "decisions": 12,
+      "agreement": 8,
+      "disagreement": 0,
+      "unresolved": 4
+    },
+    {
+      "stage": "peer_supply",
+      "tier": "weak",
+      "truth": "true",
+      "decisions": 39,
+      "agreement": 31,
+      "disagreement": 0,
+      "unresolved": 8
+    },
+    {
+      "stage": "peer_supply",
+      "tier": "weak",
+      "truth": "false",
+      "decisions": 48,
+      "agreement": 42,
+      "disagreement": 0,
+      "unresolved": 6
+    },
+    {
+      "stage": "recipient_initial_presence",
+      "tier": "strong",
+      "truth": "true",
+      "decisions": 30,
+      "agreement": 20,
+      "disagreement": 0,
+      "unresolved": 10
+    },
+    {
+      "stage": "recipient_initial_presence",
+      "tier": "strong",
+      "truth": "false",
+      "decisions": 12,
+      "agreement": 10,
+      "disagreement": 0,
+      "unresolved": 2
+    },
+    {
+      "stage": "recipient_initial_presence",
+      "tier": "weak",
+      "truth": "true",
+      "decisions": 39,
+      "agreement": 32,
+      "disagreement": 0,
+      "unresolved": 7
+    },
+    {
+      "stage": "recipient_initial_presence",
+      "tier": "weak",
+      "truth": "false",
+      "decisions": 48,
+      "agreement": 44,
+      "disagreement": 0,
+      "unresolved": 4
+    },
+    {
+      "stage": "explicit_opposition",
+      "tier": "strong",
+      "truth": "true",
+      "decisions": 30,
+      "agreement": 14,
+      "disagreement": 0,
+      "unresolved": 16
+    },
+    {
+      "stage": "explicit_opposition",
+      "tier": "strong",
+      "truth": "false",
+      "decisions": 12,
+      "agreement": 8,
+      "disagreement": 0,
+      "unresolved": 4
+    },
+    {
+      "stage": "explicit_opposition",
+      "tier": "weak",
+      "truth": "true",
+      "decisions": 39,
+      "agreement": 28,
+      "disagreement": 0,
+      "unresolved": 11
+    },
+    {
+      "stage": "explicit_opposition",
+      "tier": "weak",
+      "truth": "false",
+      "decisions": 48,
+      "agreement": 29,
+      "disagreement": 0,
+      "unresolved": 19
+    },
+    {
+      "stage": "eligibility",
+      "tier": "strong",
+      "truth": "true",
+      "decisions": 30,
+      "agreement": 20,
+      "disagreement": 0,
+      "unresolved": 10
+    },
+    {
+      "stage": "eligibility",
+      "tier": "strong",
+      "truth": "false",
+      "decisions": 12,
+      "agreement": 9,
+      "disagreement": 0,
+      "unresolved": 3
+    },
+    {
+      "stage": "eligibility",
+      "tier": "weak",
+      "truth": "true",
+      "decisions": 39,
+      "agreement": 29,
+      "disagreement": 0,
+      "unresolved": 10
+    },
+    {
+      "stage": "eligibility",
+      "tier": "weak",
+      "truth": "false",
+      "decisions": 48,
+      "agreement": 41,
+      "disagreement": 0,
+      "unresolved": 7
+    },
+    {
+      "stage": "later_recurrence",
+      "tier": "strong",
+      "truth": "true",
+      "decisions": 30,
+      "agreement": 28,
+      "disagreement": 0,
+      "unresolved": 2
+    },
+    {
+      "stage": "later_recurrence",
+      "tier": "strong",
+      "truth": "false",
+      "decisions": 12,
+      "agreement": 5,
+      "disagreement": 0,
+      "unresolved": 7
+    },
+    {
+      "stage": "later_recurrence",
+      "tier": "weak",
+      "truth": "true",
+      "decisions": 39,
+      "agreement": 35,
+      "disagreement": 1,
+      "unresolved": 3
+    },
+    {
+      "stage": "later_recurrence",
+      "tier": "weak",
+      "truth": "false",
+      "decisions": 48,
+      "agreement": 44,
+      "disagreement": 0,
+      "unresolved": 4
+    }
+  ],
+  "source_clear_rates": {
+    "strong_true": {
+      "unambiguous_eligible": 9,
+      "known_outcome_pairs": 9,
+      "recurrences": 9,
+      "ambiguous_later": 0
+    },
+    "strong_false": {
+      "unambiguous_eligible": 2,
+      "known_outcome_pairs": 2,
+      "recurrences": 0,
+      "ambiguous_later": 0
+    },
+    "weak_true": {
+      "unambiguous_eligible": 13,
+      "known_outcome_pairs": 13,
+      "recurrences": 7,
+      "ambiguous_later": 0
+    },
+    "weak_false": {
+      "unambiguous_eligible": 21,
+      "known_outcome_pairs": 20,
+      "recurrences": 10,
+      "ambiguous_later": 1
+    }
+  },
+  "input_sha256": {
+    "source-history-audit/reconcile_current.py": "dde8d47c5f1deb6f0d482bfafd3ddd4ceeb2848697d22309e6168d5acfce1fe7",
+    "source-history-audit/sample-manifest.json": "fa8da429dd96dbdec16537c9ee210fd4217b216a58edea936e1582a872c9ec60",
+    "source-history-audit/D01-source.json": "e6fadd22ffa5ae13e7ec06758010839b0a33b37662c2cd0ee35c83088457618c",
+    "source-history-audit/D02-source.json": "b5045bf1c24d1f2072dcab04e1818a11109fd43e73baf03e8a1301a4a636d803",
+    "source-history-audit/D03-source.json": "429e3930b05781ca7dd884dcb3dc27da56cc82df756ae9605bb24128e6f6dbbf",
+    "source-history-audit/D04-source.json": "99b7da329b0ba644f944a491135d350ee16db089a96ae3b1f04dcf1ff2778c96",
+    "source-history-audit/D05-source.json": "42c628df84e4809533cb5fd8fc112eaa01e939c54ab0b18613406634872ab652",
+    "source-history-audit/D06-source.json": "898b9d9ece7752cc080570bbfde1d5f5e7d675d23738a5305eb3d591349715d4",
+    "source-history-audit/D07-source.json": "836e219ce15581f851e27cb37fdfce0b1b6b2e4de418cd04e4fe433c3ee6f9b7",
+    "source-history-audit/D08-source.json": "dbdf6fec2d3e7ee7e009a3b10411499a376e175f77e25cf44b8a8b500f28dafc",
+    "source-history-audit/D01-audit-adjudicated.json": "a60ef7cd7bccad2120c9629ce40d9bab306dfd771653c5cee9b80ce408372e7b",
+    "source-history-audit/D02-audit-adjudicated.json": "7fbe860de56a705358e3aacd83213851f025061ab04cae6915010d589eb6ea07",
+    "source-history-audit/D03-audit-adjudicated.json": "7055f978def4f71bf37bed723a3c3a614f8e95f3e02676d9e602b25f88fb461c",
+    "source-history-audit/D04-audit-adjudicated.json": "2df074e5304aee5f5a9a70c9cfaa28b5395aee779e607d53e718f4392cf719d3",
+    "source-history-audit/D05-audit-adjudicated.json": "e77df0031fcd00f2b620ade8f26e248cac538c96990758e83e6b7fc86dc372fe",
+    "source-history-audit/D06-audit-adjudicated.json": "f062b776582134a56b7d3f5b5598e25bfd5f61ea888e4574cbde505b4f002356",
+    "source-history-audit/D07-audit-adjudicated.json": "d3c063c8fe27e34d2eb49b86dabcefeba91e1bfcba18504e03435afd957a6062",
+    "source-history-audit/D08-audit-adjudicated.json": "c0db9ce438821a22f873a73f3ba944da0cc3e099af49c6b24a85e5807beb7b74",
+    "SOURCE_CORRECTIONS.md": "267e06ffbc7a0a4e00eb355043b58fbccabb82156b10d8078719132b42c7c489",
+    "claim_logic.py": "9168e3a59cbdd1ed646f8c317dbff112c5f505dae26bae2464b1956409f98fbd",
+    "strength_controls.py": "68c3922f13b756225b9b153b1e8c4d711942de26b97615cf1eac6ae47574c7fb",
+    "corrections/source-audit-v3/correction-ledger.json": "696ae642461190488f74749acda75600457d1aaebf3479c33e106950b41db2d3",
+    "corrections/source-audit-v3/manifest.json": "d44b6f6f88adcbd097a8cc35c2eb118775c7ec98acb3a45de74ff422913d14ec",
+    "control-inputs/labels.jsonl": "b6249db9b9108846eeb30525714315e67937216c9dc93735b860a425a4a983f7",
+    "corrections/source-audit-v3/claims.csv": "b291d75404f38264ec87682f8b2c46e67bd349e7fd8feca317e605f515d70ed1",
+    "matching_persistence_pairs.csv": "99c250b5cf8a882fee7c779665891f37456c2704be3dc0f24f1d47641758e746",
+    "corrections/source-audit-v3/exposure-pairs.csv": "43f41b24b892095dc56fa9a5b301791c9dbef2ac4ee211c9488b2be5d98d85e8",
+    "controlled-exposure-pairs.csv": "5b9562cd566e586a2235a4b2724ee6fcdae905607158679f554ecf114d76fd4f"
+  }
+}

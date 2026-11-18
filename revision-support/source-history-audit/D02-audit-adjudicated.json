@@ -1,0 +1,684 @@
+{
+  "debate_id": "D02",
+  "reviewed_field_ids": [
+    "I.agent-1",
+    "I.agent-2",
+    "I.agent-3",
+    "R1.argument.agent-1.agree_reasoning",
+    "R1.argument.agent-2.agree_reasoning",
+    "R1.argument.agent-2.disagree_reasoning",
+    "R1.argument.agent-3.agree_reasoning",
+    "R1.argument.agent-3.disagree_reasoning",
+    "R1.revision.agent-1",
+    "R1.revision.agent-2",
+    "R1.revision.agent-3",
+    "R2.argument.agent-1.agree_reasoning",
+    "R2.argument.agent-2.agree_reasoning",
+    "R2.argument.agent-3.agree_reasoning",
+    "R2.revision.agent-1",
+    "R2.revision.agent-2",
+    "R2.revision.agent-3",
+    "R3.argument.agent-1.agree_reasoning",
+    "R3.argument.agent-2.agree_reasoning",
+    "R3.argument.agent-3.agree_reasoning",
+    "R3.revision.agent-1",
+    "R3.revision.agent-2",
+    "R3.revision.agent-3",
+    "R4.argument.agent-1.agree_reasoning",
+    "R4.argument.agent-2.agree_reasoning",
+    "R4.argument.agent-3.agree_reasoning",
+    "R4.revision.agent-1",
+    "R4.revision.agent-2",
+    "R4.revision.agent-3",
+    "R5.argument.agent-1.agree_reasoning",
+    "R5.argument.agent-2.agree_reasoning",
+    "R5.argument.agent-3.agree_reasoning",
+    "R5.revision.agent-1",
+    "R5.revision.agent-2",
+    "R5.revision.agent-3",
+    "R6.argument.agent-1.agree_reasoning",
+    "R6.argument.agent-2.agree_reasoning",
+    "R6.argument.agent-3.agree_reasoning",
+    "R6.revision.agent-1",
+    "R6.revision.agent-2",
+    "R6.revision.agent-3"
+  ],
+  "targets": [
+    {
+      "expression": "STMT_TRUE(B)",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "Player B says no spies among A and F, so B must be truth-telling knight"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "The initial field explicitly calls B's statement false."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "The initial field gives only a conditional false-if clause for B."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later text explicitly says B's statement is false."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later text explicitly says B's statement is false."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later text explicitly says B lies."
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(B))",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "The initial field calls B a truth-telling knight."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "Player B's statement denies 'at least 0 of A and F are spies' which is false since zero or more is true, so B lies, hence knave"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "\u201cFalse only if\u201d states a condition and does not assert B false."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "Player B's statement is false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "B's denial about spies among A and F is false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "Player B lies"
+            }
+          ],
+          "note": ""
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(C))",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "Player C says 'not at most 1 spy' among 5 players including F; only one spy exists, so C lies"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "Player C claims 'not at most 1 spy among five players'; since only one spy exists, this is false, so C lies"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "Player C's statement is false"
+            }
+          ],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "Player C's statement is also false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "C's statement about spies is false"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "Player C lies with false statement"
+            }
+          ],
+          "note": ""
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(D)",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "Player D says B and C differ, which is true"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "The field explicitly calls D false; the following question does not assert D true."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "Player D says B and C differ, which is true"
+            }
+          ],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "Player D's statement is true"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "D says B and C differ, which is true"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "D's statement about B and C differing is true"
+            }
+          ],
+          "note": ""
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(D))",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "this is false"
+            }
+          ],
+          "note": "The later question about whether D lies or tells truth does not retract the explicit false evaluation."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later text consistently says D's statement is true."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later text consistently says D's statement is true."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later text consistently says D's statement is true."
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(E)",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "implying A is not knight"
+            }
+          ],
+          "note": "The direct negative-role assertion is exactly E's canonical statement, so semantic initial presence is established without inferring truth from E's role.",
+          "supply_eligible": false
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "E must be knight telling truth"
+            }
+          ],
+          "note": "The same field also explicitly says E\u2019s statement is false; both commitments are retained."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "The initial field states only a conditional about E being a knight."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "Player E's statement denying A is knight is true"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "E's statement is true"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R2.revision.agent-3",
+              "span": "E denies A is knight and is true"
+            }
+          ],
+          "note": ""
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(E))",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "E's statement is false"
+            }
+          ],
+          "note": "The same field also explicitly says E must be telling truth; both commitments are retained."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later text says E's statement is true."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later text says E's statement is true."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later text says E's statement is true."
+        }
+      }
+    },
+    {
+      "expression": "OR(COUNT(at_least,2,knave,A,B),SAME_ROLE(A,B))",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "at least one holds"
+            }
+          ],
+          "note": "The explicit disjunction is asserted after invoking A\u2019s knight assignment."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "R3.revision.agent-3",
+              "span": "A's true statement only holds if A is the spy"
+            }
+          ],
+          "note": "True is presupposed by the noun phrase, but the full sentence is a necessary-condition claim. Scope/endorsement unresolved. Do not certify either nonrecurrence or unconditional recurrence."
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(F)",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "F's statement about at most 2 knights among C, D, E, F holds with the assignments"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "Player F's statement about at most 2 knights among C,D,E,F is true"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "F's statement about knights holds with C,D,E,F roles"
+            }
+          ],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "F's statement about knights is true"
+            }
+          ],
+          "note": ""
+        }
+      }
+    },
+    {
+      "expression": "COUNT(exactly,0,spy,A,F)",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "meaning no spy in A or F"
+            }
+          ],
+          "note": ""
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": ""
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later text discusses B\u2019s statement truth, but does not explicitly assert a zero-spy count for A and F."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later text discusses B\u2019s statement truth, but does not explicitly assert a zero-spy count for A and F."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later text discusses B\u2019s statement truth, but does not explicitly assert a zero-spy count for A and F."
+        }
+      }
+    },
+    {
+      "expression": "COUNT(at_least,1,spy,A,F)",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "B says no spies among A and F"
+            },
+            {
+              "field_id": "I.agent-1",
+              "span": "meaning no spy in A or F"
+            }
+          ],
+          "note": "The first span reports B's purported claim. The second is the agent's own explicit COUNT(SPY,A,F)=0 conclusion, which is the opposite of COUNT(at_least,1,spy,A,F); the candidate is not asserted."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "Player B's statement denies 'at least 0 of A and F are spies' which is false since zero or more is true"
+            }
+          ],
+          "note": "This describes B's character statement and a zero-or-more tautology. It never asserts at least one spy among A and F."
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "Player B's statement is false only if there is at least one spy among A and F, implying one spy in A or F"
+            }
+          ],
+          "note": "The wording explicitly contains the candidate count, but first scopes it under a necessary-condition claim about B's statement being false. The participial 'implying' may restate that conditional or assert the count; there is no separate unconditional assertion of B's falsehood to resolve the scope."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "ambiguous",
+          "evidence": [],
+          "note": "No unambiguous initial supply established for this candidate; later status not separately adjudicated and does not enter source-derived eligible counts."
+        },
+        "agent-2": {
+          "status": "ambiguous",
+          "evidence": [],
+          "note": "No unambiguous initial supply established for this candidate; later status not separately adjudicated and does not enter source-derived eligible counts."
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [],
+          "note": "No unambiguous initial supply established for this candidate; later status not separately adjudicated and does not enter source-derived eligible counts."
+        }
+      },
+      "adjudication_origin": "Candidate identified after pipeline comparison; independently source-reviewed; not part of blinded discovery."
+    }
+  ],
+  "exclusions": [
+    {
+      "field_id": "I.agent-1",
+      "span": "if E lies, A is knight contradicting other clues",
+      "reason": "Scoped hypothetical about E and A; no unconditional statement evaluation."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "E is knight, implying A is not knight (knave)",
+      "reason": "Role assignment; propositions containing literal ROLE atoms are excluded."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "Since A is knight (always true)",
+      "reason": "Role assignment; not separately treated as a statement-truth target."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "D must be spy to satisfy only one spy",
+      "reason": "Role assignment."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "Player B's statement is false only if there is at least one spy among A and F",
+      "reason": "Conditional truth status, not an unconditional evaluation."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "E denies A is knight; if E is knight, A not knight",
+      "reason": "Scoped hypothetical with role predicates."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "F's statement is true if at most two among C,D,E,F are knights",
+      "reason": "Conditional statement truth, not an unconditional evaluation."
+    }
+  ],
+  "ambiguities": [
+    {
+      "field_id": "I.agent-2",
+      "span": "Since A is knight (always true), at least one holds",
+      "note": "The role premise scopes the otherwise explicit disjunction."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "E's statement is false",
+      "note": "Conflicts with the later explicit \u201cE must be knight telling truth\u201d in the same field."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "D lies or tells truth? D must be spy to satisfy only one spy",
+      "note": "This question follows an explicit assertion that D\u2019s statement is false; it is not itself an assertion of D true."
+    }
+  ],
+  "adjudication_notes": [
+    "Root retained ambiguity about conditional/presupposed A truth in agent-3 later history after reviewing disputed extraction evidence.",
+    "Root aligned semantic identity to directly asserted canonical formula: STMT_TRUE(E) / agent-1. Literal-role predicates remain excluded from initial supply generation; their direct equivalents may establish recipient prior presence."
+  ]
+}

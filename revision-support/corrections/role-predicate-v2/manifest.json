@@ -1,0 +1,23 @@
+{
+  "version": "role-predicate-v2",
+  "reason": "Exclude role_is AST nodes, not SAME_ROLE relational predicates. No translations changed.",
+  "legacy_counts": {
+    "size6": 698,
+    "size8": 270
+  },
+  "corrected_counts": {
+    "size6": 728,
+    "size8": 298
+  },
+  "added_counts": {
+    "size6": 30,
+    "size8": 28
+  },
+  "inputs_sha256": {
+    "exposure-pairs.csv": "c16246575f94f825ece9d5cf36cba44534a9bd7361ca6e615013b4a2dfa4068b",
+    "debate-features.csv": "fa712b4fb35873f33655ecb9e8b3544235551c98897fca5838e6c7cc805ed969",
+    "paper-auc.csv": "c627b2cd13e3deabc539529b77b13653ebdacd2e168ad635ae0159fcdbd0e9b4",
+    "control-inputs/claims.csv": "b209751d0d9476dbfc74255ac4fb8268bdb551660cd2e3dbc7d0f8ad7f677e2a",
+    "control-inputs/claims-size8.csv": "838c25d917bb9349609814bc15d21d21aa5ec68cb512734dcff74e482602c93a"
+  }
+}

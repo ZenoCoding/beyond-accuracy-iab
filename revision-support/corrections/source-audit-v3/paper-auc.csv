@@ -1,0 +1,12 @@
+feature,window,label,n,auc_pooled,pooled_ci_low,pooled_ci_high,auc_within_condition,within_ci_low,within_ci_high,n_within_contributing,within_comparison_pairs
+any_initial_correct,initial,At least one correct initial solution,120,0.8698630136986302,,,0.9009216589861752,,,100.0,217.0
+initial_net_bits,initial,Net initial information,119,0.8216607565011821,,,0.8617511520737328,,,100.0,217.0
+false_resistance,mid-debate,False-claim resistance (non-role pairs),77,0.810391363022942,,,0.86,,,48.0,75.0
+initial_precision,initial,Initial claim precision,118,0.7998201977824393,,,0.8502304147465438,,,100.0,217.0
+initial_true_bits,initial,Truth-aligned initial bits,119,0.7316784869976359,,,0.8018433179723502,,,100.0,217.0
+initial_correct_propositions,initial,Correct distinct initial propositions,120,0.6654036723987176,,,0.7995391705069125,,,100.0,217.0
+selectivity,mid-debate,True uptake minus false uptake (non-role pairs),73,0.8475975975975976,,,0.7923076923076923,,,46.0,65.0
+uptake_true,mid-debate,True-claim adaptation (non-role pairs),98,0.7070578231292517,,,0.6631944444444444,,,85.0,144.0
+initial_distinct,initial,Distinct initial propositions,119,0.4604018912529551,,,0.5299539170506913,,,100.0,217.0
+post_initial_distinct,whole-debate,"Distinct later propositions, including final decisions",120,0.7353541241620519,,,0.27419354838709675,,,100.0,217.0
+post_initial_distinct_before_final,mid-debate,"Distinct later propositions, excluding final decisions",120,0.7280676187700379,,,0.25806451612903225,,,100.0,217.0

@@ -1,0 +1,83 @@
+{
+  "debate_id": "D07",
+  "reviewed_field_ids": [
+    "I.agent-1",
+    "I.agent-2",
+    "I.agent-3",
+    "R1.argument.agent-1.agree_reasoning",
+    "R1.argument.agent-2.agree_reasoning",
+    "R1.argument.agent-3.disagree_reasoning",
+    "R1.revision.agent-1",
+    "R1.revision.agent-2",
+    "R1.revision.agent-3",
+    "R2.argument.agent-1.agree_reasoning",
+    "R2.argument.agent-2.agree_reasoning",
+    "R2.argument.agent-3.agree_reasoning",
+    "R2.revision.agent-1",
+    "R2.revision.agent-2",
+    "R2.revision.agent-3",
+    "R3.argument.agent-1.agree_reasoning",
+    "R3.argument.agent-2.agree_reasoning",
+    "R3.argument.agent-3.agree_reasoning",
+    "R3.revision.agent-1",
+    "R3.revision.agent-2",
+    "R3.revision.agent-3",
+    "R4.argument.agent-1.agree_reasoning",
+    "R4.argument.agent-2.agree_reasoning",
+    "R4.argument.agent-3.agree_reasoning",
+    "R4.revision.agent-1",
+    "R4.revision.agent-2",
+    "R4.revision.agent-3",
+    "R5.argument.agent-1.agree_reasoning",
+    "R5.argument.agent-2.agree_reasoning",
+    "R5.argument.agent-3.agree_reasoning",
+    "R5.revision.agent-1",
+    "R5.revision.agent-2",
+    "R5.revision.agent-3",
+    "R6.argument.agent-1.agree_reasoning",
+    "R6.argument.agent-2.agree_reasoning",
+    "R6.argument.agent-3.agree_reasoning",
+    "R6.revision.agent-1",
+    "R6.revision.agent-2",
+    "R6.revision.agent-3"
+  ],
+  "targets": [],
+  "exclusions": [
+    {
+      "field_id": "I.agent-1",
+      "span": "If B is a knave, A must be the spy because A's statement would otherwise create a contradiction.",
+      "reason": "Explicit hypothetical role premise and scoped consequence."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "E must be a knight with a true statement, leaving C, D, and F as knaves.",
+      "reason": "Truth and role evaluations occur within the preceding assumed solution."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "Assume B knave, then C and F statements are false, making them knaves unless one is the spy.",
+      "reason": "Explicit hypothetical; scoped statement evaluations."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "E's parity claim is true, so E knight.",
+      "reason": "Statement truth is a consequence inside the assumed B-knave solution."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "D's complex statement is true via its second clause, making D knight.",
+      "reason": "Statement truth is a consequence inside the assumed B-knave solution."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "Assume A is the spy: E must be knight because his statement is true; B, C, F are knaves by B’s count condition (exactly 4 knaves among A,B,C,E,F). D’s statement is true (knave count odd or parity condition) so D is knight.",
+      "reason": "All evaluations in this sentence are explicitly scoped under the A-spy hypothesis."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "All statements satisfy truth/lie requirements. Other spy placements lead to contradictions.",
+      "reason": "Vague proof summary and generalization, not an isolated proposition."
+    }
+  ],
+  "ambiguities": []
+}

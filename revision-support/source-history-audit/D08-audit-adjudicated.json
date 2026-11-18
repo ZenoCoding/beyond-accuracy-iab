@@ -1,0 +1,539 @@
+{
+  "debate_id": "D08",
+  "reviewed_field_ids": [
+    "I.agent-1",
+    "I.agent-2",
+    "I.agent-3",
+    "R1.argument.agent-1.agree_reasoning",
+    "R1.argument.agent-1.disagree_reasoning",
+    "R1.argument.agent-2.agree_reasoning",
+    "R1.argument.agent-2.disagree_reasoning",
+    "R1.argument.agent-3.agree_reasoning",
+    "R1.argument.agent-3.disagree_reasoning",
+    "R1.revision.agent-1",
+    "R1.revision.agent-2",
+    "R1.revision.agent-3",
+    "R2.argument.agent-1.agree_reasoning",
+    "R2.argument.agent-1.disagree_reasoning",
+    "R2.argument.agent-2.agree_reasoning",
+    "R2.argument.agent-3.agree_reasoning",
+    "R2.revision.agent-1",
+    "R2.revision.agent-2",
+    "R2.revision.agent-3",
+    "R3.argument.agent-1.agree_reasoning",
+    "R3.argument.agent-2.agree_reasoning",
+    "R3.argument.agent-3.agree_reasoning",
+    "R3.revision.agent-1",
+    "R3.revision.agent-2",
+    "R3.revision.agent-3",
+    "R4.argument.agent-1.agree_reasoning",
+    "R4.argument.agent-2.agree_reasoning",
+    "R4.argument.agent-3.agree_reasoning",
+    "R4.revision.agent-1",
+    "R4.revision.agent-2",
+    "R4.revision.agent-3",
+    "R5.argument.agent-1.agree_reasoning",
+    "R5.argument.agent-2.agree_reasoning",
+    "R5.argument.agent-3.agree_reasoning",
+    "R5.revision.agent-1",
+    "R5.revision.agent-2",
+    "R5.revision.agent-3",
+    "R6.argument.agent-1.agree_reasoning",
+    "R6.argument.agent-2.agree_reasoning",
+    "R6.argument.agent-3.agree_reasoning",
+    "R6.revision.agent-1",
+    "R6.revision.agent-2",
+    "R6.revision.agent-3"
+  ],
+  "targets": [
+    {
+      "expression": "NOT(STMT_TRUE(A))",
+      "initial": {
+        "agent-1": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "same role as B false false"
+            }
+          ],
+          "note": "Unclear parenthetical may explicitly evaluate A\u2019s same-role statement as false, but could describe the content\u2019s falsity rather than name a statement-truth evaluation."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "A\u2019s statement is false"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "A is assigned the spy role but A statement truth is not explicitly evaluated."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "A (spy) lies"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "A (spy) false"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "A\u2019s false claim"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(D)",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "D's complex statement is always true"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "D is assigned a role, but no initial direct evaluation of D statement truth."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "D\u2019s statement is true via clause (2)"
+            }
+          ]
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "D knight true via clause1"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "D (knight) true via clause1"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "D\u2019s complex statement is true via clause"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(E)",
+      "initial": {
+        "agent-1": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "E is knight (spy count even)"
+            }
+          ],
+          "note": "Parenthetical could assert E\u2019s statement content is true, but its syntax also reads as a role/count rationale rather than an explicit statement-truth evaluation."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "E\u2019s statement is true"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "E is assigned a role to avoid the knave-count threshold; no direct evaluation of E statement truth."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "E knight true about spy count"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "E (knight) true"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "E\u2019s true statement"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(C)",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "C is assigned a role but no initial direct positive evaluation."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "C and F then tell the truth"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts NOT(STMT_TRUE(C))."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later revisions explicitly say C\u2019s claim is false; the initial positive target reverses."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later revisions explicitly say C\u2019s claim is false; the initial positive target reverses."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later revisions explicitly say C\u2019s claim is false."
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(F)",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "F is assigned a role but no initial direct positive evaluation."
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "C and F then tell the truth"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts NOT(STMT_TRUE(F))."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later revisions explicitly say F\u2019s claim is false; no positive recurrence."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later revisions explicitly say F\u2019s claim is false; the initial positive target reverses."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later revisions explicitly say F\u2019s claim is false."
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(C))",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "B must be knave"
+            }
+          ],
+          "note": "Direct B-knave assertion equals negation of canonical C/F statements. Semantic presence does not require saying C/F statements are false.",
+          "supply_eligible": false
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts STMT_TRUE(C)."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "C and F lie"
+            }
+          ]
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "C knave lies about B"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "C (knave) false"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "C and F false claims"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(F))",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "B must be knave"
+            }
+          ],
+          "note": "Direct B-knave assertion equals negation of canonical C/F statements.",
+          "supply_eligible": false
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Initial explanation explicitly asserts STMT_TRUE(F)."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "C and F lie"
+            }
+          ]
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "F knave lies about B"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-2",
+              "span": "F (knave) false"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "C and F false claims"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "SAME_ROLE(A,B)",
+      "initial": {
+        "agent-1": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "same role as B false false"
+            }
+          ],
+          "note": "This malformed parenthetical contains the SAME_ROLE wording followed by two 'false' tokens, without clear syntax or polarity. It may report A's statement content or attempt to deny it; do not force an unconditional SAME_ROLE assertion."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [
+            {
+              "field_id": "I.agent-2",
+              "span": "A\u2019s statement is false"
+            }
+          ],
+          "note": "A's puzzle statement is exactly that A and B have the same role, so the explicit claim that A's statement is false directly asserts the negative of SAME_ROLE(A,B). It is a clear negative evaluation, not a positive same-role claim; the initial inventory preserves it as NOT(STMT_TRUE(A))."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "A spy, B knave"
+            }
+          ],
+          "note": "This is a literal role assignment from which a same-role relation might be inferred, but the protocol excludes role-only implications. No direct SAME_ROLE(A,B) expression appears."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "ambiguous",
+          "evidence": [],
+          "note": "No unambiguous initial supply established for this candidate; later status not separately adjudicated and does not enter source-derived eligible counts."
+        },
+        "agent-2": {
+          "status": "ambiguous",
+          "evidence": [],
+          "note": "No unambiguous initial supply established for this candidate; later status not separately adjudicated and does not enter source-derived eligible counts."
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [],
+          "note": "No unambiguous initial supply established for this candidate; later status not separately adjudicated and does not enter source-derived eligible counts."
+        }
+      },
+      "adjudication_origin": "Candidate identified after pipeline comparison; independently source-reviewed; not part of blinded discovery."
+    }
+  ],
+  "exclusions": [
+    {
+      "field_id": "I.agent-1",
+      "span": "B must be knave because otherwise C and F could not both be knights",
+      "reason": "ROLE assignments and role-based inference; no C/F truth evaluation is stated here."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "C and F are knaves",
+      "reason": "ROLE assignments alone do not establish statement truth."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "B must be the unique spy because B cannot be knave or knight without contradictions",
+      "reason": "ROLE assignment; no direct B statement truth evaluation."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "D\u2019s statement forces D to be a knave",
+      "reason": "ROLE assignment/consequence, not an explicit D statement truth evaluation."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "B must be knave (otherwise contradictions)",
+      "reason": "ROLE assignment only."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "E must be knight to avoid 4 knaves count",
+      "reason": "ROLE assignment from a count constraint; no explicit E statement-truth claim."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "All statements fit, giving one spy (A) and consistent roles.",
+      "reason": "Vague solution summary; the role claim is excluded and no new non-role proposition is separately stated."
+    }
+  ],
+  "ambiguities": [
+    {
+      "field_id": "I.agent-1",
+      "span": "This forces A to be the spy (same role as B false false).",
+      "note": "The repeated \u201cfalse\u201d wording is unclear: it may mean A\u2019s statement is false or assert NOT(SAME_ROLE(A,B)); marked ambiguous for NOT(STMT_TRUE(A))."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "E is knight (spy count even).",
+      "note": "Could be an explicit truth evaluation of E\u2019s statement, but also reads as a parenthetical count rationale; marked ambiguous."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "C and F then tell the truth, so they are knights.",
+      "note": "Counted as an explicit positive evaluation in the proposed B-spy solution; later revision fields reverse it to false."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "Then C and F lie, so they are knaves",
+      "note": "Counted as explicit negative evaluation after the asserted B-knave premise; later revision fields consistently repeat it."
+    }
+  ],
+  "adjudication_notes": [
+    "Root aligned semantic identity to directly asserted canonical formula: NOT(STMT_TRUE(C)) / agent-1. Literal-role predicates remain excluded from initial supply generation; their direct equivalents may establish recipient prior presence.",
+    "Root aligned semantic identity to directly asserted canonical formula: NOT(STMT_TRUE(F)) / agent-1. Literal-role predicates remain excluded from initial supply generation; their direct equivalents may establish recipient prior presence."
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "D02": {
+    "candidate": "COUNT(at_least,1,spy,A,F)",
+    "agents": {
+      "agent-1": {
+        "status": "absent_report_only",
+        "evidence": [
+          {
+            "field_id": "I.agent-1",
+            "span": "B says no spies among A and F"
+          },
+          {
+            "field_id": "I.agent-1",
+            "span": "meaning no spy in A or F"
+          }
+        ],
+        "rationale": "The first span reports B's purported claim. The second is the agent's own explicit COUNT(SPY,A,F)=0 conclusion, which is the opposite of COUNT(at_least,1,spy,A,F); the candidate is not asserted."
+      },
+      "agent-2": {
+        "status": "absent_report_only",
+        "evidence": [
+          {
+            "field_id": "I.agent-2",
+            "span": "Player B's statement denies 'at least 0 of A and F are spies' which is false since zero or more is true"
+          }
+        ],
+        "rationale": "This describes B's character statement and a zero-or-more tautology. It never asserts at least one spy among A and F."
+      },
+      "agent-3": {
+        "status": "ambiguous",
+        "evidence": [
+          {
+            "field_id": "I.agent-3",
+            "span": "Player B's statement is false only if there is at least one spy among A and F, implying one spy in A or F"
+          }
+        ],
+        "rationale": "The wording explicitly contains the candidate count, but first scopes it under a necessary-condition claim about B's statement being false. The participial 'implying' may restate that conditional or assert the count; there is no separate unconditional assertion of B's falsehood to resolve the scope."
+      }
+    }
+  },
+  "D04": {
+    "candidates": {
+      "SAME_ROLE(A,B)": {
+        "agents": {
+          "agent-1": {
+            "status": "absent_report_only",
+            "evidence": [
+              {
+                "field_id": "I.agent-1",
+                "span": "A cannot be knight because his statement would be false"
+              }
+            ],
+            "rationale": "This evaluates A's whole disjunctive statement in a role-scoped argument. It does not separately assert the SAME_ROLE disjunct; deriving that disjunct's falsity would add a consequence not separately expressed."
+          },
+          "agent-2": {
+            "status": "absent_report_only",
+            "evidence": [
+              {
+                "field_id": "I.agent-2",
+                "span": "A's statement reduces to A and B same role"
+              }
+            ],
+            "rationale": "The clause rewrites or reports the content attributed to A's statement. It does not say that A and B actually have the same role; the subsequent 'choose A as spy' is a role-solving choice."
+          },
+          "agent-3": {
+            "status": "absent_report_only",
+            "evidence": [],
+            "rationale": "This field contains no assertion or report of A and B having the same role. The role-solving text concerns B and C instead."
+          }
+        }
+      },
+      "STMT_TRUE(A)": {
+        "agents": {
+          "agent-1": {
+            "status": "ambiguous",
+            "evidence": [
+              {
+                "field_id": "I.agent-1",
+                "span": "A cannot be knight because his statement would be false"
+              }
+            ],
+            "rationale": "The phrase 'would be false' is a truth evaluation, but it is embedded in the claim that A cannot be a knight and reads as a scoped/modal consequence. It does not make a clear unconditional assertion that A's statement is false."
+          },
+          "agent-2": {
+            "status": "absent_report_only",
+            "evidence": [
+              {
+                "field_id": "I.agent-2",
+                "span": "A's statement reduces to A and B same role"
+              }
+            ],
+            "rationale": "This reports a purported simplification of A's statement and then chooses a role for A. It does not evaluate whether A's statement is true."
+          },
+          "agent-3": {
+            "status": "absent_report_only",
+            "evidence": [],
+            "rationale": "No statement truth evaluation for A appears in this field."
+          }
+        }
+      }
+    }
+  },
+  "D05": {
+    "candidate": "COUNT(exactly,4,knave,A,B,C,E,F)",
+    "agents": {
+      "agent-1": {
+        "status": "absent_report_only",
+        "evidence": [
+          {
+            "field_id": "I.agent-1",
+            "span": "Player B claims exactly 4 of A,B,C,E,F are knaves"
+          },
+          {
+            "field_id": "I.agent-1",
+            "span": "If B is knave, this is false, so number of knaves among those is not 4"
+          }
+        ],
+        "rationale": "The exact-set count first appears as a report of B's character claim. The agent's own count polarity is explicitly negative only under the 'If B is knave' scope; there is no unconditional endorsement of exactly four."
+      },
+      "agent-2": {
+        "status": "absent_report_only",
+        "evidence": [],
+        "rationale": "This field does not mention the four-knave count or its A,B,C,E,F set."
+      },
+      "agent-3": {
+        "status": "ambiguous",
+        "evidence": [
+          {
+            "field_id": "I.agent-3",
+            "span": "B's statement implies 4 knaves among A, B, C, E, F"
+          },
+          {
+            "field_id": "I.agent-3",
+            "span": "there are already 4 knaves"
+          }
+        ],
+        "rationale": "The first span gives the exact set but frames the count as an implication from B's statement, not as an unconditional count assertion. The later unqualified count could refer back to that set or to the broader role list that includes D, who is outside the candidate set. The source does not resolve the set or commitment."
+      }
+    }
+  },
+  "D08": {
+    "candidate": "SAME_ROLE(A,B)",
+    "agents": {
+      "agent-1": {
+        "status": "ambiguous",
+        "evidence": [
+          {
+            "field_id": "I.agent-1",
+            "span": "same role as B false false"
+          }
+        ],
+        "rationale": "This malformed parenthetical contains the SAME_ROLE wording followed by two 'false' tokens, without clear syntax or polarity. It may report A's statement content or attempt to deny it; do not force an unconditional SAME_ROLE assertion."
+      },
+      "agent-2": {
+        "status": "explicitly_asserted",
+        "polarity": "negative",
+        "evidence": [
+          {
+            "field_id": "I.agent-2",
+            "span": "A’s statement is false"
+          }
+        ],
+        "rationale": "A's puzzle statement is exactly that A and B have the same role, so the explicit claim that A's statement is false directly asserts the negative of SAME_ROLE(A,B). It is a clear negative evaluation, not a positive same-role claim; the initial inventory preserves it as NOT(STMT_TRUE(A))."
+      },
+      "agent-3": {
+        "status": "absent_report_only",
+        "evidence": [
+          {
+            "field_id": "I.agent-3",
+            "span": "A spy, B knave"
+          }
+        ],
+        "rationale": "This is a literal role assignment from which a same-role relation might be inferred, but the protocol excludes role-only implications. No direct SAME_ROLE(A,B) expression appears."
+      }
+    }
+  }
+}

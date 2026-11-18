@@ -1,0 +1,3016 @@
+{
+  "rows": [
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-001",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-001",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-001",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-017",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "spy",
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-017",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "spy",
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-017",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "spy",
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-032",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-032",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-032",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-048",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-048",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "knight",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-048",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "spy",
+        "knave",
+        "knight",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-080",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "spy",
+        "knave",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-080",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knight",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-080",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-095",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-095",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "knight",
+        "knave",
+        "spy",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-095",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knight",
+        "knight",
+        "knight",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-112",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "spy",
+        "knight",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-112",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-112",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-127",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-127",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-127",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-143",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-143",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "spy",
+        "knave",
+        "knave",
+        "knave",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-143",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "spy",
+        "knave",
+        "knave",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-158",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knight",
+        "knight",
+        "spy",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-158",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "knight",
+        "knight",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-158",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-174",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-174",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "spy",
+        "knave",
+        "knave",
+        "knight",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-174",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "spy",
+        "knave",
+        "knave",
+        "knight",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-189",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "spy",
+        "knight",
+        "knight",
+        "knave",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-189",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-189",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knight",
+        "knight",
+        "knight",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-198",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knight",
+        "spy",
+        "knave",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-198",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "knight",
+        "spy",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-198",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "spy",
+        "knave",
+        "knave",
+        "knight",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-221",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "spy",
+        "knave",
+        "knight",
+        "knave",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-221",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knight",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-221",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "spy",
+        "knave",
+        "knave",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-253",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "spy",
+        "knight",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-253",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-253",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-284",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-284",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "spy",
+        "knave",
+        "knight",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-het",
+      "task_id": "kks-v1-n06-284",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-001",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-001",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-001",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-017",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "spy",
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-017",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "spy",
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-017",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "spy",
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-048",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-048",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "knight",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-048",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "knight",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-112",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-112",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-112",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-127",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-127",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "spy",
+        "knave",
+        "knight",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-127",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knight",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-143",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-143",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "spy",
+        "knave",
+        "knave",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-143",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "spy",
+        "knave",
+        "knave",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-158",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-158",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "knight",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-158",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "spy",
+        "knight",
+        "knight",
+        "knave",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-174",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "spy",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-174",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "spy",
+        "knave",
+        "knave",
+        "knight",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-174",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "knight",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-189",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knight",
+        "knight",
+        "spy",
+        "knave",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-189",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-189",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "spy",
+        "knight",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-198",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "spy",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-198",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knave",
+        "spy",
+        "knight",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-198",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knight",
+        "knight",
+        "spy",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-221",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knight",
+        "spy",
+        "knight",
+        "knave",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-221",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "spy",
+        "knave",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-221",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knight",
+        "spy",
+        "knight",
+        "knave",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-237",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-237",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knave",
+        "spy",
+        "knight",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-237",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "spy",
+        "knave",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-253",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "spy",
+        "knave",
+        "knave",
+        "knave",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-253",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-253",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-269",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "spy",
+        "knave",
+        "knave",
+        "knight",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-269",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "spy",
+        "knight",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-269",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "spy",
+        "knave",
+        "knave",
+        "knight",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-284",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-284",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knave",
+        "spy",
+        "knight",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-medium-hom",
+      "task_id": "kks-v1-n06-284",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "spy",
+        "knight",
+        "knave",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-001",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "knave",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-001",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-001",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-017",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "spy",
+        "knave",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-017",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "spy",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-017",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-032",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-032",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-032",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "knight",
+        "spy",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-064",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "spy",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-064",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "spy",
+        "knight",
+        "knave",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-064",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "spy",
+        "knight",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-080",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "knight",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-080",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "spy",
+        "knight",
+        "knave",
+        "knave",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-080",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-095",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-095",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "knight",
+        "knave",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-095",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-112",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-112",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-112",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-127",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-127",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "spy",
+        "knight",
+        "knave",
+        "knight",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-127",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knight",
+        "spy",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-143",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "spy",
+        "knight",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-143",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-143",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-158",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-158",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "spy",
+        "knight",
+        "knave",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-158",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-174",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-174",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "spy",
+        "knight",
+        "knight",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-174",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "knave",
+        "spy",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-189",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-189",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knave",
+        "knight",
+        "knave",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-189",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-198",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-198",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "spy",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-198",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-221",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "spy",
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-221",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knight",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-221",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-237",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "spy",
+        "knight",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-237",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "knight",
+        "spy",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-237",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "spy",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-253",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-253",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-253",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-269",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-269",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "spy",
+        "knight",
+        "knight",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-269",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knave",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-284",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knight",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-284",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knight",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-284",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "spy",
+        "knight",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-300",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-300",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "spy",
+        "knight",
+        "knave",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-het",
+      "task_id": "kks-v1-n06-300",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knave",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-001",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-001",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-001",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-017",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-017",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-017",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-032",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "knave",
+        "spy",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-032",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-032",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "knave",
+        "spy",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-048",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-048",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "knave",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-048",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-064",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "spy",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-064",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-064",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-080",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "spy",
+        "knight",
+        "knave",
+        "knight",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-080",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "spy",
+        "knight",
+        "knave",
+        "knight",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-080",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "spy",
+        "knave",
+        "knight",
+        "knight",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-095",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-095",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-095",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-112",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-112",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-112",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "spy",
+        "knave",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-127",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-127",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-127",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knight",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-143",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knight",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-143",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "spy",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-143",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "spy",
+        "knave",
+        "knave",
+        "knight",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-158",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-158",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-158",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-174",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-174",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "spy",
+        "knight",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-174",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-189",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "knave",
+        "spy",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-189",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "knight",
+        "knave",
+        "spy",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-189",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-198",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "spy",
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-198",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-198",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-221",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-221",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-221",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knight",
+        "knave",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-237",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "spy",
+        "knight",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-237",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-237",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knight",
+        "knave",
+        "knight",
+        "knave",
+        "knave",
+        "spy"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-253",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-253",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-253",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knave",
+        "spy",
+        "knight",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-269",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-269",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-269",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knave",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-284",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knight",
+        "knave",
+        "spy",
+        "knight",
+        "knight",
+        "knave"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-284",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knight",
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-284",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knave",
+        "spy",
+        "knight",
+        "knight",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-300",
+      "repetition": 1,
+      "agent_id": "agent-1",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-300",
+      "repetition": 1,
+      "agent_id": "agent-2",
+      "roles": [
+        "knave",
+        "knave",
+        "knave",
+        "knight",
+        "spy",
+        "knight"
+      ]
+    },
+    {
+      "condition_id": "broad-luna-low-weak-hom",
+      "task_id": "kks-v1-n06-300",
+      "repetition": 1,
+      "agent_id": "agent-3",
+      "roles": [
+        "knave",
+        "knave",
+        "knight",
+        "knave",
+        "spy",
+        "knight"
+      ]
+    }
+  ],
+  "raw_hashes": {
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-001__rep_0001/result.json": "fc4bbc7f377c21458dfc518df5b63d93403defff034297d94a6c14fb0621d5a3",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-017__rep_0001/result.json": "2a3a65ddf87a7288d0f7ce027eb851962c0d2fa6899874bc1fc222be16d1040b",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-032__rep_0001/result.json": "bb5be31f1cd029eceee2beaec92b3d16a46f52d93cdd60a2ee1b80d29da43718",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-048__rep_0001/result.json": "08ada1954616537cfe203030f34584f934cdd658d2d445cd9285f9556a39f986",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-080__rep_0001/result.json": "7ebb46ab187ac860f20188d31ababd34eab19064b6c5f163314df5b653e4e492",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-095__rep_0001/result.json": "6c695244afa8bba967853bc017b8cb5a434a17a57e6a0d205f177aa2f307bd2b",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-112__rep_0001/result.json": "389285a3175b0249eae209c29b251a5eb6c3e34093f64093a49acbf04269d88e",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-127__rep_0001/result.json": "5b2d41d5cba2bf6f65cfa4fd7583c21fb45ccdaa394d4b583afe275124344446",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-143__rep_0001/result.json": "692f6dd3d8f2929c6c8cc38b25122c80c07055929cc0e1cec38f2976f178bd33",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-158__rep_0001/result.json": "b42b01c47e13eed8aa0e9c4ba90a79b2c4b0e3a5dd3be7e10594677bf9439b50",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-174__rep_0001/result.json": "b94d0684cbffcae1d458b3ba8c7e1f1fb1b826e2193d859412803df84defd9f5",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-189__rep_0001/result.json": "d3a5509eb4272f67a4caed7649b6ebfd4781bc55a502a77c31b58a213c7017e1",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-198__rep_0001/result.json": "68c4f191bd3ea319ac1f1606700951180f380cae5b2aa9bf78532efc740ec19a",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-221__rep_0001/result.json": "9fdaea108dc6a49bc0297e0883e98b196d218142a060ba01cd3bba270f5b14b8",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-253__rep_0001/result.json": "5c6decb2d7ae0152628a8cc4f0fa2770ddcd5a9116c3edc4b0573c8dd4454b68",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-284__rep_0001/result.json": "c1eea3e9b9f0d8d01cb0e8a95bdd937e6d0a20d0977a48f5e2acdfa522d97d67",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-001__rep_0001/result.json": "287e4f3d8a044dbfae9d92f79a45a53a11ed4f5fa6975eff099cdb51d8b03ba9",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-017__rep_0001/result.json": "1e8e5533d342b8f8a5eab652161e18e261776d3925e9d592212ce60c4009b15d",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-048__rep_0001/result.json": "afe68f635a3865b813f215637378394825c76f397d922b54d3ae2854debf80aa",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-112__rep_0001/result.json": "885d18f3cb2431bd177f3810b8a8cecab47c991321fa94c58621743ffff6f6df",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-127__rep_0001/result.json": "4fc56b0c33455ecb001bcc661033619b5f16a915820d3a1209f9ae7925a19b45",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-143__rep_0001/result.json": "e7ca1c0d1cc36fe43745ceaa3a4fdaf7af962fd2006366daf04632ff2a58f422",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-158__rep_0001/result.json": "e06cf52ec1212a85cc23b61e3461107484f107522b6f01d75df1fce026e9809c",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-174__rep_0001/result.json": "5680faea307914c70f70c734e921350cabd018c74a847f75aa6b1af5ae29e4b6",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-189__rep_0001/result.json": "64e4552871ef4773104c87f520098f593095d8de2b7ba773cde7a3fe0ce15bbe",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-198__rep_0001/result.json": "e53cd1930c330afa570294fd04dd6eaa28da34eb3303637fa707729093829e98",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-221__rep_0001/result.json": "9947327aac9667b98c5142a5717368b91335d0067d999b359371c28f1f84ddbe",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-237__rep_0001/result.json": "6f47532606ad9e5486fcd0f958cd671b52cf0f74a4b2f19e73feeb36ccf7f87a",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-253__rep_0001/result.json": "ebdfe65d856b52d091c9dd083b11fc953b8f1782efae81f29e25cc1837572479",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-269__rep_0001/result.json": "7050a16ebcd3fed937fff2256905e72c1574ebbb183443512e0cb93004f6529c",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-284__rep_0001/result.json": "d57bd80d3b10473ab4f3c7cdb545e81b5493f56b88334a3c94a55351cbf471d4",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-001__rep_0001/result.json": "68a27291c6ad357820626358b8b29acd4f593d005b65dfc81e219f4efc58d584",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-017__rep_0001/result.json": "2adb1bb6e84aa74cb59523d45b0b9c59be992674eac5cb775de9e44a241f17f0",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-032__rep_0001/result.json": "cfc815ba2fa8182a031f3ac5cd812959ac8451b4eb45524600e3b0c44eb9aaf3",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-064__rep_0001/result.json": "f5244b940c9ebf76ad2e55b1cfb38192e37c6a8348017b287f9dc1bf7dc2dc94",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-080__rep_0001/result.json": "0a8b638e123547c8399de8c8282418b55cb144598d5470d9634f6065d72f9154",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-095__rep_0001/result.json": "029679c160f969d4b217e6de1863e5b0a513bc2d05d6d3258db9a566342c60b3",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-112__rep_0001/result.json": "f1ed1586785ad5c91cb206c4b8efdaf94a94d18f8a1d1a1189089bb9bdaf3eb1",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-127__rep_0001/result.json": "998988e4f77279fda486d438935aec633cd0b9294220721278669b2ec785d0e1",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-143__rep_0001/result.json": "20e8524cdbf5ef84fa5ff906d1b79874004ab629b9210eafc0ab8cdbfd47489c",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-158__rep_0001/result.json": "a64c028f4a1cb49dcdfc7f1ab00a00038f46ec55508f726780be0765e4ad6b05",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-174__rep_0001/result.json": "e7768547f307162c0ee965e8f75fc6fa972bc8e6afd0147a7cc14e6b8503ca30",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-189__rep_0001/result.json": "ae607bcfb7ebc79997f77bd01fbf4be4648cd449622b0ced7069a96004df31bb",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-198__rep_0001/result.json": "23f47cb0f142a22efd0b1bf6ca206784c89fe428940b7188ec4c987228062baf",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-221__rep_0001/result.json": "08a1bdaf7b8ff648fa304792162253b22d237da7a1db9a348c021ba931139d79",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-237__rep_0001/result.json": "8bb74f62dfd1ffd07244879ace2e70b552b1ba1921e15cc78dd6d16e6e645df8",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-253__rep_0001/result.json": "1c279ed737ef826bf88138753dea09a4b0c39250a04d680dbeca74e0c5b2a11e",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-269__rep_0001/result.json": "91e730df6723a1173ee4cf30a0e07ca733e3bfb604527393471fd026198b1165",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-284__rep_0001/result.json": "60767db31c36d97dfaf656686387e2f58f30edf355168af018aebc899f845be2",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-300__rep_0001/result.json": "9ad44ffb6de6e4021b954707d0c341a4557ed5a6c1db045d9fb458ed1ec6406e",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-001__rep_0001/result.json": "62e43b0cf1b675d6e529251981a34f663b735fa0536bce1f024e99c49a7304a1",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-017__rep_0001/result.json": "b1b745b014e813ba60d93e8fe1661b05b77f1ea2bc09bf6faab0b63e612c6f75",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-032__rep_0001/result.json": "3a2c569f9cb9fff8cec59865f46fbf1441679fc5ea742e2cdb4d1af05b446eea",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-048__rep_0001/result.json": "241824c0628f21b2e24338e0291c51d3332a04a5d2c905a49c2d18f3966049de",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-064__rep_0001/result.json": "d572e55764926d72081268dee72a26911126b62686ff7f9a7d135efdd7981046",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-080__rep_0001/result.json": "a8f3990bcfef82b341f9c6a56903e7c3c9fffd05777f376dde787f0b65a3ffb8",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-095__rep_0001/result.json": "979a36e889346ce8d1cc2e9415b624a4e6b7ae58ee85af0c94930b08057df7af",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-112__rep_0001/result.json": "1a96eec6337d516a762043ca2eaa81c22bbd21fcdd53df4fa1765ad9c9bfc76d",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-127__rep_0001/result.json": "34c751f2ff08cc21217500c8c496d62d324e837bc9504a0988524acc7a6a765a",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-143__rep_0001/result.json": "dd4fdefba2c1f07da88f88a0badf1b769507048f9ff55a71276218a086dbe650",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-158__rep_0001/result.json": "33844e2d0e354fd798fedfd77f2e10397fc5375df0e6513806e4fb659f0be6cb",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-174__rep_0001/result.json": "c4c261b453d60848071fa019be55b34488ace87d691b73531d8bd73602fe4a74",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-189__rep_0001/result.json": "440c544c57f007cf105bbbc190e8b7c6388320f40609e729d0a047f1e5db40eb",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-198__rep_0001/result.json": "e7fab9a63a5d473247e3fc2b9498fb0a34185ac8c3bb0b886e9253faeff6691d",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-221__rep_0001/result.json": "954e8ce291fd40d0ddb8af609f49fdfa2124bca1fec02618b0f3e15d0c905da4",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-237__rep_0001/result.json": "23e54922422a6876e930e2ac93e67567277c68bdce0314fd2da75caf1b49c32e",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-253__rep_0001/result.json": "57e9576570db170791c831125ad42b45a2efad4f0b1201006d58188b8e84cca4",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-269__rep_0001/result.json": "98de11409e9900df9fc6a39ff16ff0982ce92d3bcd71d8210fb510c483899f66",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-284__rep_0001/result.json": "d85243b593e27ba7d28e743cda6c01bacb28091f9935cd267d0f5179c25f1665",
+    "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-300__rep_0001/result.json": "7f8f8a502bf126740b581f0fd3f0e9a43bd9159ca29681139459accd2d8ccd3e"
+  }
+}

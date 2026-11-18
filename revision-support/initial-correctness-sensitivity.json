@@ -1,0 +1,116 @@
+{
+  "all": {
+    "strong": {
+      "n_debates": 40,
+      "n_puzzles": 20,
+      "counts": [
+        157,
+        199,
+        11,
+        86
+      ],
+      "true_rate": 0.7889447236180904,
+      "false_rate": 0.12790697674418605,
+      "gap_pp": 66.10377468739044
+    },
+    "weak": {
+      "n_debates": 40,
+      "n_puzzles": 20,
+      "counts": [
+        132,
+        242,
+        97,
+        201
+      ],
+      "true_rate": 0.5454545454545454,
+      "false_rate": 0.48258706467661694,
+      "gap_pp": 6.286748077792847
+    },
+    "difference": {
+      "gap_pp": 59.81702660959759,
+      "ci": [
+        42.172946200458526,
+        77.56081147458474
+      ],
+      "defined_draws": 10000
+    }
+  },
+  "none_initial_correct": {
+    "strong": {
+      "n_debates": 14,
+      "n_puzzles": 10,
+      "counts": [
+        50,
+        61,
+        10,
+        41
+      ],
+      "true_rate": 0.819672131147541,
+      "false_rate": 0.24390243902439024,
+      "gap_pp": 57.57696921231508
+    },
+    "weak": {
+      "n_debates": 37,
+      "n_puzzles": 19,
+      "counts": [
+        110,
+        211,
+        97,
+        195
+      ],
+      "true_rate": 0.5213270142180095,
+      "false_rate": 0.49743589743589745,
+      "gap_pp": 2.3891116782112087
+    },
+    "difference": {
+      "gap_pp": 55.18785753410387,
+      "ci": [
+        42.49502963669494,
+        70.2132338104455
+      ],
+      "defined_draws": 9999
+    }
+  },
+  "matched_none_initial_correct": {
+    "strong": {
+      "n_debates": 14,
+      "n_puzzles": 10,
+      "counts": [
+        50,
+        61,
+        10,
+        41
+      ],
+      "true_rate": 0.819672131147541,
+      "false_rate": 0.24390243902439024,
+      "gap_pp": 57.57696921231508
+    },
+    "weak": {
+      "n_debates": 14,
+      "n_puzzles": 10,
+      "counts": [
+        41,
+        70,
+        35,
+        63
+      ],
+      "true_rate": 0.5857142857142857,
+      "false_rate": 0.5555555555555556,
+      "gap_pp": 3.0158730158730163
+    },
+    "difference": {
+      "gap_pp": 54.56109619644206,
+      "ci": [
+        39.16912296322994,
+        76.8880761662594
+      ],
+      "defined_draws": 9999
+    }
+  },
+  "provenance": {
+    "input_sha256": "fa515e00831b6e489721f5610287496171696272d4212f46ddea71d65f68a491",
+    "seed": 20260917,
+    "draws": 10000,
+    "method": "Joint puzzle bootstrap over original 20 six-player puzzles; fixed descriptive subsets; pooled claim-recipient counts."
+  }
+}

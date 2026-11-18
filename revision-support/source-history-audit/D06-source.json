@@ -1,0 +1,471 @@
+{
+  "debate_id": "D06",
+  "puzzle": {
+    "hint": "There is exactly one spy among the players.",
+    "players": [
+      "Player A",
+      "Player B",
+      "Player C",
+      "Player D",
+      "Player E",
+      "Player F"
+    ],
+    "size": 6,
+    "statements": [
+      {
+        "ast": {
+          "op": "same_role",
+          "players": [
+            0,
+            1
+          ]
+        },
+        "speaker": "Player A",
+        "text": "Player A and Player B have the same role."
+      },
+      {
+        "ast": {
+          "comparison": "exactly",
+          "count": 4,
+          "op": "count_role",
+          "players": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "role": "knave"
+        },
+        "speaker": "Player B",
+        "text": "exactly 4 of Player A, Player B, Player C, Player E, and Player F are knaves."
+      },
+      {
+        "ast": {
+          "arg": {
+            "op": "role_is",
+            "player": 1,
+            "role": "knave"
+          },
+          "op": "not"
+        },
+        "speaker": "Player C",
+        "text": "it is not the case that (Player B is a knave)."
+      },
+      {
+        "ast": {
+          "left": {
+            "arg": {
+              "op": "parity",
+              "parity": "even",
+              "players": [
+                1,
+                3,
+                4
+              ],
+              "role": "knave"
+            },
+            "op": "not"
+          },
+          "op": "or",
+          "right": {
+            "left": {
+              "arg": {
+                "op": "role_is",
+                "player": 4,
+                "role": "knight"
+              },
+              "op": "not"
+            },
+            "op": "iff",
+            "right": {
+              "op": "parity",
+              "parity": "even",
+              "players": [
+                0,
+                2,
+                5
+              ],
+              "role": "spy"
+            }
+          }
+        },
+        "speaker": "Player D",
+        "text": "at least one of the following is true: (1) it is not the case that (the number of knaves among Player B, Player D, and Player E is even); (2) the following have the same truth value: (2.1) it is not the case that (Player E is a knight); (2.2) the number of spies among Player A, Player C, and Player F is even."
+      },
+      {
+        "ast": {
+          "arg": {
+            "op": "parity",
+            "parity": "odd",
+            "players": [
+              2,
+              3,
+              4
+            ],
+            "role": "spy"
+          },
+          "op": "not"
+        },
+        "speaker": "Player E",
+        "text": "it is not the case that (the number of spies among Player C, Player D, and Player E is odd)."
+      },
+      {
+        "ast": {
+          "arg": {
+            "op": "role_is",
+            "player": 1,
+            "role": "knave"
+          },
+          "op": "not"
+        },
+        "speaker": "Player F",
+        "text": "it is not the case that (Player B is a knave)."
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "I.agent-1",
+      "agent": "agent-1",
+      "stage_order": 0,
+      "text": "Player C and F say 'Player B is not a knave'; if true, B is not knave. But B claims 4 among A,B,C,E,F are knaves; with B not knave, B's statement is false (so B is knave). This contradiction shows C and F are knights (truth-tellers). A says A and B have same role; A knave lying means A and B differ; B knave, so A not knave, but A must be knave (contradiction unless A is knave lying about same role). E claims number of spies among C,D,E is even; E is knave lying, so number of spies in these three is odd. Only one spy total, D fits as spy. D's statement is complex but can be true or false (spy). Thus roles: A knave, B knave, C knight, D spy, E knave, F knight."
+    },
+    {
+      "id": "I.agent-2",
+      "agent": "agent-2",
+      "stage_order": 0,
+      "text": "Player C and F say Player B is not a knave; if B were knave, their statements would be false, contradicting their truthfulness, so B is knave and C, F are knights. B claims exactly 4 of A,B,C,E,F are knaves; with B knave and C,F knights, A,E must be knaves, total 4 knaves. A claims same role as B but A is knave, B knave, so A's statement is false, consistent only if A is knave. D's complex statement fits spy role as it can be true or false. E's statement about spies matches with D as spy."
+    },
+    {
+      "id": "I.agent-3",
+      "agent": "agent-3",
+      "stage_order": 0,
+      "text": "Player A's claim that A and B have the same role is false, so A is knave. B says exactly 4 of A,B,C,E,F are knaves; since A,B,E are knaves, B's statement is false implying B is knave. C says B is not a knave, but B is knave, so C's statement is false, so C must be knight (truth-teller). F says B is not knave, F is truthful, so F is knight. E says the number of spies among C,D,E is not odd; E is knave, so this is false; meaning there is an odd number of spies among C,D,E. Only one spy total, so D is spy. D's complex statement is consistent with spy role."
+    },
+    {
+      "id": "R1.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 110,
+      "text": "All agents agree Player A is knave based on Player A's false statement and consistent logical deductions about Player B and the others."
+    },
+    {
+      "id": "R1.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 110,
+      "text": ""
+    },
+    {
+      "id": "R1.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 110,
+      "text": "All agents consistently deduce Player A must be knave since A's statement is false and aligns with the roles of others as knave or knight."
+    },
+    {
+      "id": "R1.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 110,
+      "text": ""
+    },
+    {
+      "id": "R1.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 110,
+      "text": "All agents correctly deduce Player A must be knave since A's statement is false and consistent with the roles of others."
+    },
+    {
+      "id": "R1.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 110,
+      "text": ""
+    },
+    {
+      "id": "R1.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 111,
+      "text": "Player A lies about sharing role with B, so A is knave. B claims 4 of A,B,C,E,F are knaves; with B knave, this is false, consistent with A,E knaves and C,F knights. C and F say B is not knave, so both are knights. E's statement about spies is false, making E knave. Only one spy exists; D fits as spy with complex truth-flexible statement."
+    },
+    {
+      "id": "R1.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 111,
+      "text": "A's statement is false, so A is knave; B's statement about 4 knaves among A,B,C,E,F is false, so B is knave; C and F say B is not knave, so C and F are knights; E's statement about odd spies among C,D,E is false, so E is knave; exactly one spy exists, so D is spy consistent with complex statement."
+    },
+    {
+      "id": "R1.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 111,
+      "text": "Player A lies about having the same role as B, so A is knave. B claims exactly 4 knaves among A,B,C,E,F, which is false, so B is knave. C and F say B is not knave; their truthfulness indicates they are knights. E lies about the number of spies among C,D,E, implying an odd count; only D fits as the single spy. D's complex statement aligns with a spy role. This satisfies all statements and rules."
+    },
+    {
+      "id": "R2.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 120,
+      "text": "All agents consistently deduce Player B is knave based on the falsehood of B's statement about knaves and the truthfulness of C and F denying B is knave, fitting the puzzle logic."
+    },
+    {
+      "id": "R2.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 120,
+      "text": ""
+    },
+    {
+      "id": "R2.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 120,
+      "text": "All agents correctly deduce Player B is knave because B's statement about 4 knaves is false, consistent with the roles of A and E as knaves and C and F as knights. C and F's statements that B is not knave align with their being knights, confirming B's knave status."
+    },
+    {
+      "id": "R2.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 120,
+      "text": ""
+    },
+    {
+      "id": "R2.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 120,
+      "text": "Both agents correctly deduce Player B is knave since B's claim about 4 knaves is false, fitting the roles of others and aligning with the logic of C and F's truthful statements that B is not knave."
+    },
+    {
+      "id": "R2.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 120,
+      "text": ""
+    },
+    {
+      "id": "R2.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 121,
+      "text": "Player A lies about sharing role with B, so A is knave. Player B's claim about 4 knaves among A,B,C,E,F is false, making B knave. Players C and F truthfully say B is not knave, so C and F are knights. Player E lies about spies among C,D,E, so E is knave. Only one spy exists; Player D fits as the spy with a complex statement compatible with lying or truth."
+    },
+    {
+      "id": "R2.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 121,
+      "text": "A lies about matching B's role, so A is knave; B falsely claims 4 knaves among A,B,C,E,F, so B is knave; C and F truthfully say B is not knave, so they are knights; E lies about spies among C,D,E, so E is knave; only one spy, D fits spy role with complex statement. This assignment satisfies all statements and game rules."
+    },
+    {
+      "id": "R2.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 121,
+      "text": "Player A lies about sharing role with B, so A is knave. B claims exactly 4 knaves among A,B,C,E,F; false, so B is knave. C and F truthfully say B is not knave, so both are knights. E lies about spies among C,D,E, so E is knave. Only one spy exists, D fits as spy with a complex, flexible statement. This allocation satisfies all conditions and statements."
+    },
+    {
+      "id": "R3.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 130,
+      "text": "All agents consistently conclude Player C is knight because C's statement that B is not a knave is true, matching the logic that B is indeed a knave. This fits perfectly with the puzzle's rules and the roles of other players."
+    },
+    {
+      "id": "R3.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 130,
+      "text": ""
+    },
+    {
+      "id": "R3.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 130,
+      "text": "All agents consistently deduce Player C is knight, as C's statement that B is not a knave is true, fitting the puzzle and other roles logically."
+    },
+    {
+      "id": "R3.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 130,
+      "text": ""
+    },
+    {
+      "id": "R3.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 130,
+      "text": "Agents 1 and 2 correctly deduce Player C is knight because C's statement that B is not a knave aligns with the logic that B is knave and C tells truth, consistent with the puzzle's constraints."
+    },
+    {
+      "id": "R3.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 130,
+      "text": ""
+    },
+    {
+      "id": "R3.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 131,
+      "text": "Player A lies about sharing role with B, so A is knave. B's claim about 4 knaves is false, making B knave. C and F truthfully say B is not knave, so they are knights. E lies about spies, so E is knave. Only one spy exists; D fits as spy with a complex statement allowing truth or lie. This assignment satisfies all statements and game rules."
+    },
+    {
+      "id": "R3.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 131,
+      "text": "A lies about having same role as B, so A is knave. B's claim of 4 knaves among A,B,C,E,F is false, so B is knave. C and F say B is not knave, both true, so C and F are knights. E lies about the number of spies among C,D,E, so E is knave. Only one spy exists; D fits as spy with a complex statement consistent with truth or lie."
+    },
+    {
+      "id": "R3.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 131,
+      "text": "Player A lies about sharing role with B, so A is knave. B's claim about 4 knaves among A,B,C,E,F is false, so B is knave. C and F both truthfully say B is not knave, so they are knights. E lies about the number of spies among C,D,E, indicating E is knave. Only one spy exists, so D is the spy. This satisfies all statements and game rules."
+    },
+    {
+      "id": "R4.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 140,
+      "text": "All agents correctly assign Player D as spy based on the complex statement that fits a truth-flexible role and the unique spy count."
+    },
+    {
+      "id": "R4.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 140,
+      "text": ""
+    },
+    {
+      "id": "R4.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 140,
+      "text": "All agents consistently identify Player D as the spy since D's complex statement fits a role that can lie or tell truth, and the unique spy count matches this assignment."
+    },
+    {
+      "id": "R4.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 140,
+      "text": ""
+    },
+    {
+      "id": "R4.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 140,
+      "text": "Both agents correctly identify Player D as the spy, fitting the unique spy count and D's complex statement that can be true or false. This aligns perfectly with all logical deductions from the puzzle."
+    },
+    {
+      "id": "R4.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 140,
+      "text": ""
+    },
+    {
+      "id": "R4.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 141,
+      "text": "Player A lies about sharing role with B, so A is knave. B's claim about 4 knaves among A,B,C,E,F is false, so B is knave. C and F truthfully say B is not knave, so they are knights. E lies about the number of spies among C,D,E, so E is knave. Only one spy exists; D fits as spy with a complex statement allowing truth or lie."
+    },
+    {
+      "id": "R4.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 141,
+      "text": "Player A lies about sharing role with B, so A is knave. Player B falsely claims 4 knaves among A,B,C,E,F, so B is knave. Players C and F truthfully say B is not knave, so they are knights. Player E lies about spies among C,D,E, so E is knave. Exactly one spy exists; Player D's complex statement fits the spy role. This assignment satisfies all statements and game rules."
+    },
+    {
+      "id": "R4.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 141,
+      "text": "A lies about sharing role with B, so A is knave. B's claim about 4 knaves is false, so B is knave. C and F say B is not knave, so both are knights. E lies about spies, so E is knave. Only one spy exists; D fits as spy with a complex statement allowing truth or lie. This assignment satisfies all statements and rules."
+    },
+    {
+      "id": "R5.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 150,
+      "text": "All agents consistently conclude Player E is knave because E's statement about the number of spies among C, D, and E is false, fitting the unique spy assignment to Player D and the knave count."
+    },
+    {
+      "id": "R5.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 150,
+      "text": ""
+    },
+    {
+      "id": "R5.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 150,
+      "text": "All agents agree Player E is knave because E's statement about the number of spies among C, D, and E is false, consistent with the unique spy being Player D and the knave count fitting the puzzle rules."
+    },
+    {
+      "id": "R5.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 150,
+      "text": ""
+    },
+    {
+      "id": "R5.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 150,
+      "text": "All agents consistently conclude Player E is knave because E's statement about the number of spies among C, D, and E is false, fitting the unique spy assignment to Player D and the knave count."
+    },
+    {
+      "id": "R5.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 150,
+      "text": ""
+    },
+    {
+      "id": "R5.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 151,
+      "text": "Player A lies about sharing role with B, so A is knave. B falsely claims 4 knaves among A,B,C,E,F, so B is knave. C and F truthfully say B is not knave, so they are knights. E lies about spies among C,D,E, so E is knave. Exactly one spy exists\u2014D fits as spy with a complex statement allowing truth or lie. This assignment satisfies all statements and game rules."
+    },
+    {
+      "id": "R5.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 151,
+      "text": "Player A lies about sharing role with B, so A is knave. B's claim about 4 knaves among A,B,C,E,F is false, so B is knave. C and F truthfully say B is not knave, so they are knights. E lies about the number of spies among C,D,E, so E is knave. Only one spy exists; Player D's complex statement fits the spy role, satisfying all statements and rules."
+    },
+    {
+      "id": "R5.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 151,
+      "text": "Player A lies about sharing role with B, so A is knave. B's claim about 4 knaves among A,B,C,E,F is false, so B is knave. C and F say B is not knave truthfully, so they are knights. E lies about the number of spies among C,D,E, so E is knave. Only one spy exists; D fits as the spy with a complex statement allowing truth or lie, matching all conditions."
+    },
+    {
+      "id": "R6.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 160,
+      "text": "All agents consistently assign Player F as knight because F truthfully says B is not a knave, fitting the roles and statements logically."
+    },
+    {
+      "id": "R6.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 160,
+      "text": ""
+    },
+    {
+      "id": "R6.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 160,
+      "text": "All agents agree Player F is knight because F's statement that Player B is not a knave is true, aligning with the consistent assignments of B as knave and F as knight. This fits all statements and the unique spy assignment to Player D."
+    },
+    {
+      "id": "R6.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 160,
+      "text": ""
+    },
+    {
+      "id": "R6.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 160,
+      "text": "The consistent assignment by all agents that Player F is knight fits perfectly as F's statement that B is not knave is true, confirming F's truthfulness and aligning with the unique spy and knave roles."
+    },
+    {
+      "id": "R6.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 160,
+      "text": ""
+    },
+    {
+      "id": "R6.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 161,
+      "text": "Player A lies about sharing role with B, so A is knave. B falsely claims 4 knaves among A,B,C,E,F, so B is knave. C and F truthfully say B is not knave, so knights. E lies about spies among C,D,E, so E is knave. Exactly one spy exists\u2014D fits as spy with a complex statement allowing truth or lie. This satisfies all statements and rules."
+    },
+    {
+      "id": "R6.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 161,
+      "text": "Player A lies about having the same role as B, so A is knave. Player B's claim about 4 knaves is false, so B is knave. Players C and F truthfully say B is not knave, so they are knights. Player E lies about spies among C, D, E, so E is knave. Exactly one spy exists, and D's complex statement fits the spy role. This assignment satisfies all statements and rules."
+    },
+    {
+      "id": "R6.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 161,
+      "text": "Player A lies about sharing role with B, so A is knave. B's statement about 4 knaves is false, so B is knave. C and F truthfully say B is not knave, so knights. E lies about spies, so E is knave. Only one spy exists; D fits as spy with a complex statement allowing truth or lie. This satisfies all statements and rules."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "weak": {
+    "true_hits": 132,
+    "true_pairs": 242,
+    "true_uptake": 0.5454545454545454,
+    "false_hits": 97,
+    "false_pairs": 201,
+    "false_uptake": 0.48258706467661694,
+    "resistance": 0.5174129353233831,
+    "resistance_count": 104,
+    "gap_pp": 6.286748077792847,
+    "gap_ci": [
+      -8.1498925263255,
+      20.22480544692581
+    ],
+    "defined_draws": 10000
+  },
+  "strong": {
+    "true_hits": 157,
+    "true_pairs": 199,
+    "true_uptake": 0.7889447236180904,
+    "false_hits": 11,
+    "false_pairs": 86,
+    "false_uptake": 0.12790697674418605,
+    "resistance": 0.872093023255814,
+    "resistance_count": 75,
+    "gap_pp": 66.10377468739044,
+    "gap_ci": [
+      55.26125635439362,
+      77.0611896294459
+    ],
+    "defined_draws": 10000
+  },
+  "difference": {
+    "gap_pp": 59.81702660959759,
+    "gap_ci": [
+      42.21030278928762,
+      77.51181232060031
+    ],
+    "defined_draws": 10000
+  }
+}

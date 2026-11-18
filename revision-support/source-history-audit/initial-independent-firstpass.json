@@ -1,0 +1,1317 @@
+{
+  "D01": {
+    "debate_id": "D01",
+    "initial_targets": [
+      {
+        "expression": "COUNT(exactly,1,spy,A,B,C,D,E,F)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "only one spy",
+        "note": "Explicit total spy count; retained as COUNT despite its role-derived context."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(A))",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "A's statement is false",
+        "note": "Explicit evaluation of A statement."
+      },
+      {
+        "expression": "COUNT(exactly,3,knight,D,E,F)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "D,E,F are knights, 3 knights",
+        "note": "Explicit count claim; COUNT expressions remain eligible."
+      },
+      {
+        "expression": "STMT_TRUE(D)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "D tells truth",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "STMT_TRUE(E)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "E tells truth",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(F))",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "F lies",
+        "note": "Explicit statement evaluation, despite the immediately following conflicting role conclusion."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(B))",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "which is false",
+        "note": "Explicit evaluation of B statement in the preceding clause."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(C))",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "which is false",
+        "note": "Explicit evaluation of C statement in the preceding clause."
+      },
+      {
+        "expression": "STMT_TRUE(A)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "Player A's statement is true",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "STMT_TRUE(C)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "C's statement is true",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(D))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "D's statement is false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(E))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "E's statement is false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "STMT_TRUE(F)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "F's statement is true",
+        "note": "Explicit statement evaluation."
+      }
+    ],
+    "exclusions": [
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "Player B says it's not the case that at least 0 of A and F are spies",
+        "reason": "Reported character statement; the explanation does not endorse B statement truth here."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "Player C says not the case that at most 1 of A,B,C,E,F are spies",
+        "reason": "Reported character statement; the explanation does not endorse C statement truth here."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "Player D says B and C don't have the same role",
+        "reason": "Reported character statement; only the subsequent explicit truth evaluation is targeted."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "E says not A is knight",
+        "reason": "Reported character statement; only the subsequent explicit truth evaluation is targeted."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "A is knave",
+        "reason": "Literal role assignment, excluded even where used to infer statement truth."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "C must be the spy (can lie or tell truth)",
+        "reason": "Literal role assignment; “can lie or tell truth” does not choose a truth value."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "F is knight",
+        "reason": "Literal role assignment; do not infer STMT_TRUE from a role label."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "Player A says (at least 2 of A/B are knaves OR A/B same role). If A is knight, they share a role, so A is knight",
+        "reason": "Description of statement content and conditional truth relation, not a standalone endorsement of either disjunct."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "If A is knight, they share a role",
+        "reason": "Hypothetical/scoped consequence; not an unconditional SAME_ROLE assertion."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "Player E claims A is not a knight",
+        "reason": "Reported character statement and literal role proposition."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "C must be knight to make D true",
+        "reason": "Role assignment and scoped consequence; not an unconditional statement evaluation."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "F is spy",
+        "reason": "Literal role assignment."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "B's statement implies A or F is spy",
+        "reason": "Conditional/logical implication attributed to B statement; does not explicitly assert B statement truth or an unconditional spy count."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "Combining these, we get the roles",
+        "reason": "Vague role-summary, not a separately expressed non-role proposition."
+      }
+    ],
+    "ambiguities": [
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "F lies, knave or spy but spy taken by C, so F is knight",
+        "note": "Explicit false evaluation of F is retained above; it conflicts with the role conclusion, from which truth must not be inferred."
+      }
+    ]
+  },
+  "D02": {
+    "debate_id": "D02",
+    "initial_targets": [
+      {
+        "expression": "STMT_TRUE(B)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "truth-telling knight",
+        "note": "Explicit claim that B tells the truth."
+      },
+      {
+        "expression": "COUNT(exactly,0,spy,A,F)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "meaning no spy in A or F",
+        "note": "Explicitly stated count consequence."
+      },
+      {
+        "expression": "COUNT(exactly,1,spy,A,B,C,D,E,F)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "only one spy exists",
+        "note": "Explicit total count claim."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(C))",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "C lies",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "STMT_TRUE(D)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "which is true",
+        "note": "Explicit evaluation of D statement."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(B))",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "so B lies",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "COUNT(exactly,1,spy,A,B,C,D,E,F)",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "only one spy exists",
+        "note": "Explicit total count claim."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(C))",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "C lies",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(D))",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "this is false",
+        "note": "Explicit evaluation of D claim; nearby wording questions whether D lies or tells truth."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(E))",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "E lies",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "STMT_TRUE(F)",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "F's statement about at most 2 knights among C, D, E, F holds",
+        "note": "Explicit statement evaluation"
+      },
+      {
+        "expression": "NOT(STMT_TRUE(C))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "Player C's statement is false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "COUNT(at_least,2,spy,A,B,C,E,F)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "more than one spy among A,B,C,E,F",
+        "note": "Explicit count assertion stated as the consequence of C false; whether this remains scoped is recorded below."
+      },
+      {
+        "expression": "COUNT(exactly,1,spy,A,B,C,D,E,F)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "only one spy total",
+        "note": "Explicit total count claim."
+      },
+      {
+        "expression": "STMT_TRUE(D)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "which is true",
+        "note": "Explicit evaluation of D statement."
+      },
+      {
+        "expression": "COUNT(exactly,1,spy,A,B,C,D,E,F)",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "only one spy allowed",
+        "note": "Explicit total count assertion/restatement of puzzle constraint."
+      }
+    ],
+    "exclusions": [
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "B says no spies among A and F",
+        "reason": "Reported character statement; only “truth-telling” and the separately stated count consequence are targeted."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "Player C says 'not at most 1 spy' among 5 players including F; only one spy exists, so C lies and is knave",
+        "reason": "C role assignment excluded; truth evaluation and count claim are separately targeted."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "E says A is not knight; if E lies",
+        "reason": "Reported character statement plus a conditional role inference; no unconditional truth evaluation of E."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "Since A is knight (always true)",
+        "reason": "Literal role assertion excluded; the following disjunction is scoped/ambiguous."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "zero or more is true",
+        "reason": "Tautological count observation, recorded as exclusion under protocol."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "D must be spy to satisfy only one spy",
+        "reason": "Literal role assignment; the puzzle count constraint is not an independent target in this phrase."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "E must be knight",
+        "reason": "Literal role assignment; no statement truth inference from role."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "B and C knaves, D,E,F knights",
+        "reason": "Literal role assignments, excluded."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "F's statement is true if at most two among C,D,E,F are knights",
+        "reason": "Conditional evaluation; no unconditional STMT_TRUE(F) commitment."
+      }
+    ],
+    "ambiguities": [
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "at least one holds",
+        "note": "The disjunction from A statement is explicitly repeated, but only as a consequence of the asserted A-is-knight premise; status as unconditional target is ambiguous."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "D lies or tells truth?",
+        "note": "The preceding “this is false” explicitly evaluates D statement, but the question immediately leaves D truth status unresolved; retain the target with this ambiguity."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "B's statement is false only if there is at least one spy among A and F",
+        "note": "Only-if/implication wording does not clearly assert B false or the count unconditionally."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "so more than one spy among A,B,C,E,F",
+        "note": "Stated as the consequence of C false; could be a scoped explanation rather than an unconditional claim, although the count is textually explicit."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "at least one holds",
+        "note": "The disjunction from A statement is explicitly repeated, but only as a consequence of the asserted A-is-knight premise; status as unconditional target is ambiguous."
+      }
+    ]
+  },
+  "D03": {
+    "debate_id": "D03",
+    "initial_targets": [
+      {
+        "expression": "NOT(STMT_TRUE(B))",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "Player B and Player C make statements that are logically false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(C))",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "Player B and Player C make statements that are logically false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(B))",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "B's statement is always false",
+        "note": "Explicit statement evaluation; “always” also raises the protocol exclusion of universal/constant propositions."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(E))",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "E's false statement",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(B))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "B and C must be knaves because their statements are impossible to be true",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(C))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "B and C must be knaves because their statements are impossible to be true",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(D))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "D’s statement is false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "STMT_TRUE(E)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "E’s statement is true",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "STMT_TRUE(F)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "F’s statement is always true",
+        "note": "Explicit statement evaluation; “always” retained literally, with constant/universal status noted below."
+      }
+    ],
+    "exclusions": [
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "Player E's statement evaluates to true only if Player A is a knight",
+        "reason": "Conditional evaluation plus literal role atom; not an unconditional STMT_TRUE(E) endorsement."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "single spy constraint",
+        "reason": "Puzzle-rule mention, not a separately asserted solution count."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "yields Player E as the spy, with A and D as knights, and B, C, and F as knaves",
+        "reason": "Literal role assignments and vague proof summary."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "assuming B knave works",
+        "reason": "Explicitly scoped hypothesis and role assignment."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "D must be knave to make B and C same role",
+        "reason": "Scoped role consequence and literal role assignment; SAME_ROLE is not asserted unconditionally."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "F must be knight to keep his statement true",
+        "reason": "Role-scoped consequence; do not infer STMT_TRUE(F) from the role conclusion."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "A is the single spy",
+        "reason": "Literal role assignment."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "All constraints satisfied",
+        "reason": "Vague proof summary."
+      }
+    ],
+    "ambiguities": [
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "E's statement evaluates to true only if Player A is a knight",
+        "note": "Explicit conditional relation, not an actual truth-value commitment for E."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "B's statement is always false",
+        "note": "Direct evaluation is recorded above; its “always” characterization may be a contradiction/universal excluded by protocol, so preserve classification for reconciliation."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "F must be knight to keep his statement true",
+        "note": "The truth condition is only stated inside the role-scoped rationale."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "F’s statement is always true",
+        "note": "Direct evaluation is recorded above; “always true” may be a universal/tautology category under protocol."
+      }
+    ]
+  },
+  "D04": {
+    "debate_id": "D04",
+    "initial_targets": [
+      {
+        "expression": "NOT(STMT_TRUE(B))",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "B and C's statements are always false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(C))",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "B and C's statements are always false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "STMT_TRUE(E)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "E's statement is true",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "STMT_TRUE(F)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "F's statement is true",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "COUNT(exactly,1,spy,A,B,C,D,E,F)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "Exactly one spy (E)",
+        "note": "Explicit total count assertion; accompanying identity is excluded as role assignment."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(B))",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "B's statement is false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(C))",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "C's false statement",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "STMT_TRUE(E)",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "E's statement true",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "STMT_TRUE(F)",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "F's statement true",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(B))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "B and C statements are always false",
+        "note": "Explicit evaluation of B statement."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(C))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "B and C statements are always false",
+        "note": "Explicit evaluation of C statement."
+      },
+      {
+        "expression": "STMT_TRUE(E)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "E's claim that A is not a knight is true",
+        "note": "Explicit evaluation of E statement."
+      },
+      {
+        "expression": "COUNT(exactly,1,spy,A,B,C,D,E,F)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "single‑spy requirement",
+        "note": "Explicit count constraint mentioned in the solution summary."
+      }
+    ],
+    "exclusions": [
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "Assuming they are knaves, D's statement becomes false",
+        "reason": "Hypothetical/scoped statement evaluation, not unconditional."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "A cannot be knight because his statement would be false",
+        "reason": "Scoped role inference; no unconditional statement evaluation."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "B and C's statements are always false, so they are knaves (or spy). Assuming they are knaves, D's statement becomes false, making D a knave. A cannot be knight because his statement would be false, so A is knave. Then E's statement is true, allowing E to be the spy. F's statement is true, so F is knight",
+        "reason": "Literal role assignments excluded."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "A's statement reduces to A and B same role",
+        "reason": "Description of character statement content, not endorsement of SAME_ROLE."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "choose A as spy",
+        "reason": "Role choice in solution reasoning."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "All constraints satisfied",
+        "reason": "Vague proof summary."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "Assuming A is the spy",
+        "reason": "Explicitly scoped role hypothesis."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "Then D's statement is false",
+        "reason": "Evaluation is scoped to the A-is-spy assumption."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "F must be knight to keep his at‑most‑2‑knights claim true",
+        "reason": "Role-scoped consequence; not unconditional STMT_TRUE(F)."
+      }
+    ],
+    "ambiguities": [
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "B and C's statements are always false",
+        "note": "Direct evaluations are recorded above; “always” may be treated as universal/constant under the protocol exclusion."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "Then D's statement is false",
+        "note": "Explicitly tied to the preceding assumption; not an unconditional target."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "F must be knight to keep his at‑most‑2‑knights claim true",
+        "note": "The truth evaluation is scoped to the role-solving argument."
+      }
+    ]
+  },
+  "D05": {
+    "debate_id": "D05",
+    "initial_targets": [
+      {
+        "expression": "NOT(STMT_TRUE(A))",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "A is knave (lying)",
+        "note": "“Lying” explicitly evaluates A statement false, despite adjacent role wording."
+      },
+      {
+        "expression": "COUNT(exactly,1,spy,A,B,C,D,E,F)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "one spy (D)",
+        "note": "Explicit total role count claim."
+      },
+      {
+        "expression": "COUNT(exactly,3,knave,A,B,C,D,E,F)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "three knaves (A,B,E)",
+        "note": "Explicit total role count claim."
+      },
+      {
+        "expression": "COUNT(exactly,2,knight,A,B,C,D,E,F)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "two knights (C,F)",
+        "note": "Explicit total role count claim."
+      },
+      {
+        "expression": "STMT_TRUE(C)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "C tells the truth",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(D))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "D's complex statement is false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(E))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "E's statement about spy count being odd is false",
+        "note": "Explicit statement evaluation."
+      }
+    ],
+    "exclusions": [
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "If B is knave, this is false, so number of knaves among those is not 4",
+        "reason": "Conditional evaluation/count consequence under a role hypothesis; neither is unconditional."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "Player C and F both say B is not knave",
+        "reason": "Reported character claims, not truth endorsement."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "C's statement is true if B is knave",
+        "reason": "Conditional statement evaluation."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "E's statement about spies among C,D,E is false if E is knave",
+        "reason": "Conditional evaluation."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "C and F state B is not a knave",
+        "reason": "Reported character claims, not truth endorsement."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "If B were a knave",
+        "reason": "Hypothetical role assignments and scoped consequences."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "if A is a knave, this is false",
+        "reason": "Conditional evaluation of A statement, not unconditional."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "if E is a knave, this is false (1 spy total)",
+        "reason": "Conditional statement evaluation; the parenthetical count is recorded as a puzzle-count mention below."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "The logic holds with B as the spy",
+        "reason": "Vague proof summary plus literal role assignment."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "B's statement implies 4 knaves among A, B, C, E, F",
+        "reason": "Report of character statement content/conditional implication; not endorsement of the count."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "A says A and B have the same role",
+        "reason": "Reported character statement, not endorsement of SAME_ROLE."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "F is a knave as there are already 4 knaves",
+        "reason": "Vague proof summary."
+      }
+    ],
+    "ambiguities": [
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "1 spy total",
+        "note": "Explicit puzzle count appears within a conditional discussion of E truth; unclear whether independent constraint restatement or merely scoped reasoning."
+      }
+    ]
+  },
+  "D06": {
+    "debate_id": "D06",
+    "initial_targets": [
+      {
+        "expression": "STMT_TRUE(C)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "C and F are knights (truth-tellers)",
+        "note": "Explicit truth-teller label for C."
+      },
+      {
+        "expression": "STMT_TRUE(F)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "C and F are knights (truth-tellers)",
+        "note": "Explicit truth-teller label for F."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(A))",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "A knave lying",
+        "note": "“lying” explicitly evaluates A statement false in the stated reasoning."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(E))",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "E is knave lying",
+        "note": "“lying” explicitly evaluates E statement false."
+      },
+      {
+        "expression": "PARITY(odd,spy,C,D,E)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "number of spies in these three is odd",
+        "note": "Explicit parity claim."
+      },
+      {
+        "expression": "COUNT(exactly,1,spy,A,B,C,D,E,F)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "Only one spy total",
+        "note": "Explicit total count assertion/restatement of puzzle constraint."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(A))",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "A's statement is false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "COUNT(exactly,4,knave,A,B,C,E,F)",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "total 4 knaves",
+        "note": "Explicit count phrase; referent/scope is unclear and may conflict with the named assignments."
+      },
+      {
+        "expression": "STMT_TRUE(F)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "F is truthful",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(A))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "Player A's claim that A and B have the same role is false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(B))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "B's statement is false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(C))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "C's statement is false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(E))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "this is false",
+        "note": "Explicit evaluation of E statement in the preceding clause."
+      },
+      {
+        "expression": "PARITY(odd,spy,C,D,E)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "there is an odd number of spies among C,D,E",
+        "note": "Explicit parity assertion."
+      },
+      {
+        "expression": "COUNT(exactly,1,spy,A,B,C,D,E,F)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "Only one spy total",
+        "note": "Explicit total count assertion/restatement of puzzle constraint."
+      }
+    ],
+    "exclusions": [
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "Player C and F say 'Player B is not a knave'; if true, B is not knave",
+        "reason": "Reported statement and scoped conditional, not direct endorsement of C/F statements."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "B's statement is false (so B is knave)",
+        "reason": "False evaluation is scoped to the earlier conditional chain; no unconditional commitment."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "A and B differ",
+        "reason": "Relation is presented as a consequence of the A-knave assumption, not as an unconditional SAME_ROLE proposition."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "D's statement is complex but can be true or false",
+        "reason": "Unresolved possibility, not an asserted actual truth value."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "A knave, B knave, C knight, D spy, E knave, F knight",
+        "reason": "Literal role assignments excluded."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "C and F say Player B is not a knave",
+        "reason": "Reported character statements; later wording is counterfactual/scoped."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "if B were knave, their statements would be false",
+        "reason": "Conditional evaluations, not unconditional."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "D's complex statement fits spy role",
+        "reason": "Role-scoped/vague explanation; no actual statement evaluation."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "E's statement about spies matches with D as spy",
+        "reason": "Vague match claim and role condition, not an explicit parity evaluation."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "C must be knight (truth-teller)",
+        "reason": "Literal role assignment; separate false evaluation is targeted."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "D is spy",
+        "reason": "Literal role assignment."
+      }
+    ],
+    "ambiguities": [
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "This contradiction shows C and F are knights (truth-tellers)",
+        "note": "Truth-teller language explicitly supports the two targets above, but it follows a contradictory conditional chain; retain source inconsistency for adjudication."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "with B knave and C,F knights, A,E must be knaves, total 4 knaves",
+        "note": "“total 4 knaves” is textually explicit and retained as COUNT; its set is unclear and the arithmetic appears inconsistent with the named players."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "A's statement is false",
+        "note": "Direct evaluation is retained, but it conflicts with the same-role role assignments stated immediately around it."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "D's statement is complex but can be true or false",
+        "note": "Truth status is expressly left open, so it is not a binary target."
+      }
+    ]
+  },
+  "D07": {
+    "debate_id": "D07",
+    "initial_targets": [
+      {
+        "expression": "STMT_TRUE(E)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "E must be a knight with a true statement",
+        "note": "Explicit evaluation of E statement."
+      },
+      {
+        "expression": "STMT_TRUE(E)",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "E's parity claim is true",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "STMT_TRUE(D)",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "D's complex statement is true via its second clause",
+        "note": "Explicit statement evaluation."
+      }
+    ],
+    "exclusions": [
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "Player C and Player F make identical statements",
+        "reason": "Claim about statement identity, not a proposition in the compact target vocabulary."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "B must be a knave",
+        "reason": "Literal role assignment."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "A must be the spy because A's statement would otherwise create a contradiction",
+        "reason": "Role assignment and scoped implication."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "leaving C, D, and F as knaves",
+        "reason": "Literal role assignments."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "Assume B knave, then C and F statements are false",
+        "reason": "Hypothesis and scoped statement evaluations; not unconditional targets."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "This forces C and F knaves",
+        "reason": "Literal role assignments."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "All statements then match role constraints",
+        "reason": "Vague proof summary."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "Assume A is the spy",
+        "reason": "Explicitly scoped role hypothesis."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "E must be knight because his statement is true",
+        "reason": "Statement evaluation is inside the A-is-spy hypothesis."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "D’s statement is true",
+        "reason": "Statement evaluation is inside the A-is-spy hypothesis."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "Other spy placements lead to contradictions",
+        "reason": "Vague proof summary."
+      }
+    ],
+    "ambiguities": [
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "Assume A is the spy",
+        "note": "Both truth evaluations occur under the explicit “Assume A is the spy” scope; not unconditional initial commitments."
+      }
+    ]
+  },
+  "D08": {
+    "debate_id": "D08",
+    "initial_targets": [
+      {
+        "expression": "STMT_TRUE(D)",
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "D's complex statement is always true",
+        "note": "Explicit statement evaluation; phrase “always” has possible universal/constant implications."
+      },
+      {
+        "expression": "STMT_TRUE(C)",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "C and F then tell the truth",
+        "note": "Explicit truth-teller claim for C."
+      },
+      {
+        "expression": "STMT_TRUE(F)",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "C and F then tell the truth",
+        "note": "Explicit truth-teller claim for F."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(A))",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "A’s statement is false",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "STMT_TRUE(E)",
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "E’s statement is true",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(C))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "C and F lie",
+        "note": "Explicit truth evaluation for C."
+      },
+      {
+        "expression": "NOT(STMT_TRUE(F))",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "C and F lie",
+        "note": "Explicit truth evaluation for F."
+      },
+      {
+        "expression": "STMT_TRUE(D)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "D’s statement is true via clause (2)",
+        "note": "Explicit statement evaluation."
+      },
+      {
+        "expression": "COUNT(exactly,1,spy,A,B,C,D,E,F)",
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "one spy (A)",
+        "note": "Explicit total spy count in the solution summary; the identity assignment remains excluded."
+      }
+    ],
+    "exclusions": [
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "B must be knave",
+        "reason": "Literal role assignment."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "A to be the spy",
+        "reason": "Literal role assignment."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "C and F are knaves, E is knight",
+        "reason": "Literal role assignments."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "D is knight",
+        "reason": "Literal role assignment; D truth evaluation is separately targeted."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "B must be the unique spy",
+        "reason": "Literal role assignment containing a role atom; do not derive a standalone count target from it."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "so they are knights",
+        "reason": "Literal role assignments; truth evaluation is separately targeted."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "D’s statement forces D to be a knave to keep the logical parity",
+        "reason": "Role conclusion with scoped rationale; no unconditional statement truth value."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "Then C and F lie, so they are knaves",
+        "reason": "“lie” is separately targeted above; the knave labels are role assignments."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "Trying spy=A works",
+        "reason": "Explicitly scoped trial/role assignment."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "E must be knight to avoid 4 knaves count",
+        "reason": "Role-scoped consequence; no independent count assertion."
+      },
+      {
+        "agent": "agent-3",
+        "field_id": "I.agent-3",
+        "span": "All statements fit, giving one spy (A) and consistent roles",
+        "reason": "Vague solution summary plus literal role assignment/count implied by it; not separately targeted."
+      }
+    ],
+    "ambiguities": [
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "(same role as B false false)",
+        "note": "Malformed shorthand; unclear whether “false” explicitly evaluates A statement or is a role-derived note. Do not force a target."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "E is knight (spy count even)",
+        "note": "Count/parity is stated without identifying the counted player set and is attached to the role-solving conclusion; preserve as ambiguous rather than canonicalize."
+      },
+      {
+        "agent": "agent-2",
+        "field_id": "I.agent-2",
+        "span": "D’s statement forces D to be a knave to keep the logical parity",
+        "note": "This could imply a truth evaluation of D, but it is phrased as a scoped role constraint rather than an explicit true/false assertion."
+      },
+      {
+        "agent": "agent-1",
+        "field_id": "I.agent-1",
+        "span": "D's complex statement is always true",
+        "note": "Explicit evaluation is retained above; “always” could invoke protocol exclusion of universal/constant propositions."
+      }
+    ]
+  }
+}

@@ -1,0 +1,228 @@
+[
+  {
+    "debate_id": "D03",
+    "expression": "NOT(STMT_TRUE(E))",
+    "agent": "agent-2",
+    "phase": "initial",
+    "before": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-2",
+          "span": "E's false statement makes E knave"
+        }
+      ],
+      "note": ""
+    },
+    "after_status": "ambiguous",
+    "reason": "Previously documented unresolved scope/polarity candidate in SOURCE_CORRECTIONS.md; not a confirmed omission.",
+    "origin": "documented_deferral",
+    "source_packet_sha256": "429e3930b05781ca7dd884dcb3dc27da56cc82df756ae9605bb24128e6f6dbbf",
+    "annotation_sha256": "7055f978def4f71bf37bed723a3c3a614f8e95f3e02676d9e602b25f88fb461c",
+    "full_source": "B's statement is always false, so B is knave or spy; assuming B knave works. D must be knave to make B and C same role, forcing C knave. With one spy, A fits as spy. E's false statement makes E knave. F must be knight to keep his statement true. All roles satisfy constraints."
+  },
+  {
+    "debate_id": "D05",
+    "expression": "NOT(STMT_TRUE(A))",
+    "agent": "agent-1",
+    "phase": "initial",
+    "before": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "A is knave (lying)"
+        }
+      ]
+    },
+    "after_status": "ambiguous",
+    "reason": "Previously documented unresolved scope/polarity candidate in SOURCE_CORRECTIONS.md; not a confirmed omission.",
+    "origin": "documented_deferral",
+    "source_packet_sha256": "42c628df84e4809533cb5fd8fc112eaa01e939c54ab0b18613406634872ab652",
+    "annotation_sha256": "e77df0031fcd00f2b620ade8f26e248cac538c96990758e83e6b7fc86dc372fe",
+    "full_source": "Player B claims exactly 4 of A,B,C,E,F are knaves. If B is knave, this is false, so number of knaves among those is not 4. Player C and F both say B is not knave. They can't both be knights because B is knave, so one is spy and one knight. Assign F as knight and C as knight since C's statement is true if B is knave. Player A claims A and B have same role; since B is knave and A is not, A is knave (lying). E's statement about spies among C,D,E is false if E is knave. D's statement is complex and consistent with spy role. Thus, one spy (D), three knaves (A,B,E), two knights (C,F)."
+  },
+  {
+    "debate_id": "D05",
+    "expression": "COUNT(exactly,3,knave,A,B,C,D,E,F)",
+    "agent": "agent-1",
+    "phase": "initial",
+    "before": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "one spy (D), three knaves (A,B,E), two knights (C,F)"
+        }
+      ],
+      "note": "Explicit total in the proposed whole assignment, whose one-spy/three-knave/two-knight groups enumerate all six players."
+    },
+    "after_status": "ambiguous",
+    "reason": "Previously documented unresolved scope/polarity candidate in SOURCE_CORRECTIONS.md; not a confirmed omission.",
+    "origin": "documented_deferral",
+    "source_packet_sha256": "42c628df84e4809533cb5fd8fc112eaa01e939c54ab0b18613406634872ab652",
+    "annotation_sha256": "e77df0031fcd00f2b620ade8f26e248cac538c96990758e83e6b7fc86dc372fe",
+    "full_source": "Player B claims exactly 4 of A,B,C,E,F are knaves. If B is knave, this is false, so number of knaves among those is not 4. Player C and F both say B is not knave. They can't both be knights because B is knave, so one is spy and one knight. Assign F as knight and C as knight since C's statement is true if B is knave. Player A claims A and B have same role; since B is knave and A is not, A is knave (lying). E's statement about spies among C,D,E is false if E is knave. D's statement is complex and consistent with spy role. Thus, one spy (D), three knaves (A,B,E), two knights (C,F)."
+  },
+  {
+    "debate_id": "D05",
+    "expression": "COUNT(exactly,2,knight,A,B,C,D,E,F)",
+    "agent": "agent-1",
+    "phase": "initial",
+    "before": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "one spy (D), three knaves (A,B,E), two knights (C,F)"
+        }
+      ],
+      "note": "Explicit total in the proposed whole assignment, whose one-spy/three-knave/two-knight groups enumerate all six players."
+    },
+    "after_status": "ambiguous",
+    "reason": "Previously documented unresolved scope/polarity candidate in SOURCE_CORRECTIONS.md; not a confirmed omission.",
+    "origin": "documented_deferral",
+    "source_packet_sha256": "42c628df84e4809533cb5fd8fc112eaa01e939c54ab0b18613406634872ab652",
+    "annotation_sha256": "e77df0031fcd00f2b620ade8f26e248cac538c96990758e83e6b7fc86dc372fe",
+    "full_source": "Player B claims exactly 4 of A,B,C,E,F are knaves. If B is knave, this is false, so number of knaves among those is not 4. Player C and F both say B is not knave. They can't both be knights because B is knave, so one is spy and one knight. Assign F as knight and C as knight since C's statement is true if B is knave. Player A claims A and B have same role; since B is knave and A is not, A is knave (lying). E's statement about spies among C,D,E is false if E is knave. D's statement is complex and consistent with spy role. Thus, one spy (D), three knaves (A,B,E), two knights (C,F)."
+  },
+  {
+    "debate_id": "D06",
+    "expression": "NOT(STMT_TRUE(A))",
+    "agent": "agent-2",
+    "phase": "initial",
+    "before": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-2",
+          "span": "A claims same role as B but A is knave, B knave, so A's statement is false"
+        }
+      ],
+      "note": ""
+    },
+    "after_status": "ambiguous",
+    "reason": "Previously documented unresolved scope/polarity candidate in SOURCE_CORRECTIONS.md; not a confirmed omission.",
+    "origin": "documented_deferral",
+    "source_packet_sha256": "898b9d9ece7752cc080570bbfde1d5f5e7d675d23738a5305eb3d591349715d4",
+    "annotation_sha256": "f062b776582134a56b7d3f5b5598e25bfd5f61ea888e4574cbde505b4f002356",
+    "full_source": "Player C and F say Player B is not a knave; if B were knave, their statements would be false, contradicting their truthfulness, so B is knave and C, F are knights. B claims exactly 4 of A,B,C,E,F are knaves; with B knave and C,F knights, A,E must be knaves, total 4 knaves. A claims same role as B but A is knave, B knave, so A's statement is false, consistent only if A is knave. D's complex statement fits spy role as it can be true or false. E's statement about spies matches with D as spy."
+  },
+  {
+    "debate_id": "D06",
+    "expression": "COUNT(exactly,4,knave,A,B,C,E,F)",
+    "agent": "agent-2",
+    "phase": "initial",
+    "before": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-2",
+          "span": "with B knave and C,F knights, A,E must be knaves, total 4 knaves"
+        }
+      ],
+      "note": "The count assertion is explicit, although its tally conflicts with the roles listed in the same field."
+    },
+    "after_status": "ambiguous",
+    "reason": "Previously documented unresolved scope/polarity candidate in SOURCE_CORRECTIONS.md; not a confirmed omission.",
+    "origin": "documented_deferral",
+    "source_packet_sha256": "898b9d9ece7752cc080570bbfde1d5f5e7d675d23738a5305eb3d591349715d4",
+    "annotation_sha256": "f062b776582134a56b7d3f5b5598e25bfd5f61ea888e4574cbde505b4f002356",
+    "full_source": "Player C and F say Player B is not a knave; if B were knave, their statements would be false, contradicting their truthfulness, so B is knave and C, F are knights. B claims exactly 4 of A,B,C,E,F are knaves; with B knave and C,F knights, A,E must be knaves, total 4 knaves. A claims same role as B but A is knave, B knave, so A's statement is false, consistent only if A is knave. D's complex statement fits spy role as it can be true or false. E's statement about spies matches with D as spy."
+  },
+  {
+    "debate_id": "D08",
+    "expression": "SAME_ROLE(A,B)",
+    "agent": "agent-1",
+    "phase": "initial",
+    "before": {
+      "status": "ambiguous",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "same role as B false false"
+        }
+      ],
+      "note": "This malformed parenthetical contains the SAME_ROLE wording followed by two 'false' tokens, without clear syntax or polarity. It may report A's statement content or attempt to deny it; do not force an unconditional SAME_ROLE assertion."
+    },
+    "after_status": "ambiguous",
+    "reason": "Previously documented unresolved scope/polarity candidate in SOURCE_CORRECTIONS.md; not a confirmed omission.",
+    "origin": "documented_deferral",
+    "source_packet_sha256": "dbdf6fec2d3e7ee7e009a3b10411499a376e175f77e25cf44b8a8b500f28dafc",
+    "annotation_sha256": "c0db9ce438821a22f873a73f3ba944da0cc3e099af49c6b24a85e5807beb7b74",
+    "full_source": "B must be knave because otherwise C and F could not both be knights. This forces A to be the spy (same role as B false false). C and F are knaves, E is knight (spy count even). D's complex statement is always true due to part (2), so D is knight. Consistent assignment found."
+  },
+  {
+    "debate_id": "D07",
+    "expression": "STMT_TRUE(E)",
+    "agent": "agent-1",
+    "phase": "initial",
+    "before": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "E must be a knight with a true statement"
+        }
+      ],
+      "note": "The field first asserts that B must be a knave; E\u2019s truth evaluation is then stated declaratively after the scoped \u201cif\u201d reasoning."
+    },
+    "after_status": "ambiguous",
+    "reason": "New reconciliation ambiguity: E-truth follows an explicit if-B-knave clause. The preceding independent B-knave assertion favors an unconditional reading, but the clause has no explicit case closure; retain both readings rather than certify either.",
+    "origin": "new_scope_review",
+    "source_packet_sha256": "836e219ce15581f851e27cb37fdfce0b1b6b2e4de418cd04e4fe433c3ee6f9b7",
+    "annotation_sha256": "d3c063c8fe27e34d2eb49b86dabcefeba91e1bfcba18504e03435afd957a6062",
+    "full_source": "Player C and Player F make identical statements, meaning B must be a knave. If B is a knave, A must be the spy because A's statement would otherwise create a contradiction. Evaluating the remaining statements, E must be a knight with a true statement, leaving C, D, and F as knaves."
+  },
+  {
+    "debate_id": "D06",
+    "expression": "NOT(STMT_TRUE(C))",
+    "agent": "agent-1",
+    "phase": "later",
+    "before": {
+      "status": "absent",
+      "evidence": [],
+      "note": "Later fields explicitly call C\u2019s statement true."
+    },
+    "after_status": "present",
+    "origin": "new_semantic_reference_repair",
+    "source_packet_sha256": "898b9d9ece7752cc080570bbfde1d5f5e7d675d23738a5305eb3d591349715d4",
+    "annotation_sha256": "f062b776582134a56b7d3f5b5598e25bfd5f61ea888e4574cbde505b4f002356",
+    "reason": "Source explicitly asserts B is knave in R1 revision; this is semantically identical to NOT(STMT_TRUE(C)), not an inference from the speaker role.",
+    "full_source": "Player A lies about sharing role with B, so A is knave. B claims 4 of A,B,C,E,F are knaves; with B knave, this is false, consistent with A,E knaves and C,F knights. C and F say B is not knave, so both are knights. E's statement about spies is false, making E knave. Only one spy exists; D fits as spy with complex truth-flexible statement."
+  },
+  {
+    "debate_id": "D06",
+    "expression": "NOT(STMT_TRUE(C))",
+    "agent": "agent-2",
+    "phase": "later",
+    "before": {
+      "status": "absent",
+      "evidence": [],
+      "note": "Later fields explicitly call C\u2019s statement true."
+    },
+    "after_status": "present",
+    "origin": "new_semantic_reference_repair",
+    "source_packet_sha256": "898b9d9ece7752cc080570bbfde1d5f5e7d675d23738a5305eb3d591349715d4",
+    "annotation_sha256": "f062b776582134a56b7d3f5b5598e25bfd5f61ea888e4574cbde505b4f002356",
+    "reason": "Source explicitly asserts B is knave in R1 revision; this is semantically identical to NOT(STMT_TRUE(C)), not an inference from the speaker role.",
+    "full_source": "A's statement is false, so A is knave; B's statement about 4 knaves among A,B,C,E,F is false, so B is knave; C and F say B is not knave, so C and F are knights; E's statement about odd spies among C,D,E is false, so E is knave; exactly one spy exists, so D is spy consistent with complex statement."
+  },
+  {
+    "debate_id": "D06",
+    "expression": "NOT(STMT_TRUE(C))",
+    "agent": "agent-3",
+    "phase": "later",
+    "before": {
+      "status": "absent",
+      "evidence": [],
+      "note": "Later fields explicitly call C\u2019s statement true."
+    },
+    "after_status": "present",
+    "origin": "new_semantic_reference_repair",
+    "source_packet_sha256": "898b9d9ece7752cc080570bbfde1d5f5e7d675d23738a5305eb3d591349715d4",
+    "annotation_sha256": "f062b776582134a56b7d3f5b5598e25bfd5f61ea888e4574cbde505b4f002356",
+    "reason": "Source explicitly asserts B is knave in R1 revision; this is semantically identical to NOT(STMT_TRUE(C)), not an inference from the speaker role.",
+    "full_source": "Player A lies about having the same role as B, so A is knave. B claims exactly 4 knaves among A,B,C,E,F, which is false, so B is knave. C and F say B is not knave; their truthfulness indicates they are knights. E lies about the number of spies among C,D,E, implying an odd count; only D fits as the single spy. D's complex statement aligns with a spy role. This satisfies all statements and rules."
+  }
+]

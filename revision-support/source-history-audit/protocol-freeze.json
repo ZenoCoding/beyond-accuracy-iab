@@ -1,0 +1,23 @@
+{
+  "protocol_sha256": "1909cf360bfea738e725099c06f77deb4289d50e936809928b88d843953c5454",
+  "sample_manifest_sha256": "fa8da429dd96dbdec16537c9ee210fd4217b216a58edea936e1582a872c9ec60",
+  "annotation_started_after_freeze": true,
+  "full_history_assignments": {
+    "raw_history_audit_a": [
+      "D01",
+      "D04",
+      "D05",
+      "D08"
+    ],
+    "raw_history_audit_b": [
+      "D02",
+      "D03",
+      "D06",
+      "D07"
+    ]
+  },
+  "initial_independent": "raw_initial_crosscheck:all8debates",
+  "adjudication": "root after independent initial and full-history passes freeze; comparisons then unblinded",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "xhigh"
+}

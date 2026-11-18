@@ -1,0 +1,90 @@
+[
+  {
+    "tier": "strong",
+    "truth": "misleading",
+    "task": "kks-v1-n06-158",
+    "recipient": "agent-1",
+    "expression": "STMT_TRUE(A)",
+    "initial": "Logical deduction leads to D knave, F knight, making D's statement false. C's statement true, so C knight. A's statement false, so A knave. B's parity statement true, so B knight. E's compound statement forces E to be the unique spy. All conditions satisfied.",
+    "peer": "D must be the unique spy; then A and C's statements are true, making them knights. F's claim that no A or B are knaves forces B to be a knight, and F to be a knight as well. B's true statement requires an odd number of knights among E and F, which with F knight means E is a knave. All conditions are satisfied.",
+    "later": "Agent-2's assignment satisfies all statements; A's claim is true, making A a knight.",
+    "raw": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-hom-full-120/tasks/kks-v1-n06-158__rep_0001/result.json"
+  },
+  {
+    "tier": "strong",
+    "truth": "misleading",
+    "task": "kks-v1-n06-189",
+    "recipient": "agent-1",
+    "expression": "STMT_TRUE(A)",
+    "initial": "Player B is the spy and makes a true statement since there is only one spy. Player C and D are knights making true statements, while A, E, and F are knaves making false statements, satisfying all logical constraints.",
+    "peer": "B\u2019s statement is always true, so B is a knight. E\u2019s claim that B is not a knight is false, making E a knave. D\u2019s equivalence forces him to be the sole spy. A\u2019s condition about D and E holds, so A is a knight. C\u2019s denial of four knaves is false, so C is a knave. Finally, F\u2019s exact\u2011one\u2011knight claim is true, making F a knight.",
+    "later": "Player B and Player A are knights making true statements. Player D is the single spy. Player C is a knight with a true statement. Player E and Player F are knaves making false statements, perfectly satisfying all logical constraints.",
+    "raw": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-189__rep_0001/result.json"
+  },
+  {
+    "tier": "strong",
+    "truth": "truth_aligned",
+    "task": "kks-v1-n06-048",
+    "recipient": "agent-3",
+    "expression": "STMT_TRUE(F)",
+    "initial": "A\u2019s statement is always false, so A cannot be a knight; with spy=B, A must be knave. C\u2019s statement is false when the spy is B, forcing C to be knave. F\u2019s statement is false when the spy is B, so F is knave. D\u2019s statement requires an odd number of knights among A,B,C,E; with only E as a knight, it is true, so D must be knight. E\u2019s statement, an equivalence, is true only if D is knight, which holds. All roles satisfy the truth/false conditions and there is exactly one spy (B).",
+    "peer": "Player E is the spy. Player D and Player F are knights making true statements, while Player A, Player B, and Player C are knaves making false statements consistent with the single spy constraint.",
+    "later": "A\u2019s statement is always false, so A is not a knight. Testing each player as the unique spy shows only E works consistently. With E the spy, A, B, C, D, F must be knight/knave. C and F\u2019s statements are true, so they are knights. B\u2019s statement is false, making B a knave. Parity in D\u2019s statement forces D to be a knight. All constraints satisfy the single spy condition.",
+    "raw": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-048__rep_0001/result.json"
+  },
+  {
+    "tier": "strong",
+    "truth": "truth_aligned",
+    "task": "kks-v1-n06-112",
+    "recipient": "agent-1",
+    "expression": "NOT(STMT_TRUE(D))",
+    "initial": "Player A and Player D and Player E make true statements and are knights. Player C is the spy. Player B and Player F make false statements corresponding to knaves.",
+    "peer": "Spy is Player F. A is knight (statement true). B is knight (exactly two of A, B, D, E knights). C and D are knaves (their statements are false). E is knave (statement false). All statements satisfy truth/lie rules.",
+    "later": "Player A is a knight since their statement is true. Player B is a knight because their disjunction holds true. Players C, D, and E are knaves with false statements. Player F is the spy, making a true statement.",
+    "raw": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/imported/debate-recalibrated-v2-final-30314582310/checkpoint/kks-debate-v2-medium-het-full-120/tasks/kks-v1-n06-112__rep_0001/result.json"
+  },
+  {
+    "tier": "weak",
+    "truth": "misleading",
+    "task": "kks-v1-n06-017",
+    "recipient": "agent-3",
+    "expression": "STMT_TRUE(C)",
+    "initial": "Player A's statement implies they are not a knave, so they are a knave. Player B's statement is true, so they are a knight or spy. Player C's statement is false, so they are a knave. Player D's statement implies they are not the same as Player B, so Player D is the spy. Player E's statement is true, so they are a knight. Player F's statement is false, so they are a knave.",
+    "peer": "Player A's claim 'I am a knave' is false, so A is knave. B says 'not at most 0 of C,E,F are knaves' meaning at least one is knave; C,F,E must include knaves. C says 'not (F is knight)', so F is not knight, C is truthful so knight. D says 'not (number of spies among B and D is even)'; B is not spy (knight), so D is spy, making count 1 (odd), statement true. E says 'not (exactly 2 of A and E are spies)'; A not spy, so E must not be spy, E is knave. F says 'not (at least 4 of B,D,E,F are knights)'; B knight, D spy, E knave, so at most 1 knight among them, statement true if F is knave. Final roles fit all statements.",
+    "later": "Player A is knave as their statement is false. Player C's truthfulness makes them knight, and F is not knight. Player B is knight as their statement is true. Player D is spy, making their statement true. Player E is knave as their statement is false. Player F is knave as their statement is true with B as knight and E, F as knaves.",
+    "raw": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-017__rep_0001/result.json"
+  },
+  {
+    "tier": "weak",
+    "truth": "misleading",
+    "task": "kks-v1-n06-032",
+    "recipient": "agent-3",
+    "expression": "NOT(STMT_TRUE(F))",
+    "initial": "Player D says 'not Player D knight,' so D is knave (false). Only one spy exists; E's statement is ambiguous, so E is spy. B says 'not exactly 3 spies among A,B,D,E'; with only one spy, this is true, so B is knight. C says at least 2 of A,B,C,E,F are knaves; with A,D,F knaves and B,C knights, this is true, so C is knight. A says at least one of A and B are spies; since E is the only spy, A's statement is false, so A is knave. F says 'not exactly 4 knights among A,C,E,F'; knights are B,C, so count is 2, statement true means F is knave.",
+    "peer": "Player D says 'not Player D is knight', so Player D must be knave (lying). Exactly one spy exists; Player E's statement about spies is ambiguous, fitting spy role. Player B's statement negates exactly 3 spies among A,B,D,E; since only one spy (E), B is truthful knight. Player C claims at least 2 knaves among A,B,C,E,F; with A,D,F knaves, C's statement is true, so C is knight. Player A's statement about spies (A or B) is false (only E is spy), so A is knave. Player F's statement about 4 knights is false (only B,C), so F is knave.",
+    "later": "Player D's statement is false, so D is knave. Exactly one spy exists; E's ambiguous statement fits spy role. B's statement true, so B is knight. C's statement about knaves true, so C is knight. A's statement false (only E is spy), so A is knave. F's statement false, so F is knave. Roles consistent with all statements and the game's rules.",
+    "raw": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-032__rep_0001/result.json"
+  },
+  {
+    "tier": "weak",
+    "truth": "truth_aligned",
+    "task": "kks-v1-n06-017",
+    "recipient": "agent-3",
+    "expression": "STMT_TRUE(F)",
+    "initial": "Player A says 'I am a knave' which is a paradox if true; thus A is knave lying. B says 'not at most 0 of C,E,F are knaves' meaning at least 1 is a knave; this must be true, so B is knight. C says 'not F is knight', so F is not knight; C can be spy. D says 'not (number of spies among B,D is even)', spy count among B,D is 0 or 1; D lying means D is knave. E says 'not exactly 2 of A,E are spies'; since only one spy, E is knight. F says 'not at least 4 of B,D,E,F are knights'; B,E are knights, D,F are knaves, so at most 2 knights among them; F lies so knave.",
+    "peer": "Player A says he is a knave, which is a paradox if true, so Player A is knave (lying). Player B's statement means at least 1 of C, E, F is a knave; since Player C says Player F is not knight, and only one spy exists, Player C must be spy. Player D says number of spies among B and D is odd; since B is knight, D must be knave to keep one spy total. Player E denies exactly 2 of A and E are spies, which is true as only C is spy, so E is knight. Player F claims fewer than 4 of B, D, E, F are knights, which is true as D is knave, so F is knight.",
+    "later": "Player A's claim is paradoxical if true, so A is knave. B's true statement implies at least one of C, E, F is knave; since E and F are knights, C must be spy. C's statement conflicts with F being knight, fitting spy behavior. D lies about spies among B and D, so D is knave. E's statement is true, so E is knight. F's statement about knights among B, D, E, F is true, so F is knight. Exactly one spy (C) fits all constraints.",
+    "raw": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-hom-full-120-temp07-gpt5t1-v1/tasks/kks-v1-n06-017__rep_0001/result.json"
+  },
+  {
+    "tier": "weak",
+    "truth": "truth_aligned",
+    "task": "kks-v1-n06-032",
+    "recipient": "agent-3",
+    "expression": "NOT(STMT_TRUE(A))",
+    "initial": "Player D's statement implies they are not a knight, so they are either a knave or spy. If D were a knave, their statement would be false, meaning they are a knight, which is a contradiction. Thus, D is the spy. A's statement is true, so A is a knight. B's statement is false, so B is a knave. C and E's statements are consistent with being knights. F's statement being false makes F a knave.",
+    "peer": "Player D says 'not Player D is knight', so Player D is knave (lying). Only one spy, so Player E is spy (statement about spies is ambiguous). Player A's claim about spies is false (knave). Player B's statement about exactly 3 spies is true (knight). Player C says at least 2 of A,B,C,E,F are knaves; with A,C knaves, B knight, E spy, F knight, this is true, so C is knave (lies), so C must be lying, so statement false, so at least 2 knaves false, fits if C knave. Player F's statement about exactly 4 knights is false, so F is knight and lying is impossible, meaning exactly 4 knights is false, consistent. This fits all constraints.",
+    "later": "Player D is a knave due to the liar's paradox. Player A's statement is false, making A a knave. Player B's statement is true, making B a knight. Player C's statement is false, making C a knave. Player E is the spy as it's the only remaining role. Player F's statement is false, but F is a knight due to the constraints.",
+    "raw": "paper/fast2026/checklist-merge-2026-09-06/merged/release-staging/runs/kks-debate-weak-het-full-120-temp07-gpt5t1-or-pinned-v1/tasks/kks-v1-n06-032__rep_0001/result.json"
+  }
+]

@@ -1,0 +1,324 @@
+{
+  "audit": {
+    "all_20_puzzle_primary_exact_pairs_reproduced": 20,
+    "assert_or_endorse_rows": 23303,
+    "claim_rows": 34976,
+    "final_stage_rows_excluded": 3709,
+    "model_calls": 0,
+    "semantic_supply_proposition_count": 347,
+    "source_label_gold_world_mismatches": 0,
+    "unparsed_assert_or_endorse_rows_excluded": 0
+  },
+  "definitions": {
+    "final_stage": "all claims with stage_order >= 10010 excluded from later recurrence and persistence summaries",
+    "initial_absence": "recipient has no stage-0 ASSERT/ENDORSE claim with the same semantic signature; checks all committed formulas, including role-bearing formulas, against the same finite-world signature",
+    "later_recurrence": "any recipient ASSERT/ENDORSE claim semantically equivalent on that same universe at stage_order > 0 and < 10010",
+    "pair_unit": "one condition x task x repetition x semantic supply proposition x initially absent recipient",
+    "rate_estimand": "eligible recipient-pair pooled adoption rates for truth-aligned and misleading propositions; per-tier gap is true rate minus false rate",
+    "semantic_universe": "all 192 six-player role assignments with exactly one spy, matching claim_logic.assignments(6)",
+    "supply": "a stage-0 ASSERT/ENDORSE claim with corrected information_type truth_aligned or misleading and no ROLE predicate; each semantic proposition signature is counted once per condition, task, repetition",
+    "truth_class": "direct truth evaluation of the supplied proposition on canonical labels.jsonl gold roles; informative source annotations are checked against this classification"
+  },
+  "joint_shared_and_opposition": {
+    "common_shared_strata": 64,
+    "common_shared_strata_by_truth": {
+      "misleading": 15,
+      "truth_aligned": 49
+    },
+    "eligible_pairs_with_opposition_in_any_common_shared_stratum_by_tier_and_truth": {
+      "strong": {
+        "misleading": {
+          "adopted": 1,
+          "eligible": 8,
+          "n_puzzles": 6,
+          "rate": 0.125
+        },
+        "truth_aligned": {
+          "adopted": 10,
+          "eligible": 11,
+          "n_puzzles": 5,
+          "rate": 0.9090909090909091
+        }
+      },
+      "weak": {
+        "misleading": {
+          "adopted": 1,
+          "eligible": 4,
+          "n_puzzles": 2,
+          "rate": 0.25
+        },
+        "truth_aligned": {
+          "adopted": 7,
+          "eligible": 13,
+          "n_puzzles": 6,
+          "rate": 0.5384615384615384
+        }
+      }
+    },
+    "eligible_pairs_with_opposition_in_mutually_supported_strata_by_tier_and_truth": {
+      "strong": {
+        "misleading": {
+          "adopted": 0,
+          "eligible": 3,
+          "n_puzzles": 2,
+          "rate": 0.0
+        },
+        "truth_aligned": {
+          "adopted": 2,
+          "eligible": 2,
+          "n_puzzles": 1,
+          "rate": 1.0
+        }
+      },
+      "weak": {
+        "misleading": {
+          "adopted": 1,
+          "eligible": 4,
+          "n_puzzles": 2,
+          "rate": 0.25
+        },
+        "truth_aligned": {
+          "adopted": 2,
+          "eligible": 2,
+          "n_puzzles": 1,
+          "rate": 1.0
+        }
+      }
+    },
+    "equal_stratum_gap_pp": {
+      "strong": 100.0,
+      "weak": 66.66666666666667
+    },
+    "equal_stratum_rates": {
+      "misleading": {
+        "strong": 0.0,
+        "weak": 0.3333333333333333
+      },
+      "truth_aligned": {
+        "strong": 1.0,
+        "weak": 1.0
+      }
+    },
+    "equal_stratum_strong_minus_weak_gap_pp": 33.33333333333333,
+    "item_pooled_gap_for_any_common_shared_opposition_rows": {
+      "gap_pp": {
+        "strong": 78.4090909090909,
+        "weak": 28.846153846153843
+      },
+      "strong_minus_weak_gap_pp": 49.56293706293707
+    },
+    "item_pooled_gap_for_mutually_supported_opposition_rows": {
+      "gap_pp": {
+        "strong": 100.0,
+        "weak": 75.0
+      },
+      "strong_minus_weak_gap_pp": 25.0
+    },
+    "matched_opposition_strata_by_truth": {
+      "misleading": {
+        "both_tiers_supported": 3,
+        "matched_task_ids": 2,
+        "n_candidate_shared_strata": 15,
+        "strong_supported": 7,
+        "weak_supported": 3
+      },
+      "truth_aligned": {
+        "both_tiers_supported": 2,
+        "matched_task_ids": 1,
+        "n_candidate_shared_strata": 49,
+        "strong_supported": 10,
+        "weak_supported": 11
+      }
+    },
+    "opposition_definition": "existing corrected primary flag: the recipient had at least one committed initial non-role proposition semantically complementary to the supplied proposition on the finite exactly-one-spy worlds, and no same-signature initial proposition",
+    "shared_definition": "exact (task_id, composition, expression text, information_type) tuple represented among eligible primary exposure pairs in both tiers",
+    "weighting": "item-pooled results count eligible recipient pairs; matched-stratum results first compute adopted/eligible within each stratum and tier, then give each common stratum equal weight within truth class"
+  },
+  "persistence": {
+    "among_ever_target": {
+      "last_mention_status": {
+        "mixed": 11,
+        "opposite_only": 32,
+        "target_only": 341
+      },
+      "latest_recorded_stage_status": {
+        "mixed": 11,
+        "opposite_only": 32,
+        "silent": 59,
+        "target_only": 282
+      }
+    },
+    "definition": {
+      "ever_opposite": "any such expression with the bitwise-complement signature over the same 192 exactly-one-spy worlds",
+      "ever_target": "any later ASSERT/ENDORSE expression with the supplied proposition signature at stage_order > 0 and < 10010",
+      "interpretation": "these are claim-recording states; silence is not retraction, and an expressed claim does not establish uptake caused by another agent",
+      "last_mention_status": "target/opposite/mixed at the latest stage when either proposition was expressed; never means neither was expressed in the recorded debate history",
+      "latest_recorded_stage_status": "whether target, opposite, both, or neither was expressed at the maximum non-final stage_order present anywhere in that condition/task/repetition; neither is recorded silence at that stage"
+    },
+    "eligible_semantic_pairs": 622,
+    "ever_both_rate": 0.12379421221864952,
+    "ever_both_target_and_opposite": 77,
+    "ever_opposite_expression": 212,
+    "ever_opposite_rate": 0.3408360128617363,
+    "ever_target_expression": 384,
+    "ever_target_rate": 0.617363344051447,
+    "last_mention_status": {
+      "mixed": 11,
+      "never": 103,
+      "opposite_only": 167,
+      "target_only": 341
+    },
+    "latest_recorded_debate_stage_distribution": {
+      "161": 622
+    },
+    "latest_recorded_stage_status": {
+      "mixed": 11,
+      "opposite_only": 145,
+      "silent": 184,
+      "target_only": 282
+    },
+    "n_puzzles": 20
+  },
+  "primary_exact_expression": {
+    "pairs": 728,
+    "reported_primary_joint_puzzle_bootstrap": {
+      "ci_95_percentile_pp": [
+        38.87623110650791,
+        74.97824203329971
+      ],
+      "defined_draws": 10000,
+      "draws": 10000,
+      "estimand": "as stored by strength_controls.py",
+      "seed": 20260918,
+      "strong_minus_weak_gap_pp": 57.34996085671662
+    },
+    "source": "controlled-exposure-pairs.csv and strength-controls.json all condition",
+    "summary": {
+      "strong": {
+        "classes": {
+          "misleading": {
+            "adopted": 13,
+            "eligible": 88,
+            "n_puzzles": 14,
+            "rate": 0.14772727272727273
+          },
+          "truth_aligned": {
+            "adopted": 157,
+            "eligible": 199,
+            "n_puzzles": 18,
+            "rate": 0.7889447236180904
+          }
+        },
+        "gap_pp": 64.12174508908177,
+        "n_puzzles": 18,
+        "pairs": 287
+      },
+      "strong_minus_weak_gap_pp": 57.34996085671662,
+      "weak": {
+        "classes": {
+          "misleading": {
+            "adopted": 96,
+            "eligible": 200,
+            "n_puzzles": 19,
+            "rate": 0.48
+          },
+          "truth_aligned": {
+            "adopted": 132,
+            "eligible": 241,
+            "n_puzzles": 20,
+            "rate": 0.5477178423236515
+          }
+        },
+        "gap_pp": 6.771784232365152,
+        "n_puzzles": 20,
+        "pairs": 441
+      }
+    }
+  },
+  "provenance": {
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 20260919,
+    "script_sha256": "09e1122306e8f8251be06dc7df2db548689d1c79425dbd8ebb16a17712c42954",
+    "sha256": {
+      "claim_logic.py": "9168e3a59cbdd1ed646f8c317dbff112c5f505dae26bae2464b1956409f98fbd",
+      "control-inputs/claims.csv": "b209751d0d9476dbfc74255ac4fb8268bdb551660cd2e3dbc7d0f8ad7f677e2a",
+      "control-inputs/initial-positions.json": "c8314032a17018544fceaae1abe4f28357594f4718dad57d5dd876b9ffd81730",
+      "control-inputs/labels.jsonl": "b6249db9b9108846eeb30525714315e67937216c9dc93735b860a425a4a983f7",
+      "control-inputs/questions.jsonl": "41faebf32c38f72d0df4b773a9895ee64e0b9b80bdb14dde7f63930c2df39c92",
+      "controlled-exposure-pairs.csv": "156e19874eeb219763750b8392f8637b77b26dce77766b9c9bca66964a111154",
+      "shared-claim-strata.csv": "29f32a1dc26c390a9cac36e2f4503101b57f41faae9e6c23db5095b91f7aee12",
+      "strength-controls.json": "b4edd6c4cd5607924f81d561adb9b4e22d8799851ab191625efc888351d3744a",
+      "strength_controls.py": "433a0635853654041059953e8b4951ec6149374ae3be8fae2427b04f9fd1e99d"
+    }
+  },
+  "semantic_sensitivity": {
+    "denominator_change_vs_exact_by_tier_truth": {
+      "strong": {
+        "misleading": -8,
+        "truth_aligned": -38
+      },
+      "weak": {
+        "misleading": -27,
+        "truth_aligned": -33
+      }
+    },
+    "joint_puzzle_bootstrap": {
+      "ci_95_percentile_pp": [
+        39.779935870491926,
+        83.55982313410105
+      ],
+      "cluster_unit": "20 size-6 task IDs; bootstrap resamples 20 IDs with replacement",
+      "defined_draws": 10000,
+      "draws": 10000,
+      "estimand": "pooled (truth-aligned adoption rate - misleading adoption rate), strong tier minus weak tier; same resampled task IDs for both tiers",
+      "gap_pp": {
+        "strong": 68.19875776397515,
+        "weak": 7.008670520231219
+      },
+      "seed": 20260919,
+      "strong_minus_weak_gap_pp": 61.19008724374393
+    },
+    "pairs": 622,
+    "summary": {
+      "strong": {
+        "classes": {
+          "misleading": {
+            "adopted": 16,
+            "eligible": 80,
+            "n_puzzles": 14,
+            "rate": 0.2
+          },
+          "truth_aligned": {
+            "adopted": 142,
+            "eligible": 161,
+            "n_puzzles": 18,
+            "rate": 0.8819875776397516
+          }
+        },
+        "gap_pp": 68.19875776397515,
+        "n_puzzles": 18,
+        "pairs": 241
+      },
+      "strong_minus_weak_gap_pp": 61.19008724374393,
+      "weak": {
+        "classes": {
+          "misleading": {
+            "adopted": 96,
+            "eligible": 173,
+            "n_puzzles": 19,
+            "rate": 0.5549132947976878
+          },
+          "truth_aligned": {
+            "adopted": 130,
+            "eligible": 208,
+            "n_puzzles": 20,
+            "rate": 0.625
+          }
+        },
+        "gap_pp": 7.008670520231219,
+        "n_puzzles": 20,
+        "pairs": 381
+      }
+    }
+  }
+}

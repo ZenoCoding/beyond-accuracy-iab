@@ -1,0 +1,21 @@
+{
+  "annotations_sha256": {
+    "D01-audit-adjudicated.json": "a60ef7cd7bccad2120c9629ce40d9bab306dfd771653c5cee9b80ce408372e7b",
+    "D02-audit-adjudicated.json": "7fbe860de56a705358e3aacd83213851f025061ab04cae6915010d589eb6ea07",
+    "D03-audit-adjudicated.json": "7055f978def4f71bf37bed723a3c3a614f8e95f3e02676d9e602b25f88fb461c",
+    "D04-audit-adjudicated.json": "2df074e5304aee5f5a9a70c9cfaa28b5395aee779e607d53e718f4392cf719d3",
+    "D05-audit-adjudicated.json": "e77df0031fcd00f2b620ade8f26e248cac538c96990758e83e6b7fc86dc372fe",
+    "D06-audit-adjudicated.json": "f062b776582134a56b7d3f5b5598e25bfd5f61ea888e4574cbde505b4f002356",
+    "D07-audit-adjudicated.json": "d3c063c8fe27e34d2eb49b86dabcefeba91e1bfcba18504e03435afd957a6062",
+    "D08-audit-adjudicated.json": "c0db9ce438821a22f873a73f3ba944da0cc3e099af49c6b24a85e5807beb7b74"
+  },
+  "source_discrepancy_ledger_sha256": "9e7984ae90b62f7179a30991eaad2e5f2e477f36ba230076d6b5b53cf7e28984",
+  "status": "model-assisted diagnostic, not independently human-validated",
+  "comparison_inputs_sha256": {
+    "control-inputs/claims.csv": "b209751d0d9476dbfc74255ac4fb8268bdb551660cd2e3dbc7d0f8ad7f677e2a",
+    "control-inputs/labels.jsonl": "b6249db9b9108846eeb30525714315e67937216c9dc93735b860a425a4a983f7",
+    "corrections/role-predicate-v2/exposure-pairs.csv": "f4971a9b7511d34ba7209bcf74cd796002728e0d515b0fec7e70a3978b09773b",
+    "corrections/role-predicate-v2/statistics-snapshot/matching_persistence_pairs.csv": "2cffc9c8bc5efd963a579e212372ce2ccb29f6d19274cd388ed4894b46725b7a"
+  },
+  "baseline_note": "Historical V2 comparison inputs; matching-pair file relocated unchanged when V3 became current."
+}

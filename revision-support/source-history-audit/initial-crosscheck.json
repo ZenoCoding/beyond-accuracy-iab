@@ -1,0 +1,1114 @@
+[
+  {
+    "debate_id": "D01",
+    "agent": "agent-1",
+    "signature_hex": "10101010101010101010101",
+    "full_history_expression": null,
+    "initial_only_expression": "COUNT(exactly,3,knight,D,E,F)",
+    "agreement": false,
+    "full_history_evidence": null,
+    "initial_only_evidence": {
+      "expression": "COUNT(exactly,3,knight,D,E,F)",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "D,E,F are knights, 3 knights",
+      "note": "Explicit count claim; COUNT expressions remain eligible."
+    }
+  },
+  {
+    "debate_id": "D01",
+    "agent": "agent-2",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff0000ffff00000000",
+    "full_history_expression": "NOT(STMT_TRUE(E))",
+    "initial_only_expression": null,
+    "agreement": false,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-2",
+          "span": "Player E claims A is not a knight, which is false"
+        }
+      ]
+    },
+    "initial_only_evidence": null
+  },
+  {
+    "debate_id": "D01",
+    "agent": "agent-3",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff0000ffff00000000",
+    "full_history_expression": "NOT(STMT_TRUE(E))",
+    "initial_only_expression": "NOT(STMT_TRUE(E))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "E's statement is false"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(E))",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "E's statement is false",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D01",
+    "agent": "agent-1",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff00ffffffffffffffff",
+    "full_history_expression": "NOT(STMT_TRUE(A))",
+    "initial_only_expression": "NOT(STMT_TRUE(A))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "A's statement is false"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(A))",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "A's statement is false",
+      "note": "Explicit evaluation of A statement."
+    }
+  },
+  {
+    "debate_id": "D01",
+    "agent": "agent-1",
+    "signature_hex": "10101010101010101010101010101010117011701170117",
+    "full_history_expression": "NOT(STMT_TRUE(F))",
+    "initial_only_expression": "NOT(STMT_TRUE(F))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "F lies"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(F))",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "F lies",
+      "note": "Explicit statement evaluation, despite the immediately following conflicting role conclusion."
+    }
+  },
+  {
+    "debate_id": "D01",
+    "agent": "agent-1",
+    "signature_hex": "ff00ff00ff00ff00ff00ff0ffffffffffffffff00ffff00",
+    "full_history_expression": "STMT_TRUE(D)",
+    "initial_only_expression": "STMT_TRUE(D)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "D tells truth"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(D)",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "D tells truth",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D01",
+    "agent": "agent-3",
+    "signature_hex": "f00ff00ff00ff00ff00ff00f0000000000000000ff0000ff",
+    "full_history_expression": "NOT(STMT_TRUE(D))",
+    "initial_only_expression": "NOT(STMT_TRUE(D))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "D's statement is false"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(D))",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "D's statement is false",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D01",
+    "agent": "agent-3",
+    "signature_hex": "fefefefefefefefefefefefefefefefefee8fee8fee8fee8",
+    "full_history_expression": "STMT_TRUE(F)",
+    "initial_only_expression": "STMT_TRUE(F)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "F's statement is true"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(F)",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "F's statement is true",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D01",
+    "agent": "agent-3",
+    "signature_hex": "ff0000ffff0000ffff0000ffff0000ff0000000000000000",
+    "full_history_expression": "STMT_TRUE(A)",
+    "initial_only_expression": "STMT_TRUE(A)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "Player A's statement is true"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(A)",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "Player A's statement is true",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D01",
+    "agent": "agent-1",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff0000ffff0000ffffffff",
+    "full_history_expression": "STMT_TRUE(E)",
+    "initial_only_expression": "STMT_TRUE(E)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "E tells truth"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(E)",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "E tells truth",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D02",
+    "agent": "agent-1",
+    "signature_hex": "ffffffffffffffffffffffffffffffff00000000",
+    "full_history_expression": null,
+    "initial_only_expression": "COUNT(exactly,0,spy,A,F)",
+    "agreement": false,
+    "full_history_evidence": null,
+    "initial_only_evidence": {
+      "expression": "COUNT(exactly,0,spy,A,F)",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "meaning no spy in A or F",
+      "note": "Explicitly stated count consequence."
+    }
+  },
+  {
+    "debate_id": "D02",
+    "agent": "agent-2",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff0000ffff00000000",
+    "full_history_expression": null,
+    "initial_only_expression": "NOT(STMT_TRUE(E))",
+    "agreement": false,
+    "full_history_evidence": null,
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(E))",
+      "agent": "agent-2",
+      "field_id": "I.agent-2",
+      "span": "E lies",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D02",
+    "agent": "agent-1",
+    "signature_hex": "ff00ff00ff00ff00ff00ff0ffffffffffffffff00ffff00",
+    "full_history_expression": "STMT_TRUE(D)",
+    "initial_only_expression": "STMT_TRUE(D)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "Player D says B and C differ, which is true"
+        }
+      ],
+      "note": ""
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(D)",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "which is true",
+      "note": "Explicit evaluation of D statement."
+    }
+  },
+  {
+    "debate_id": "D02",
+    "agent": "agent-3",
+    "signature_hex": "ff00ff00ff00ff00ff00ff0ffffffffffffffff00ffff00",
+    "full_history_expression": "STMT_TRUE(D)",
+    "initial_only_expression": "STMT_TRUE(D)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "Player D says B and C differ, which is true"
+        }
+      ],
+      "note": ""
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(D)",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "which is true",
+      "note": "Explicit evaluation of D statement."
+    }
+  },
+  {
+    "debate_id": "D02",
+    "agent": "agent-2",
+    "signature_hex": "f00ff00ff00ff00ff00ff00f0000000000000000ff0000ff",
+    "full_history_expression": null,
+    "initial_only_expression": "NOT(STMT_TRUE(D))",
+    "agreement": false,
+    "full_history_evidence": null,
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(D))",
+      "agent": "agent-2",
+      "field_id": "I.agent-2",
+      "span": "this is false",
+      "note": "Explicit evaluation of D claim; nearby wording questions whether D lies or tells truth."
+    }
+  },
+  {
+    "debate_id": "D02",
+    "agent": "agent-2",
+    "signature_hex": "fefefefefefefefefefefefefefefefefee8fee8fee8fee8",
+    "full_history_expression": null,
+    "initial_only_expression": "STMT_TRUE(F)",
+    "agreement": false,
+    "full_history_evidence": null,
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(F)",
+      "agent": "agent-2",
+      "field_id": "I.agent-2",
+      "span": "F's statement about at most 2 knights among C, D, E, F holds",
+      "note": "Explicit statement evaluation"
+    }
+  },
+  {
+    "debate_id": "D02",
+    "agent": "agent-2",
+    "signature_hex": "ff0000ffff0000ffff0000ffff0000ff0000000000000000",
+    "full_history_expression": "OR(COUNT(at_least,2,knave,A,B),SAME_ROLE(A,B))",
+    "initial_only_expression": null,
+    "agreement": false,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-2",
+          "span": "at least one holds"
+        }
+      ],
+      "note": "The explicit disjunction is asserted after invoking A\u2019s knight assignment."
+    },
+    "initial_only_evidence": null
+  },
+  {
+    "debate_id": "D03",
+    "agent": "agent-2",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff0000ffff00000000",
+    "full_history_expression": "NOT(STMT_TRUE(E))",
+    "initial_only_expression": "NOT(STMT_TRUE(E))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-2",
+          "span": "E's false statement makes E knave"
+        }
+      ],
+      "note": ""
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(E))",
+      "agent": "agent-2",
+      "field_id": "I.agent-2",
+      "span": "E's false statement",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D03",
+    "agent": "agent-3",
+    "signature_hex": "f00ff00ff00ff00ff00ff00f0000000000000000ff0000ff",
+    "full_history_expression": "NOT(STMT_TRUE(D))",
+    "initial_only_expression": "NOT(STMT_TRUE(D))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "D\u2019s statement is false"
+        }
+      ],
+      "note": ""
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(D))",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "D\u2019s statement is false",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D03",
+    "agent": "agent-3",
+    "signature_hex": "fefefefefefefefefefefefefefefefefee8fee8fee8fee8",
+    "full_history_expression": null,
+    "initial_only_expression": "STMT_TRUE(F)",
+    "agreement": false,
+    "full_history_evidence": null,
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(F)",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "F\u2019s statement is always true",
+      "note": "Explicit statement evaluation; \u201calways\u201d retained literally, with constant/universal status noted below."
+    }
+  },
+  {
+    "debate_id": "D03",
+    "agent": "agent-3",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff0000ffff0000ffffffff",
+    "full_history_expression": "STMT_TRUE(E)",
+    "initial_only_expression": "STMT_TRUE(E)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "E\u2019s statement is true (A is not knight)"
+        }
+      ],
+      "note": ""
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(E)",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "E\u2019s statement is true",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D04",
+    "agent": "agent-1",
+    "signature_hex": "fefefefefefefefefefefefefefefefefee8fee8fee8fee8",
+    "full_history_expression": null,
+    "initial_only_expression": "STMT_TRUE(F)",
+    "agreement": false,
+    "full_history_evidence": null,
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(F)",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "F's statement is true",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D04",
+    "agent": "agent-2",
+    "signature_hex": "fefefefefefefefefefefefefefefefefee8fee8fee8fee8",
+    "full_history_expression": "STMT_TRUE(F)",
+    "initial_only_expression": "STMT_TRUE(F)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-2",
+          "span": "F's statement true makes F knight"
+        }
+      ],
+      "note": "Explicit evaluation in the proposed A-spy solution."
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(F)",
+      "agent": "agent-2",
+      "field_id": "I.agent-2",
+      "span": "F's statement true",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D04",
+    "agent": "agent-1",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff0000ffff0000ffffffff",
+    "full_history_expression": null,
+    "initial_only_expression": "STMT_TRUE(E)",
+    "agreement": false,
+    "full_history_evidence": null,
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(E)",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "E's statement is true",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D04",
+    "agent": "agent-2",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff0000ffff0000ffffffff",
+    "full_history_expression": "STMT_TRUE(E)",
+    "initial_only_expression": "STMT_TRUE(E)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-2",
+          "span": "E's statement true makes E knight"
+        }
+      ],
+      "note": "Explicit evaluation in the proposed A-spy solution."
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(E)",
+      "agent": "agent-2",
+      "field_id": "I.agent-2",
+      "span": "E's statement true",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D04",
+    "agent": "agent-3",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff0000ffff0000ffffffff",
+    "full_history_expression": null,
+    "initial_only_expression": "STMT_TRUE(E)",
+    "agreement": false,
+    "full_history_evidence": null,
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(E)",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "E's claim that A is not a knight is true",
+      "note": "Explicit evaluation of E statement."
+    }
+  },
+  {
+    "debate_id": "D05",
+    "agent": "agent-3",
+    "signature_hex": "ffffffffffffffffffffffff0000000000000000",
+    "full_history_expression": "NOT(STMT_TRUE(E))",
+    "initial_only_expression": "NOT(STMT_TRUE(E))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "E's statement about spy count being odd is false"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(E))",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "E's statement about spy count being odd is false",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D05",
+    "agent": "agent-3",
+    "signature_hex": "ff00ff00ff00ff00ff00ff00ff00ffffffffff0000ffff",
+    "full_history_expression": "STMT_TRUE(C)",
+    "initial_only_expression": "STMT_TRUE(C)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "C tells the truth about B"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(C)",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "C tells the truth",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D05",
+    "agent": "agent-1",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff00ffffffffffffffff",
+    "full_history_expression": "NOT(STMT_TRUE(A))",
+    "initial_only_expression": "NOT(STMT_TRUE(A))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "A is knave (lying)"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(A))",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "A is knave (lying)",
+      "note": "\u201cLying\u201d explicitly evaluates A statement false, despite adjacent role wording."
+    }
+  },
+  {
+    "debate_id": "D05",
+    "agent": "agent-1",
+    "signature_hex": "166868801668688016686880166868801668688016686880",
+    "full_history_expression": null,
+    "initial_only_expression": "COUNT(exactly,2,knight,A,B,C,D,E,F)",
+    "agreement": false,
+    "full_history_evidence": null,
+    "initial_only_evidence": {
+      "expression": "COUNT(exactly,2,knight,A,B,C,D,E,F)",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "two knights (C,F)",
+      "note": "Explicit total role count claim."
+    }
+  },
+  {
+    "debate_id": "D05",
+    "agent": "agent-3",
+    "signature_hex": "2288228800000000003300330cc00cc0030303030c0cc0c0",
+    "full_history_expression": "NOT(STMT_TRUE(D))",
+    "initial_only_expression": "NOT(STMT_TRUE(D))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "D's complex statement is false"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(D))",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "D's complex statement is false",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D06",
+    "agent": "agent-1",
+    "signature_hex": "ffffffffffffffffffffffff0000000000000000",
+    "full_history_expression": "PARITY(odd,spy,C,D,E)",
+    "initial_only_expression": "PARITY(odd,spy,C,D,E)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "so number of spies in these three is odd"
+        }
+      ],
+      "note": ""
+    },
+    "initial_only_evidence": {
+      "expression": "PARITY(odd,spy,C,D,E)",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "number of spies in these three is odd",
+      "note": "Explicit parity claim."
+    }
+  },
+  {
+    "debate_id": "D06",
+    "agent": "agent-3",
+    "signature_hex": "ffffffffffffffffffffffff0000000000000000",
+    "full_history_expression": "PARITY(odd,spy,C,D,E)",
+    "initial_only_expression": "PARITY(odd,spy,C,D,E)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "meaning there is an odd number of spies among C,D,E"
+        }
+      ],
+      "note": ""
+    },
+    "initial_only_evidence": {
+      "expression": "PARITY(odd,spy,C,D,E)",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "there is an odd number of spies among C,D,E",
+      "note": "Explicit parity assertion."
+    }
+  },
+  {
+    "debate_id": "D06",
+    "agent": "agent-1",
+    "signature_hex": "ff00ff00ff00ff00ff00ff00ff00ffffffffff0000ffff",
+    "full_history_expression": "STMT_TRUE(F)",
+    "initial_only_expression": "STMT_TRUE(F)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "C and F are knights (truth-tellers)"
+        }
+      ],
+      "note": ""
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(F)",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "C and F are knights (truth-tellers)",
+      "note": "Explicit truth-teller label for F."
+    }
+  },
+  {
+    "debate_id": "D06",
+    "agent": "agent-3",
+    "signature_hex": "ff00ff00ff00ff00ff00ff00ff00ffffffffff0000ffff",
+    "full_history_expression": "STMT_TRUE(F)",
+    "initial_only_expression": "STMT_TRUE(F)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "F says B is not knave, F is truthful"
+        }
+      ],
+      "note": ""
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(F)",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "F is truthful",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D06",
+    "agent": "agent-1",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff00ffffffffffffffff",
+    "full_history_expression": "NOT(STMT_TRUE(A))",
+    "initial_only_expression": "NOT(STMT_TRUE(A))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "A must be knave (contradiction unless A is knave lying about same role)"
+        }
+      ],
+      "note": ""
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(A))",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "A knave lying",
+      "note": "\u201clying\u201d explicitly evaluates A statement false in the stated reasoning."
+    }
+  },
+  {
+    "debate_id": "D06",
+    "agent": "agent-2",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff00ffffffffffffffff",
+    "full_history_expression": "NOT(STMT_TRUE(A))",
+    "initial_only_expression": "NOT(STMT_TRUE(A))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-2",
+          "span": "A claims same role as B but A is knave, B knave, so A's statement is false"
+        }
+      ],
+      "note": ""
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(A))",
+      "agent": "agent-2",
+      "field_id": "I.agent-2",
+      "span": "A's statement is false",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D06",
+    "agent": "agent-3",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff00ffffffffffffffff",
+    "full_history_expression": "NOT(STMT_TRUE(A))",
+    "initial_only_expression": "NOT(STMT_TRUE(A))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "Player A's claim that A and B have the same role is false"
+        }
+      ],
+      "note": ""
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(A))",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "Player A's claim that A and B have the same role is false",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D06",
+    "agent": "agent-1",
+    "signature_hex": "5fffffff5fffffff977f7fff77ffffff77ffffff77ffffff",
+    "full_history_expression": "NOT(STMT_TRUE(B))",
+    "initial_only_expression": null,
+    "agreement": false,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "B's statement is false (so B is knave)"
+        }
+      ],
+      "note": ""
+    },
+    "initial_only_evidence": null
+  },
+  {
+    "debate_id": "D06",
+    "agent": "agent-3",
+    "signature_hex": "5fffffff5fffffff977f7fff77ffffff77ffffff77ffffff",
+    "full_history_expression": "NOT(STMT_TRUE(B))",
+    "initial_only_expression": "NOT(STMT_TRUE(B))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "B's statement is false implying B is knave"
+        }
+      ],
+      "note": ""
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(B))",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "B's statement is false",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D06",
+    "agent": "agent-2",
+    "signature_hex": "a0000000a000000068808000880000008800000088000000",
+    "full_history_expression": "COUNT(exactly,4,knave,A,B,C,E,F)",
+    "initial_only_expression": "COUNT(exactly,4,knave,A,B,C,E,F)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-2",
+          "span": "with B knave and C,F knights, A,E must be knaves, total 4 knaves"
+        }
+      ],
+      "note": "The count assertion is explicit, although its tally conflicts with the roles listed in the same field."
+    },
+    "initial_only_evidence": {
+      "expression": "COUNT(exactly,4,knave,A,B,C,E,F)",
+      "agent": "agent-2",
+      "field_id": "I.agent-2",
+      "span": "total 4 knaves",
+      "note": "Explicit count phrase; referent/scope is unclear and may conflict with the named assignments."
+    }
+  },
+  {
+    "debate_id": "D06",
+    "agent": "agent-3",
+    "signature_hex": "ff00ff00ff00ff00ff00ff00ff00ff0000000000ffff0000",
+    "full_history_expression": null,
+    "initial_only_expression": "NOT(STMT_TRUE(C))",
+    "agreement": false,
+    "full_history_evidence": null,
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(C))",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "C's statement is false",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D07",
+    "agent": "agent-2",
+    "signature_hex": "dd77dd77ffffffffffccffccf33ff33ffcfcfcfcf3f33f3f",
+    "full_history_expression": null,
+    "initial_only_expression": "STMT_TRUE(D)",
+    "agreement": false,
+    "full_history_evidence": null,
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(D)",
+      "agent": "agent-2",
+      "field_id": "I.agent-2",
+      "span": "D's complex statement is true via its second clause",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D07",
+    "agent": "agent-1",
+    "signature_hex": "ffffffff000000000000000000000000ffffffffffffffff",
+    "full_history_expression": null,
+    "initial_only_expression": "STMT_TRUE(E)",
+    "agreement": false,
+    "full_history_evidence": null,
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(E)",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "E must be a knight with a true statement",
+      "note": "Explicit evaluation of E statement."
+    }
+  },
+  {
+    "debate_id": "D07",
+    "agent": "agent-2",
+    "signature_hex": "ffffffff000000000000000000000000ffffffffffffffff",
+    "full_history_expression": null,
+    "initial_only_expression": "STMT_TRUE(E)",
+    "agreement": false,
+    "full_history_evidence": null,
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(E)",
+      "agent": "agent-2",
+      "field_id": "I.agent-2",
+      "span": "E's parity claim is true",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D08",
+    "agent": "agent-2",
+    "signature_hex": "ff00ff00ff00ff00ff00ff00ff00ffffffffff0000ffff",
+    "full_history_expression": "STMT_TRUE(F)",
+    "initial_only_expression": "STMT_TRUE(F)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-2",
+          "span": "C and F then tell the truth"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(F)",
+      "agent": "agent-2",
+      "field_id": "I.agent-2",
+      "span": "C and F then tell the truth",
+      "note": "Explicit truth-teller claim for F."
+    }
+  },
+  {
+    "debate_id": "D08",
+    "agent": "agent-2",
+    "signature_hex": "ffff0000ffff0000ffff0000ffff00ffffffffffffffff",
+    "full_history_expression": "NOT(STMT_TRUE(A))",
+    "initial_only_expression": "NOT(STMT_TRUE(A))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-2",
+          "span": "A\u2019s statement is false"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(A))",
+      "agent": "agent-2",
+      "field_id": "I.agent-2",
+      "span": "A\u2019s statement is false",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D08",
+    "agent": "agent-1",
+    "signature_hex": "dd77dd77ffffffffffccffccf33ff33ffcfcfcfcf3f33f3f",
+    "full_history_expression": "STMT_TRUE(D)",
+    "initial_only_expression": "STMT_TRUE(D)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-1",
+          "span": "D's complex statement is always true"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(D)",
+      "agent": "agent-1",
+      "field_id": "I.agent-1",
+      "span": "D's complex statement is always true",
+      "note": "Explicit statement evaluation; phrase \u201calways\u201d has possible universal/constant implications."
+    }
+  },
+  {
+    "debate_id": "D08",
+    "agent": "agent-3",
+    "signature_hex": "dd77dd77ffffffffffccffccf33ff33ffcfcfcfcf3f33f3f",
+    "full_history_expression": "STMT_TRUE(D)",
+    "initial_only_expression": "STMT_TRUE(D)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "D\u2019s statement is true via clause (2)"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(D)",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "D\u2019s statement is true via clause (2)",
+      "note": "Explicit statement evaluation."
+    }
+  },
+  {
+    "debate_id": "D08",
+    "agent": "agent-3",
+    "signature_hex": "ff00ff00ff00ff00ff00ff00ff00ff0000000000ffff0000",
+    "full_history_expression": "NOT(STMT_TRUE(F))",
+    "initial_only_expression": "NOT(STMT_TRUE(F))",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-3",
+          "span": "C and F lie"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "NOT(STMT_TRUE(F))",
+      "agent": "agent-3",
+      "field_id": "I.agent-3",
+      "span": "C and F lie",
+      "note": "Explicit truth evaluation for F."
+    }
+  },
+  {
+    "debate_id": "D08",
+    "agent": "agent-2",
+    "signature_hex": "ffffffff000000000000000000000000ffffffffffffffff",
+    "full_history_expression": "STMT_TRUE(E)",
+    "initial_only_expression": "STMT_TRUE(E)",
+    "agreement": true,
+    "full_history_evidence": {
+      "status": "present",
+      "evidence": [
+        {
+          "field_id": "I.agent-2",
+          "span": "E\u2019s statement is true"
+        }
+      ]
+    },
+    "initial_only_evidence": {
+      "expression": "STMT_TRUE(E)",
+      "agent": "agent-2",
+      "field_id": "I.agent-2",
+      "span": "E\u2019s statement is true",
+      "note": "Explicit statement evaluation."
+    }
+  }
+]

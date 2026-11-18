@@ -1,0 +1,124 @@
+{
+  "scope": "Eight sampled wholedebates, two puzzles. Source-derived semantic identity, not exactexpression estimand; no corpus-wide correction/inference. Unreviewed pipeline-only targets require adjudication.",
+  "annotation_sha256": {
+    "D01-audit-adjudicated.json": "a60ef7cd7bccad2120c9629ce40d9bab306dfd771653c5cee9b80ce408372e7b",
+    "D02-audit-adjudicated.json": "7fbe860de56a705358e3aacd83213851f025061ab04cae6915010d589eb6ea07",
+    "D03-audit-adjudicated.json": "7055f978def4f71bf37bed723a3c3a614f8e95f3e02676d9e602b25f88fb461c",
+    "D04-audit-adjudicated.json": "2df074e5304aee5f5a9a70c9cfaa28b5395aee779e607d53e718f4392cf719d3",
+    "D05-audit-adjudicated.json": "e77df0031fcd00f2b620ade8f26e248cac538c96990758e83e6b7fc86dc372fe",
+    "D06-audit-adjudicated.json": "f062b776582134a56b7d3f5b5598e25bfd5f61ea888e4574cbde505b4f002356",
+    "D07-audit-adjudicated.json": "d3c063c8fe27e34d2eb49b86dabcefeba91e1bfcba18504e03435afd957a6062",
+    "D08-audit-adjudicated.json": "c0db9ce438821a22f873a73f3ba944da0cc3e099af49c6b24a85e5807beb7b74"
+  },
+  "source_derived_provisional": {
+    "strong": {
+      "true": {
+        "hits": 9,
+        "pairs": 9,
+        "ambiguous_pairs": 0,
+        "rate": 1.0
+      },
+      "false": {
+        "hits": 0,
+        "pairs": 2,
+        "ambiguous_pairs": 1,
+        "rate": 0.0
+      },
+      "gap_pp": 100.0
+    },
+    "weak": {
+      "true": {
+        "hits": 9,
+        "pairs": 17,
+        "ambiguous_pairs": 0,
+        "rate": 0.5294117647058824
+      },
+      "false": {
+        "hits": 10,
+        "pairs": 22,
+        "ambiguous_pairs": 1,
+        "rate": 0.45454545454545453
+      },
+      "gap_pp": 7.486631016042783
+    },
+    "difference_pp": 92.51336898395722
+  },
+  "pipeline_semantic_same_debates": {
+    "strong": {
+      "true": {
+        "hits": 16,
+        "pairs": 16,
+        "ambiguous_pairs": 0,
+        "rate": 1.0
+      },
+      "false": {
+        "hits": 2,
+        "pairs": 6,
+        "ambiguous_pairs": 0,
+        "rate": 0.3333333333333333
+      },
+      "gap_pp": 66.66666666666667
+    },
+    "weak": {
+      "true": {
+        "hits": 9,
+        "pairs": 17,
+        "ambiguous_pairs": 0,
+        "rate": 0.5294117647058824
+      },
+      "false": {
+        "hits": 13,
+        "pairs": 25,
+        "ambiguous_pairs": 0,
+        "rate": 0.52
+      },
+      "gap_pp": 0.9411764705882342
+    },
+    "difference_pp": 65.72549019607844
+  },
+  "pipeline_exact_same_debates": {
+    "strong": {
+      "true": {
+        "hits": 19,
+        "pairs": 19,
+        "ambiguous_pairs": 0,
+        "rate": 1.0
+      },
+      "false": {
+        "hits": 2,
+        "pairs": 8,
+        "ambiguous_pairs": 0,
+        "rate": 0.25
+      },
+      "gap_pp": 75.0
+    },
+    "weak": {
+      "true": {
+        "hits": 11,
+        "pairs": 25,
+        "ambiguous_pairs": 0,
+        "rate": 0.44
+      },
+      "false": {
+        "hits": 12,
+        "pairs": 28,
+        "ambiguous_pairs": 0,
+        "rate": 0.42857142857142855
+      },
+      "gap_pp": 1.1428571428571455
+    },
+    "difference_pp": 73.85714285714286
+  },
+  "comparison_counts": {
+    "agreement": 42,
+    "ambiguous_initial_presence": 11,
+    "ambiguous_initial_supply": 6,
+    "ambiguous_later_recurrence": 1,
+    "pipeline_false_novelty_or_expression_policy_difference": 2,
+    "pipeline_missing_pair_or_expression_policy_difference": 9,
+    "pipeline_supply_not_asserted": 2
+  },
+  "sample_pairs": 52,
+  "pipeline_semantic_pairs": 64,
+  "pipeline_exact_pairs": 80
+}

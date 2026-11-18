@@ -1,0 +1,478 @@
+{
+  "debate_id": "D05",
+  "reviewed_field_ids": [
+    "I.agent-1",
+    "I.agent-2",
+    "I.agent-3",
+    "R1.argument.agent-1.agree_reasoning",
+    "R1.argument.agent-1.disagree_reasoning",
+    "R1.argument.agent-2.agree_reasoning",
+    "R1.argument.agent-2.disagree_reasoning",
+    "R1.argument.agent-3.agree_reasoning",
+    "R1.revision.agent-1",
+    "R1.revision.agent-2",
+    "R1.revision.agent-3",
+    "R2.argument.agent-1.agree_reasoning",
+    "R2.argument.agent-1.disagree_reasoning",
+    "R2.argument.agent-2.agree_reasoning",
+    "R2.argument.agent-2.disagree_reasoning",
+    "R2.argument.agent-3.disagree_reasoning",
+    "R2.revision.agent-1",
+    "R2.revision.agent-2",
+    "R2.revision.agent-3",
+    "R3.argument.agent-1.agree_reasoning",
+    "R3.argument.agent-1.disagree_reasoning",
+    "R3.argument.agent-2.agree_reasoning",
+    "R3.argument.agent-2.disagree_reasoning",
+    "R3.argument.agent-3.agree_reasoning",
+    "R3.revision.agent-1",
+    "R3.revision.agent-2",
+    "R3.revision.agent-3",
+    "R4.argument.agent-1.agree_reasoning",
+    "R4.argument.agent-1.disagree_reasoning",
+    "R4.argument.agent-2.agree_reasoning",
+    "R4.argument.agent-2.disagree_reasoning",
+    "R4.argument.agent-3.agree_reasoning",
+    "R4.revision.agent-1",
+    "R4.revision.agent-2",
+    "R4.revision.agent-3",
+    "R5.argument.agent-1.agree_reasoning",
+    "R5.argument.agent-1.disagree_reasoning",
+    "R5.argument.agent-2.agree_reasoning",
+    "R5.argument.agent-3.agree_reasoning",
+    "R5.revision.agent-1",
+    "R5.revision.agent-2",
+    "R5.revision.agent-3",
+    "R6.argument.agent-1.agree_reasoning",
+    "R6.argument.agent-2.agree_reasoning",
+    "R6.argument.agent-3.agree_reasoning",
+    "R6.revision.agent-1",
+    "R6.revision.agent-2",
+    "R6.revision.agent-3"
+  ],
+  "targets": [
+    {
+      "expression": "NOT(STMT_TRUE(A))",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "A is knave (lying)"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "A falsity appears only in an \u201cif A is a knave\u201d clause."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "A is assigned a role, but the field does not explicitly assert A\u2019s statement false."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R2.revision.agent-1",
+              "span": "A lying about having the same role as B"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R4.revision.agent-2",
+              "span": "A claims to share a role with B; as a knave, this is false"
+            }
+          ],
+          "note": "Earlier R1\u2013R3 false evaluations are inside a B-spy conditional; R4 is the first direct endorsed assignment."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R3.revision.agent-3",
+              "span": "A is a knave lying about sharing B's role"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "STMT_TRUE(C)",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "C truth is stated only as true if B is a knave; this is scoped to a hypothesis."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "C/F truth is stated in a B-spy conditional; not an unconditional initial commitment."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "C tells the truth about B"
+            }
+          ]
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R2.argument.agent-1.agree_reasoning",
+              "span": "C and F's true statements that B is not a knave"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R4.revision.agent-2",
+              "span": "C and F truthfully state B is not a knave"
+            }
+          ],
+          "note": "Earlier R1\u2013R3 positive evaluations are within a B-spy conditional."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "C and F are knights as they truthfully state B is not knave"
+            }
+          ],
+          "note": "Agent-3 also says B is knave, making the endorsed \u201ctruthfully state\u201d evaluation inconsistent with the stated content; later fields repeat it."
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(D))",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "D is called consistent with a spy role, but its statement truth is not directly evaluated."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "No explicit D statement falsity in the initial field."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "D's complex statement is false"
+            }
+          ]
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later fields do not call D false; some explicitly call D\u2019s statement true. D\u2019s role assignments are not statement evaluations."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later fields do not call D false; revisions explicitly call D\u2019s statement true."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Later fields do not explicitly call D false; the D-spy assignment alone does not establish statement truth."
+        }
+      }
+    },
+    {
+      "expression": "NOT(STMT_TRUE(E))",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "E falsity is stated only if E is a knave, a scoped condition."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "E falsity is stated only if E is a knave, a scoped condition."
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "E's statement about spy count being odd is false"
+            }
+          ]
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-1",
+              "span": "E's statement about spies among C,D,E is false"
+            }
+          ]
+        },
+        "agent-2": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R5.argument.agent-2.agree_reasoning",
+              "span": "Both agents agree that Player E's statement is false"
+            }
+          ]
+        },
+        "agent-3": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "R1.revision.agent-3",
+              "span": "E's statement about spy count is false"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "expression": "COUNT(exactly,3,knave,A,B,C,D,E,F)",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "one spy (D), three knaves (A,B,E), two knights (C,F)"
+            }
+          ],
+          "note": "Explicit total in the proposed whole assignment, whose one-spy/three-knave/two-knight groups enumerate all six players."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": []
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": []
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Scanned every later field; no later explicit numerical total for this whole-puzzle count. Role lists without a number are not counted as recurrence."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Scanned every later field; no later explicit numerical total for this whole-puzzle count. Role lists without a number are not counted as recurrence."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Scanned every later field; no later explicit numerical total for this whole-puzzle count. Role lists without a number are not counted as recurrence."
+        }
+      }
+    },
+    {
+      "expression": "COUNT(exactly,2,knight,A,B,C,D,E,F)",
+      "initial": {
+        "agent-1": {
+          "status": "present",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "one spy (D), three knaves (A,B,E), two knights (C,F)"
+            }
+          ],
+          "note": "Explicit total in the proposed whole assignment, whose one-spy/three-knave/two-knight groups enumerate all six players."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": []
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": []
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Scanned every later field; no later explicit numerical total for this whole-puzzle count. Role lists without a number are not counted as recurrence."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Scanned every later field; no later explicit numerical total for this whole-puzzle count. Role lists without a number are not counted as recurrence."
+        },
+        "agent-3": {
+          "status": "absent",
+          "evidence": [],
+          "note": "Scanned every later field; no later explicit numerical total for this whole-puzzle count. Role lists without a number are not counted as recurrence."
+        }
+      }
+    },
+    {
+      "expression": "COUNT(exactly,4,knave,A,B,C,E,F)",
+      "initial": {
+        "agent-1": {
+          "status": "absent",
+          "evidence": [
+            {
+              "field_id": "I.agent-1",
+              "span": "Player B claims exactly 4 of A,B,C,E,F are knaves"
+            },
+            {
+              "field_id": "I.agent-1",
+              "span": "If B is knave, this is false, so number of knaves among those is not 4"
+            }
+          ],
+          "note": "The exact-set count first appears as a report of B's character claim. The agent's own count polarity is explicitly negative only under the 'If B is knave' scope; there is no unconditional endorsement of exactly four."
+        },
+        "agent-2": {
+          "status": "absent",
+          "evidence": [],
+          "note": "This field does not mention the four-knave count or its A,B,C,E,F set."
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [
+            {
+              "field_id": "I.agent-3",
+              "span": "B's statement implies 4 knaves among A, B, C, E, F"
+            },
+            {
+              "field_id": "I.agent-3",
+              "span": "there are already 4 knaves"
+            }
+          ],
+          "note": "The first span gives the exact set but frames the count as an implication from B's statement, not as an unconditional count assertion. The later unqualified count could refer back to that set or to the broader role list that includes D, who is outside the candidate set. The source does not resolve the set or commitment."
+        }
+      },
+      "later": {
+        "agent-1": {
+          "status": "ambiguous",
+          "evidence": [],
+          "note": "No unambiguous initial supply established for this candidate; later status not separately adjudicated and does not enter source-derived eligible counts."
+        },
+        "agent-2": {
+          "status": "ambiguous",
+          "evidence": [],
+          "note": "No unambiguous initial supply established for this candidate; later status not separately adjudicated and does not enter source-derived eligible counts."
+        },
+        "agent-3": {
+          "status": "ambiguous",
+          "evidence": [],
+          "note": "No unambiguous initial supply established for this candidate; later status not separately adjudicated and does not enter source-derived eligible counts."
+        }
+      },
+      "adjudication_origin": "Candidate identified after pipeline comparison; independently source-reviewed; not part of blinded discovery."
+    }
+  ],
+  "exclusions": [
+    {
+      "field_id": "I.agent-1",
+      "span": "If B is knave, this is false",
+      "reason": "B statement evaluation is explicitly conditional on B\u2019s role."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "C's statement is true if B is knave",
+      "reason": "C truth is scoped to a hypothetical B role."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "D's statement is complex and consistent with spy role",
+      "reason": "This describes role compatibility, not D statement truth."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "E's statement about spies among C,D,E is false if E is knave",
+      "reason": "E truth evaluation is explicitly conditional."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "If B were a knave, C and F would be liars",
+      "reason": "Scoped hypothetical; no unconditional C/F evaluation."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "If B is a spy, C and F are truthful (knights)",
+      "reason": "C/F evaluation is scoped to a B-spy hypothesis."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "if E is a knave, this is false",
+      "reason": "E evaluation is explicitly conditional."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "B's statement implies 4 knaves among A, B, C, E, F",
+      "reason": "Report of statement content, not an assertion that B\u2019s statement is true."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "F is a knave as there are already 4 knaves",
+      "reason": "ROLE assignment; do not infer F statement truth from knave status."
+    },
+    {
+      "field_id": "R4.revision.agent-3",
+      "span": "This satisfies all statements with one spy, knights C, D, F, and knaves A, E.",
+      "reason": "Scanned as possible later count recurrence; it enumerates role lists without stating numeric knave/knight totals, so it does not count for either whole-puzzle COUNT target."
+    }
+  ],
+  "ambiguities": [
+    {
+      "field_id": "I.agent-1",
+      "span": "A is knave (lying)",
+      "note": "\u201cLying\u201d explicitly evaluates A\u2019s statement as false, even though it is embedded in role reasoning; counted as NOT(STMT_TRUE(A))."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "C and F both say B is not knave. They can't both be knights because B is knave, so one is spy and one knight. Assign F as knight and C as knight since C's statement is true if B is knave.",
+      "note": "C truth is conditional; not counted as initial STMT_TRUE(C)."
+    },
+    {
+      "field_id": "I.agent-2",
+      "span": "If B is a spy, C and F are truthful (knights).",
+      "note": "C/F truth is conditional; not counted as initial STMT_TRUE(C)."
+    },
+    {
+      "field_id": "I.agent-3",
+      "span": "C and F are knights stating B is not a knave.",
+      "note": "This describes their statement content and role assignment; unlike the separate \u201cC tells the truth\u201d clause, it does not itself evaluate statement truth."
+    },
+    {
+      "field_id": "R1.revision.agent-3",
+      "span": "A is knave as agreed by all agents. B is knave because C and F can't both be knights if B is knave. D is spy due to complex statement consistency. E is knave as E's statement about spy count is false.",
+      "note": "All members of the initial three-knave set are explicitly named as knaves; this recurs until agent-3 later changes B to spy."
+    },
+    {
+      "field_id": "I.agent-1",
+      "span": "one spy (D), three knaves (A,B,E), two knights (C,F)",
+      "note": "The earlier subset encoding treated A,B,E and C,F as independent named-set counts. Adjudication uses whole-assignment totals because the sentence partitions all six players into one spy, three knaves, and two knights."
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "debate_id": "D04",
+  "puzzle": {
+    "hint": "There is exactly one spy among the players.",
+    "players": [
+      "Player A",
+      "Player B",
+      "Player C",
+      "Player D",
+      "Player E",
+      "Player F"
+    ],
+    "size": 6,
+    "statements": [
+      {
+        "ast": {
+          "left": {
+            "comparison": "at_least",
+            "count": 2,
+            "op": "count_role",
+            "players": [
+              0,
+              1
+            ],
+            "role": "knave"
+          },
+          "op": "or",
+          "right": {
+            "op": "same_role",
+            "players": [
+              0,
+              1
+            ]
+          }
+        },
+        "speaker": "Player A",
+        "text": "at least one of the following is true: (1) at least 2 of Player A and Player B are knaves; (2) Player A and Player B have the same role."
+      },
+      {
+        "ast": {
+          "arg": {
+            "comparison": "at_least",
+            "count": 0,
+            "op": "count_role",
+            "players": [
+              0,
+              5
+            ],
+            "role": "spy"
+          },
+          "op": "not"
+        },
+        "speaker": "Player B",
+        "text": "it is not the case that (at least 0 of Player A and Player F are spies)."
+      },
+      {
+        "ast": {
+          "arg": {
+            "comparison": "at_most",
+            "count": 1,
+            "op": "count_role",
+            "players": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ],
+            "role": "spy"
+          },
+          "op": "not"
+        },
+        "speaker": "Player C",
+        "text": "it is not the case that (at most 1 of Player A, Player B, Player C, Player E, and Player F are spies)."
+      },
+      {
+        "ast": {
+          "arg": {
+            "op": "same_role",
+            "players": [
+              1,
+              2
+            ]
+          },
+          "op": "not"
+        },
+        "speaker": "Player D",
+        "text": "it is not the case that (Player B and Player C have the same role)."
+      },
+      {
+        "ast": {
+          "arg": {
+            "op": "role_is",
+            "player": 0,
+            "role": "knight"
+          },
+          "op": "not"
+        },
+        "speaker": "Player E",
+        "text": "it is not the case that (Player A is a knight)."
+      },
+      {
+        "ast": {
+          "comparison": "at_most",
+          "count": 2,
+          "op": "count_role",
+          "players": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "role": "knight"
+        },
+        "speaker": "Player F",
+        "text": "at most 2 of Player C, Player D, Player E, and Player F are knights."
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "I.agent-1",
+      "agent": "agent-1",
+      "stage_order": 0,
+      "text": "B and C's statements are always false, so they are knaves (or spy). Assuming they are knaves, D's statement becomes false, making D a knave. A cannot be knight because his statement would be false, so A is knave. Then E's statement is true, allowing E to be the spy. F's statement is true, so F is knight. Exactly one spy (E) and all constraints satisfied."
+    },
+    {
+      "id": "I.agent-2",
+      "agent": "agent-2",
+      "stage_order": 0,
+      "text": "Derived that B's statement is false so B is knave. C's false statement makes C knave. D then must be knave. A's statement reduces to A and B same role, so A cannot be knave; choose A as spy. E's statement true makes E knight. F's statement true makes F knight. All constraints satisfied."
+    },
+    {
+      "id": "I.agent-3",
+      "agent": "agent-3",
+      "stage_order": 0,
+      "text": "B and C statements are always false, so they are knaves (or one could be spy). Assuming A is the spy avoids contradictions. Then D's statement is false (B and C same role) so D knave. E's claim that A is not a knight is true, making E a knight. F must be knight to keep his at\u2011most\u20112\u2011knights claim true. All roles fit the single\u2011spy requirement."
+    },
+    {
+      "id": "R1.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 110,
+      "text": "A as spy yields a consistent assignment: B, C, D knaves; E, F knights; all statements match truth values and only one spy."
+    },
+    {
+      "id": "R1.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 110,
+      "text": "Agent-1's knave assignment for A makes A's statement true, contradicting knave rule."
+    },
+    {
+      "id": "R1.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 110,
+      "text": "Agent-3's solution matches the consistent assignment where A is spy, B, C, D knaves, E, F knights."
+    },
+    {
+      "id": "R1.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 110,
+      "text": "Agent-1 makes A a knave, which contradicts the truth value of A's statement under knave rules."
+    },
+    {
+      "id": "R1.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 110,
+      "text": "Consistent solution with B and C knaves, D knave, E knave, F knight, and A as the sole spy satisfying all statements."
+    },
+    {
+      "id": "R1.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 110,
+      "text": "Agent-1's knave assignment for A leads to contradictions with B's false statement and the single\u2011spy requirement."
+    },
+    {
+      "id": "R1.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 111,
+      "text": "B and C statements are false, so they are knaves. D\u2019s statement then false (B and C same role), making D knave. A\u2019s statement is true only if A and B share role; with B knave this forces A to be spy (truth value free). E\u2019s claim that A is not a knight is true, so E is knight. F\u2019s claim that at most two of C,D,E,F are knights is true (only E and F), so F is knight. Exactly one spy (A) and all constraints satisfied."
+    },
+    {
+      "id": "R1.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 111,
+      "text": "B and C statements are false, so they are knaves. D\u2019s claim that B and C have the same role is therefore false, making D a knave. A\u2019s statement reduces to \u201cA and B have the same role\u201d; if A were knave it would be true, contradicting knave rule, so A must be the spy (truth value free). E\u2019s denial that A is a knight is true, so E is a knight. F\u2019s claim that at most two of C,D,E,F are knights is true (only E and F), making F a knight. Exactly one spy (A) and all constraints satisfied."
+    },
+    {
+      "id": "R1.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 111,
+      "text": "B and C statements are false, so they are knaves. D\u2019s statement then false, making D a knave. A\u2019s statement is true only if A and B share role; since B is knave, A must be spy (truth may be true). E\u2019s claim that A is not a knight is true, so E is knight. F\u2019s claim \u201cat most 2 of C,D,E,F are knights\u201d is true (only E is knight), so F is knight. Exactly one spy (A) and all roles fit."
+    },
+    {
+      "id": "R2.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 120,
+      "text": "All consistent solutions show B's statement is false, which only a knave can utter under the single\u2011spy constraint."
+    },
+    {
+      "id": "R2.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 120,
+      "text": ""
+    },
+    {
+      "id": "R2.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 120,
+      "text": "All consistent assignments make B's statement false, which only a knave can utter under the single\u2011spy rule."
+    },
+    {
+      "id": "R2.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 120,
+      "text": ""
+    },
+    {
+      "id": "R2.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 120,
+      "text": "All solutions show B's statement is false, making B a knave; this matches the consistent assignment."
+    },
+    {
+      "id": "R2.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 120,
+      "text": ""
+    },
+    {
+      "id": "R2.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 121,
+      "text": "B\u2019s claim is false, so B is a knave. C\u2019s claim is also false, making C a knave. D says B and C share a role; that is false, so D is a knave. A\u2019s statement is true only if A and B share a role; since B is knave, A must be the spy (truth value free). E\u2019s denial that A is a knight is true, so E is a knight. F\u2019s at\u2011most\u20112\u2011knights claim holds (E and F), so F is a knight. Exactly one spy (A) satisfies all constraints."
+    },
+    {
+      "id": "R2.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 121,
+      "text": "B and C statements are false, making them knaves. D\u2019s claim that B and C share a role is then false, so D is a knave. A\u2019s statement is true only if A and B share a role; with B knave this forces A to be the spy (truth value unrestricted). E\u2019s denial that A is a knight is true, so E is a knight. F\u2019s claim that at most two of C,D,E,F are knights holds (E and F), making F a knight. Exactly one spy (A) and all constraints are satisfied."
+    },
+    {
+      "id": "R2.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 121,
+      "text": "B's statement is false, so B is knave. C's claim about spies is false, making C knave. D says B and C share role; that's false, so D is knave. A's disjunction is true only if A and B share role; with B knave this forces A to be the spy (truth value unrestricted). E says A is not a knight, which is true, so E is knight. F's at\u2011most\u20112\u2011knights claim holds (E and F), so F is knight. Exactly one spy (A) and all constraints satisfied."
+    },
+    {
+      "id": "R3.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 130,
+      "text": "All consistent solutions make C's statement false, which only a knave can utter under the single\u2011spy rule."
+    },
+    {
+      "id": "R3.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 130,
+      "text": ""
+    },
+    {
+      "id": "R3.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 130,
+      "text": "All consistent assignments make C's statement false, which only a knave can utter under the single\u2011spy rule."
+    },
+    {
+      "id": "R3.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 130,
+      "text": ""
+    },
+    {
+      "id": "R3.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 130,
+      "text": "All consistent solutions show C's statement is false, which only a knave can utter under the single\u2011spy constraint."
+    },
+    {
+      "id": "R3.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 130,
+      "text": ""
+    },
+    {
+      "id": "R3.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 131,
+      "text": "B's statement is false, so B is a knave. C's statement about spies is false, making C a knave. D says B and C share a role; that's false, so D is a knave. A's disjunction is true only if A and B share a role; with B knave this forces A to be the spy (truth value unrestricted). E's claim that A is not a knight is true, so E is a knight. F's claim that at most two of C,D,E,F are knights holds (E and F), so F is a knight. Exactly one spy (A) satisfies all constraints."
+    },
+    {
+      "id": "R3.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 131,
+      "text": "B's statement is false, so B is knave. C's claim about spies is false, making C knave. D says B and C share a role; that's false, so D is knave. A's disjunction is true only if A and B share a role; with B knave this forces A to be the spy (truth value unrestricted). E's denial that A is a knight is true, so E is knight. F's at\u2011most\u20112\u2011knights claim holds (E and F), so F is knight. Exactly one spy (A) satisfies all constraints."
+    },
+    {
+      "id": "R3.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 131,
+      "text": "B's statement is false, so B is knave. C's statement about spies is also false, making C knave. D claims B and C share a role, which is false, so D is knave. A's disjunction is true only if A and B share a role; with B knave this forces A to be the spy. E says A is not a knight, which is true, so E is knight. F's claim that at most two of C,D,E,F are knights holds (E and F), so F is knight. Exactly one spy (A) satisfies all constraints."
+    },
+    {
+      "id": "R4.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 140,
+      "text": "All consistent assignments make D's statement false, so D must be a knave."
+    },
+    {
+      "id": "R4.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 140,
+      "text": ""
+    },
+    {
+      "id": "R4.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 140,
+      "text": "All consistent solutions make D's statement false, so D must be a knave."
+    },
+    {
+      "id": "R4.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 140,
+      "text": ""
+    },
+    {
+      "id": "R4.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 140,
+      "text": "All consistent solutions assign D as knave, matching the statements."
+    },
+    {
+      "id": "R4.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 140,
+      "text": ""
+    },
+    {
+      "id": "R4.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 141,
+      "text": "B\u2019s statement is false, making B a knave. C\u2019s claim about spies is false, so C is a knave. D says B and C share a role; that is false, so D is a knave. A\u2019s disjunction is true only if A and B share a role; with B knave this forces A to be the spy (truth value unrestricted). E\u2019s denial that A is a knight is true, so E is a knight. F\u2019s claim that at most two of C,D,E,F are knights holds (E and F), so F is a knight. Exactly one spy (A) satisfies all constraints."
+    },
+    {
+      "id": "R4.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 141,
+      "text": "B's statement is false, making B a knave. C's claim about spies is false, so C is a knave. D says B and C share a role, which is false, thus D is a knave. A's disjunction is true only if A and B share a role; with B knave this forces A to be the spy. E's denial that A is a knight is true, so E is a knight. F's claim that at most two of C,D,E,F are knights holds (E and F), making F a knight. Exactly one spy (A) satisfies all constraints."
+    },
+    {
+      "id": "R4.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 141,
+      "text": "B's statement is false, so B is a knave. C's claim about spies is false, making C a knave. D says B and C share a role; that's false, so D is a knave. A's disjunction is true only if A and B share a role; with B knave this forces A to be the spy (truth value unrestricted). E's claim that A is not a knight is true, so E is a knight. F's at\u2011most\u20112 knightsknights claim holds (E and F), so F is a knight. Exactly one spy (A) satisfies all constraints."
+    },
+    {
+      "id": "R5.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 150,
+      "text": "All consistent assignments make E's statement true, fitting a knight."
+    },
+    {
+      "id": "R5.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 150,
+      "text": ""
+    },
+    {
+      "id": "R5.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 150,
+      "text": "All consistent assignments make E's statement true, fitting a knight."
+    },
+    {
+      "id": "R5.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 150,
+      "text": ""
+    },
+    {
+      "id": "R5.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 150,
+      "text": "All consistent solutions assign E as knight, matching the statements."
+    },
+    {
+      "id": "R5.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 150,
+      "text": ""
+    },
+    {
+      "id": "R5.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 151,
+      "text": "B\u2019s statement is false \u2192 B knave. C\u2019s claim about spies is false \u2192 C knave. D says B and C share a role, which is false \u2192 D knave. A\u2019s disjunction is true only if A and B share a role; with B knave this forces A to be the spy. E\u2019s denial that A is a knight is true \u2192 E knight. F\u2019s claim that at most two of C,D,E,F are knights holds (E and F) \u2192 F knight. Exactly one spy (A) satisfies all constraints."
+    },
+    {
+      "id": "R5.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 151,
+      "text": "B's statement is false, making B a knave. C's claim about spies is false, so C is a knave. D says B and C share a role, which is false, so D is a knave. A's disjunction is true only if A and B share a role; with B knave this forces A to be the spy. E's denial that A is a knight is true, so E is a knight. F's claim that at most two of C,D,E,F are knights holds (E and F), making F a knight. Exactly one spy (A) satisfies all constraints."
+    },
+    {
+      "id": "R5.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 151,
+      "text": "B's statement is false, so B is a knave. C's claim about spies is false, making C a knave. D says B and C share a role; that's false, so D is a knave. A's disjunction is true only if A and B share a role; with B knave this forces A to be the spy (truth value unrestricted). E's denial that A is a knight is true, so E is a knight. F's claim that at most two of C,D,E,F are knights holds (E and F), making F a knight. Exactly one spy (A) satisfies all constraints."
+    },
+    {
+      "id": "R6.argument.agent-1.agree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 160,
+      "text": "All consistent solutions assign F as knight; his statement about at most two knights among C,D,E,F holds (E and F)."
+    },
+    {
+      "id": "R6.argument.agent-1.disagree_reasoning",
+      "agent": "agent-1",
+      "stage_order": 160,
+      "text": ""
+    },
+    {
+      "id": "R6.argument.agent-2.agree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 160,
+      "text": "All consistent solutions show F's statement true, matching a knight."
+    },
+    {
+      "id": "R6.argument.agent-2.disagree_reasoning",
+      "agent": "agent-2",
+      "stage_order": 160,
+      "text": ""
+    },
+    {
+      "id": "R6.argument.agent-3.agree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 160,
+      "text": "All consistent solutions assign F as knight; his statement about at most two knights among C,D,E,F holds (E and F)."
+    },
+    {
+      "id": "R6.argument.agent-3.disagree_reasoning",
+      "agent": "agent-3",
+      "stage_order": 160,
+      "text": ""
+    },
+    {
+      "id": "R6.revision.agent-1",
+      "agent": "agent-1",
+      "stage_order": 161,
+      "text": "B's statement is false, making B a knave. C's claim about spies is false, so C is a knave. D says B and C share a role, which is false, so D is a knave. A's disjunction is true only if A and B share a role; with B knave this forces A to be the spy. E's denial that A is a knight is true, so E is a knight. F's claim that at most two of C,D,E,F are knights holds (E and F), so F is a knight. Exactly one spy (A) satisfies all constraints."
+    },
+    {
+      "id": "R6.revision.agent-2",
+      "agent": "agent-2",
+      "stage_order": 161,
+      "text": "B's statement is false, so B is knave. C's claim about spies is false, making C knave. D says B and C share a role, which is false, so D knave. A's disjunction is true only if A and B share a role; with B knave this forces A to be the spy. E's denial that A is a knight is true, so E is knight. F's at\u2011most\u2011two\u2011knights claim holds (E and F), so F is knight. Exactly one spy (A) satisfies all constraints."
+    },
+    {
+      "id": "R6.revision.agent-3",
+      "agent": "agent-3",
+      "stage_order": 161,
+      "text": "B's statement is false, making B a knave. C's claim about spies is false, so C is a knave. D says B and C share a role, which is false, so D is a knave. A's disjunction is true only if A and B share a role; with B knave this forces A to be the spy. E's denial that A is a knight is true, so E is a knight. F's claim that at most two of C,D,E,F are knights holds (E and F), so F is a knight. Exactly one spy (A) satisfies all constraints."
+    }
+  ]
+}
